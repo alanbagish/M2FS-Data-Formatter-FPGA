@@ -1,5 +1,5 @@
 Analysis & Synthesis report for M2FS-Data-Formatter
-Fri Oct 12 15:07:07 2012
+Fri Oct 12 15:43:12 2012
 Quartus II 32-bit Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Web Edition
 
 
@@ -10,31 +10,37 @@ Quartus II 32-bit Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Web Editio
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis IP Cores Summary
-  6. Registers Protected by Synthesis
-  7. User-Specified and Inferred Latches
-  8. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component
-  9. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated
- 10. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in
- 11. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe
- 12. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:l_dffpipe
- 13. Parameter Settings for User Entity Instance: lpm_counter3:inst120|lpm_counter:LPM_COUNTER_component
- 14. Parameter Settings for User Entity Instance: lpm_counter1:inst117|lpm_counter:LPM_COUNTER_component
- 15. Parameter Settings for User Entity Instance: lpm_counter0:inst116|lpm_counter:LPM_COUNTER_component
- 16. Parameter Settings for User Entity Instance: altpll0:inst99|altpll:altpll_component
- 17. Parameter Settings for User Entity Instance: lpm_counter6:inst123|lpm_counter:LPM_COUNTER_component
- 18. Parameter Settings for User Entity Instance: lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component
- 19. Parameter Settings for User Entity Instance: lpm_counter5:inst122|lpm_counter:LPM_COUNTER_component
- 20. Parameter Settings for User Entity Instance: altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component
- 21. Parameter Settings for User Entity Instance: lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component
- 22. Parameter Settings for User Entity Instance: lpm_counter7:inst139|lpm_counter:LPM_COUNTER_component
- 23. Parameter Settings for User Entity Instance: lpm_counter9:inst145|lpm_counter:LPM_COUNTER_component
- 24. Parameter Settings for User Entity Instance: lpm_counter10:inst146|lpm_counter:LPM_COUNTER_component
- 25. Parameter Settings for User Entity Instance: lpm_counter4:inst151|lpm_counter:LPM_COUNTER_component
- 26. Parameter Settings for User Entity Instance: lpm_counter2:inst118|lpm_counter:LPM_COUNTER_component
- 27. altpll Parameter Settings by Entity Instance
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. Registers Protected by Synthesis
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component
+ 15. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated
+ 16. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in
+ 17. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe
+ 18. Source assignments for altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:l_dffpipe
+ 19. Parameter Settings for User Entity Instance: lpm_counter3:inst120|lpm_counter:LPM_COUNTER_component
+ 20. Parameter Settings for User Entity Instance: lpm_counter1:inst117|lpm_counter:LPM_COUNTER_component
+ 21. Parameter Settings for User Entity Instance: lpm_counter0:inst116|lpm_counter:LPM_COUNTER_component
+ 22. Parameter Settings for User Entity Instance: altpll0:inst99|altpll:altpll_component
+ 23. Parameter Settings for User Entity Instance: lpm_counter6:inst123|lpm_counter:LPM_COUNTER_component
+ 24. Parameter Settings for User Entity Instance: lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component
+ 25. Parameter Settings for User Entity Instance: lpm_counter5:inst122|lpm_counter:LPM_COUNTER_component
+ 26. Parameter Settings for User Entity Instance: lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component
+ 27. Parameter Settings for User Entity Instance: lpm_counter7:inst139|lpm_counter:LPM_COUNTER_component
+ 28. Parameter Settings for User Entity Instance: lpm_counter9:inst145|lpm_counter:LPM_COUNTER_component
+ 29. Parameter Settings for User Entity Instance: lpm_counter10:inst146|lpm_counter:LPM_COUNTER_component
+ 30. Parameter Settings for User Entity Instance: lpm_counter4:inst151|lpm_counter:LPM_COUNTER_component
+ 31. Parameter Settings for User Entity Instance: lpm_counter2:inst118|lpm_counter:LPM_COUNTER_component
+ 32. Parameter Settings for User Entity Instance: altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component
+ 33. altpll Parameter Settings by Entity Instance
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
 
 
 
@@ -60,20 +66,20 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Oct 12 15:07:07 2012             ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 12 15:43:12 2012         ;
 ; Quartus II 32-bit Version          ; 12.0 Build 263 08/02/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; M2FS-Data-Formatter                           ;
 ; Top-level Entity Name              ; M2FS-Data-Formatter                           ;
 ; Family                             ; Cyclone III                                   ;
-; Total logic elements               ; N/A until Partition Merge                     ;
-;     Total combinational functions  ; N/A until Partition Merge                     ;
-;     Dedicated logic registers      ; N/A until Partition Merge                     ;
-; Total registers                    ; N/A until Partition Merge                     ;
-; Total pins                         ; N/A until Partition Merge                     ;
-; Total virtual pins                 ; N/A until Partition Merge                     ;
-; Total memory bits                  ; N/A until Partition Merge                     ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                     ;
-; Total PLLs                         ; N/A until Partition Merge                     ;
+; Total logic elements               ; 44                                            ;
+;     Total combinational functions  ; 10                                            ;
+;     Dedicated logic registers      ; 37                                            ;
+; Total registers                    ; 37                                            ;
+; Total pins                         ; 82                                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                             ;
+; Total PLLs                         ; 2                                             ;
 +------------------------------------+-----------------------------------------------+
 
 
@@ -174,6 +180,127 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; M2FS-Data-Formatter.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/M2FS-Data-Formatter.bdf   ;         ;
+; altpll0.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/altpll0.vhd               ;         ;
+; lpm_counter0.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter0.vhd          ;         ;
+; lpm_counter1.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter1.vhd          ;         ;
+; lpm_counter2.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter2.vhd          ;         ;
+; lpm_counter3.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter3.vhd          ;         ;
+; lpm_counter4.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter4.vhd          ;         ;
+; lpm_counter5.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter5.vhd          ;         ;
+; lpm_counter6.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter6.vhd          ;         ;
+; lpm_counter7.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter7.vhd          ;         ;
+; lpm_counter8.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter8.vhd          ;         ;
+; lpm_counter9.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter9.vhd          ;         ;
+; lpm_counter10.vhd                ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/lpm_counter10.vhd         ;         ;
+; altlvds_rx0.vhd                  ; yes             ; User Wizard-Generated File         ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/altlvds_rx0.vhd           ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/lpm_counter.tdf             ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/lpm_constant.inc            ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/lpm_add_sub.inc             ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/cmpconst.inc                ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/lpm_compare.inc             ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/lpm_counter.inc             ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/dffeea.inc                  ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/alt_counter_stratix.inc     ;         ;
+; aglobal120.inc                   ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/aglobal120.inc              ;         ;
+; db/cntr_l2k.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_l2k.tdf           ;         ;
+; db/cmpr_lfc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cmpr_lfc.tdf           ;         ;
+; db/cntr_oqk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_oqk.tdf           ;         ;
+; db/cmpr_1hc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cmpr_1hc.tdf           ;         ;
+; db/cntr_qlk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_qlk.tdf           ;         ;
+; db/cmpr_hfc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cmpr_hfc.tdf           ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/altpll.tdf                  ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/stratix_pll.inc             ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/stratixii_pll.inc           ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/cycloneii_pll.inc           ;         ;
+; db/altpll0_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/altpll0_altpll.v       ;         ;
+; db/cntr_9kk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_9kk.tdf           ;         ;
+; db/cmpr_gfc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cmpr_gfc.tdf           ;         ;
+; 74137.bdf                        ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/others/maxplus2/74137.bdf                 ;         ;
+; db/cntr_7kk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_7kk.tdf           ;         ;
+; db/cntr_slk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_slk.tdf           ;         ;
+; db/cmpr_jfc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cmpr_jfc.tdf           ;         ;
+; db/cntr_6kk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_6kk.tdf           ;         ;
+; db/cmpr_ffc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cmpr_ffc.tdf           ;         ;
+; db/cntr_8kk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_8kk.tdf           ;         ;
+; db/cntr_5kk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_5kk.tdf           ;         ;
+; db/cntr_3kk.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cntr_3kk.tdf           ;         ;
+; db/cmpr_efc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/cmpr_efc.tdf           ;         ;
+; 74374b.bdf                       ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/others/maxplus2/74374b.bdf                ;         ;
+; altlvds_rx.tdf                   ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/altlvds_rx.tdf              ;         ;
+; stratix_lvds_receiver.inc        ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/stratix_lvds_receiver.inc   ;         ;
+; stratixgx_lvds_receiver.inc      ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/stratixgx_lvds_receiver.inc ;         ;
+; stratixgx_pll.inc                ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/stratixgx_pll.inc           ;         ;
+; stratixii_lvds_receiver.inc      ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/stratixii_lvds_receiver.inc ;         ;
+; stratixii_clkctrl.inc            ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/stratixii_clkctrl.inc       ;         ;
+; altddio_in.inc                   ; yes             ; Megafunction                       ; c:/altera/12.0sp2/quartus/libraries/megafunctions/altddio_in.inc              ;         ;
+; db/altlvds_rx0_lvds_rx.v         ; yes             ; Auto-Generated Megafunction        ; C:/Users/alanb/Documents/GitHub/M2FS-Data-Formatter/db/altlvds_rx0_lvds_rx.v  ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                   ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                           ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 44                                                                                              ;
+;                                             ;                                                                                                 ;
+; Total combinational functions               ; 10                                                                                              ;
+; Logic element usage by number of LUT inputs ;                                                                                                 ;
+;     -- 4 input functions                    ; 2                                                                                               ;
+;     -- 3 input functions                    ; 3                                                                                               ;
+;     -- <=2 input functions                  ; 5                                                                                               ;
+;                                             ;                                                                                                 ;
+; Logic elements by mode                      ;                                                                                                 ;
+;     -- normal mode                          ; 7                                                                                               ;
+;     -- arithmetic mode                      ; 3                                                                                               ;
+;                                             ;                                                                                                 ;
+; Total registers                             ; 37                                                                                              ;
+;     -- Dedicated logic registers            ; 37                                                                                              ;
+;     -- I/O registers                        ; 0                                                                                               ;
+;                                             ;                                                                                                 ;
+; I/O pins                                    ; 82                                                                                              ;
+; Total PLLs                                  ; 2                                                                                               ;
+;     -- PLLs                                 ; 2                                                                                               ;
+;                                             ;                                                                                                 ;
+; Maximum fan-out node                        ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|fast_clock ;
+; Maximum fan-out                             ; 33                                                                                              ;
+; Total fan-out                               ; 238                                                                                             ;
+; Average fan-out                             ; 1.11                                                                                            ;
++---------------------------------------------+-------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                        ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |M2FS-Data-Formatter                           ; 10 (1)            ; 37 (0)       ; 0           ; 0            ; 0       ; 0         ; 82   ; 0            ; |M2FS-Data-Formatter                                                                                                                       ;              ;
+;    |74137:inst115|                             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|74137:inst115                                                                                                         ;              ;
+;    |74374b:inst24|                             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|74374b:inst24                                                                                                         ;              ;
+;    |74374b:inst25|                             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|74374b:inst25                                                                                                         ;              ;
+;    |altlvds_rx0:inst1|                         ; 0 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altlvds_rx0:inst1                                                                                                     ;              ;
+;       |altlvds_rx:ALTLVDS_RX_component|        ; 0 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component                                                                     ;              ;
+;          |altlvds_rx0_lvds_rx:auto_generated|  ; 0 (0)             ; 32 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated                                  ;              ;
+;             |altlvds_rx0_dffpipe:h_dffpipe|    ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe    ;              ;
+;             |altlvds_rx0_lvds_ddio_in:ddio_in| ; 0 (0)             ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in ;              ;
+;    |altpll0:inst99|                            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altpll0:inst99                                                                                                        ;              ;
+;       |altpll:altpll_component|                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altpll0:inst99|altpll:altpll_component                                                                                ;              ;
+;          |altpll0_altpll:auto_generated|       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|altpll0:inst99|altpll:altpll_component|altpll0_altpll:auto_generated                                                  ;              ;
+;    |lpm_counter4:inst121|                      ; 7 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|lpm_counter4:inst121                                                                                                  ;              ;
+;       |lpm_counter:LPM_COUNTER_component|      ; 7 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component                                                                ;              ;
+;          |cntr_7kk:auto_generated|             ; 7 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated                                        ;              ;
+;             |cmpr_gfc:cmpr1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |M2FS-Data-Formatter|lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|cmpr_gfc:cmpr1                         ;              ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis IP Cores Summary                                                                                                                                              ;
 +--------+--------------+---------+--------------+--------------+--------------------------------------------+-----------------------------------------------------------------------+
@@ -237,6 +364,141 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Number of user-specified and inferred latches = 1  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                ;
++------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                                                            ; Reason for Removal                     ;
++------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; lpm_counter4:inst151|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|counter_reg_bit[0..2]                                     ; Stuck at GND due to stuck port clock   ;
+; lpm_counter10:inst146|lpm_counter:LPM_COUNTER_component|cntr_3kk:auto_generated|counter_reg_bit[0]                                       ; Stuck at GND due to stuck port clock   ;
+; lpm_counter9:inst145|lpm_counter:LPM_COUNTER_component|cntr_5kk:auto_generated|counter_reg_bit[0,1]                                      ; Stuck at GND due to stuck port clock   ;
+; lpm_counter7:inst139|lpm_counter:LPM_COUNTER_component|cntr_8kk:auto_generated|counter_reg_bit[0..2]                                     ; Stuck at GND due to stuck port clock   ;
+; lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component|cntr_6kk:auto_generated|counter_reg_bit[0,1]                                      ; Stuck at GND due to stuck port clock   ;
+; lpm_counter5:inst122|lpm_counter:LPM_COUNTER_component|cntr_slk:auto_generated|counter_reg_bit[0..5]                                     ; Stuck at GND due to stuck port clock   ;
+; lpm_counter6:inst123|lpm_counter:LPM_COUNTER_component|cntr_9kk:auto_generated|counter_reg_bit[0..2]                                     ; Stuck at GND due to stuck port clock   ;
+; 22                                                                                                                                       ; Stuck at GND due to stuck port clear   ;
+; 21                                                                                                                                       ; Stuck at GND due to stuck port clear   ;
+; 23                                                                                                                                       ; Stuck at GND due to stuck port clear   ;
+; lpm_counter3:inst120|lpm_counter:LPM_COUNTER_component|cntr_l2k:auto_generated|counter_reg_bit[0..7]                                     ; Lost fanout                            ;
+; lpm_counter0:inst116|lpm_counter:LPM_COUNTER_component|cntr_qlk:auto_generated|counter_reg_bit[0..3]                                     ; Stuck at GND due to stuck port data_in ;
+; lpm_counter1:inst117|lpm_counter:LPM_COUNTER_component|cntr_oqk:auto_generated|counter_reg_bit[0..12]                                    ; Stuck at GND due to stuck port data_in ;
+; lpm_counter2:inst118|lpm_counter:LPM_COUNTER_component|cntr_3kk:auto_generated|counter_reg_bit[0]                                        ; Stuck at GND due to stuck port data_in ;
+; 74374b:inst21|20                                                                                                                         ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[39]                                          ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg9a[0..3]                                  ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[4]            ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[4]   ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[4] ; Lost fanout                            ;
+; 74374b:inst20|20                                                                                                                         ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[47]                                          ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg11a[0..3]                                 ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[5]            ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[5]   ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[5] ; Lost fanout                            ;
+; 74374b:inst19|20                                                                                                                         ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[55]                                          ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg13a[0..3]                                 ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[6]            ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[6]   ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[6] ; Lost fanout                            ;
+; 74374b:inst52|20                                                                                                                         ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[63]                                          ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg15a[0..3]                                 ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[7]            ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[7]   ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[7] ; Lost fanout                            ;
+; 74374b:inst22|20                                                                                                                         ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[31]                                          ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg7a[0..3]                                  ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[3]            ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[3]   ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[3] ; Lost fanout                            ;
+; 74374b:inst23|20                                                                                                                         ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[23]                                          ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg5a[0..3]                                  ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[2]            ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[2]   ; Lost fanout                            ;
+; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[2] ; Lost fanout                            ;
+; Total Number of Removed Registers = 103                                                                                                  ;                                        ;
++------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                            ;
++------------------+-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Register name    ; Reason for Removal      ; Registers Removed due to This Register                                                                                                    ;
++------------------+-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; 22               ; Stuck at GND            ; 23, 74374b:inst21|20,                                                                                                                     ;
+;                  ; due to stuck port clear ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[39],                                          ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg9a[3],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg9a[2],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg9a[1],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg9a[0],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[4],            ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[4],   ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[4], ;
+;                  ;                         ; 74374b:inst20|20,                                                                                                                         ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[47],                                          ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg11a[3],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg11a[2],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg11a[1],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg11a[0],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[5],            ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[5],   ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[5], ;
+;                  ;                         ; 74374b:inst19|20,                                                                                                                         ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[55],                                          ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg13a[3],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg13a[2],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg13a[1],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg13a[0],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[6],            ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[6],   ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[6], ;
+;                  ;                         ; 74374b:inst52|20,                                                                                                                         ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[63],                                          ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg15a[3],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg15a[2],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg15a[1],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg15a[0],                                    ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[7],            ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[7],   ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[7], ;
+;                  ;                         ; 74374b:inst23|20,                                                                                                                         ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[23],                                          ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg5a[3],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg5a[2],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg5a[1],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg5a[0],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[2],            ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[2],   ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[2]  ;
+; 74374b:inst22|20 ; Lost Fanouts            ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|rx_reg[31],                                          ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg7a[3],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg7a[2],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg7a[1],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|l_shiftreg7a[0],                                     ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe|dffe17a[3],            ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_reg[3],   ;
+;                  ;                         ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in|dataout_l_latch[3]  ;
++------------------+-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 37    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 3     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 3     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
 
 
 +--------------------------------------------------------------------------+
@@ -870,61 +1132,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component ;
-+--------------------------------------+---------------------+-----------------------------------+
-; Parameter Name                       ; Value               ; Type                              ;
-+--------------------------------------+---------------------+-----------------------------------+
-; AUTO_CARRY_CHAINS                    ; ON                  ; AUTO_CARRY                        ;
-; IGNORE_CARRY_BUFFERS                 ; OFF                 ; IGNORE_CARRY                      ;
-; AUTO_CASCADE_CHAINS                  ; ON                  ; AUTO_CASCADE                      ;
-; IGNORE_CASCADE_BUFFERS               ; OFF                 ; IGNORE_CASCADE                    ;
-; NUMBER_OF_CHANNELS                   ; 8                   ; Signed Integer                    ;
-; DESERIALIZATION_FACTOR               ; 8                   ; Signed Integer                    ;
-; REGISTERED_OUTPUT                    ; ON                  ; Untyped                           ;
-; INCLOCK_PERIOD                       ; 12500               ; Signed Integer                    ;
-; INCLOCK_BOOST                        ; 0                   ; Signed Integer                    ;
-; CDS_MODE                             ; UNUSED              ; Untyped                           ;
-; INTENDED_DEVICE_FAMILY               ; Cyclone III         ; Untyped                           ;
-; DEVICE_FAMILY                        ; Cyclone III         ; Untyped                           ;
-; PORT_RX_DATA_ALIGN                   ; PORT_UNUSED         ; Untyped                           ;
-; INPUT_DATA_RATE                      ; 80                  ; Signed Integer                    ;
-; INCLOCK_DATA_ALIGNMENT               ; EDGE_ALIGNED        ; Untyped                           ;
-; INCLOCK_PHASE_SHIFT                  ; 0                   ; Signed Integer                    ;
-; REGISTERED_DATA_ALIGN_INPUT          ; ON                  ; Untyped                           ;
-; COMMON_RX_TX_PLL                     ; OFF                 ; Untyped                           ;
-; ENABLE_DPA_MODE                      ; OFF                 ; Untyped                           ;
-; ENABLE_DPA_FIFO                      ; ON                  ; Untyped                           ;
-; USE_DPLL_RAWPERROR                   ; OFF                 ; Untyped                           ;
-; USE_CORECLOCK_INPUT                  ; OFF                 ; Untyped                           ;
-; DPLL_LOCK_COUNT                      ; 0                   ; Signed Integer                    ;
-; DPLL_LOCK_WINDOW                     ; 0                   ; Signed Integer                    ;
-; OUTCLOCK_RESOURCE                    ; AUTO                ; Untyped                           ;
-; RX_ALIGN_DATA_REG                    ; RISING_EDGE         ; Untyped                           ;
-; DATA_ALIGN_ROLLOVER                  ; 4                   ; Signed Integer                    ;
-; LOSE_LOCK_ON_ONE_CHANGE              ; OFF                 ; Untyped                           ;
-; RESET_FIFO_AT_FIRST_LOCK             ; ON                  ; Untyped                           ;
-; USE_EXTERNAL_PLL                     ; OFF                 ; Untyped                           ;
-; IMPLEMENT_IN_LES                     ; ON                  ; Untyped                           ;
-; BUFFER_IMPLEMENTATION                ; RAM                 ; Untyped                           ;
-; DPA_INITIAL_PHASE_VALUE              ; 0                   ; Signed Integer                    ;
-; ENABLE_DPA_ALIGN_TO_RISING_EDGE_ONLY ; OFF                 ; Untyped                           ;
-; ENABLE_DPA_INITIAL_PHASE_SELECTION   ; OFF                 ; Untyped                           ;
-; ENABLE_SOFT_CDR_MODE                 ; OFF                 ; Untyped                           ;
-; PLL_OPERATION_MODE                   ; NORMAL              ; Untyped                           ;
-; SIM_DPA_IS_NEGATIVE_PPM_DRIFT        ; OFF                 ; Untyped                           ;
-; SIM_DPA_NET_PPM_VARIATION            ; 0                   ; Signed Integer                    ;
-; SIM_DPA_OUTPUT_CLOCK_PHASE_SHIFT     ; 0                   ; Signed Integer                    ;
-; USE_NO_PHASE_SHIFT                   ; ON                  ; Untyped                           ;
-; PORT_RX_CHANNEL_DATA_ALIGN           ; PORT_UNUSED         ; Untyped                           ;
-; PLL_SELF_RESET_ON_LOSS_LOCK          ; OFF                 ; Untyped                           ;
-; X_ON_BITSLIP                         ; ON                  ; Untyped                           ;
-; ENABLE_DPA_PLL_CALIBRATION           ; OFF                 ; Untyped                           ;
-; CBXI_PARAMETER                       ; altlvds_rx0_lvds_rx ; Untyped                           ;
-+--------------------------------------+---------------------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component ;
 +------------------------+-------------+--------------------------------------------------------------+
@@ -1087,6 +1294,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component ;
++--------------------------------------+---------------------+-----------------------------------+
+; Parameter Name                       ; Value               ; Type                              ;
++--------------------------------------+---------------------+-----------------------------------+
+; AUTO_CARRY_CHAINS                    ; ON                  ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS                 ; OFF                 ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS                  ; ON                  ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS               ; OFF                 ; IGNORE_CASCADE                    ;
+; NUMBER_OF_CHANNELS                   ; 8                   ; Signed Integer                    ;
+; DESERIALIZATION_FACTOR               ; 8                   ; Signed Integer                    ;
+; REGISTERED_OUTPUT                    ; ON                  ; Untyped                           ;
+; INCLOCK_PERIOD                       ; 12500               ; Signed Integer                    ;
+; INCLOCK_BOOST                        ; 0                   ; Signed Integer                    ;
+; CDS_MODE                             ; UNUSED              ; Untyped                           ;
+; INTENDED_DEVICE_FAMILY               ; Cyclone III         ; Untyped                           ;
+; DEVICE_FAMILY                        ; Cyclone III         ; Untyped                           ;
+; PORT_RX_DATA_ALIGN                   ; PORT_UNUSED         ; Untyped                           ;
+; INPUT_DATA_RATE                      ; 80                  ; Signed Integer                    ;
+; INCLOCK_DATA_ALIGNMENT               ; EDGE_ALIGNED        ; Untyped                           ;
+; INCLOCK_PHASE_SHIFT                  ; 0                   ; Signed Integer                    ;
+; REGISTERED_DATA_ALIGN_INPUT          ; ON                  ; Untyped                           ;
+; COMMON_RX_TX_PLL                     ; OFF                 ; Untyped                           ;
+; ENABLE_DPA_MODE                      ; OFF                 ; Untyped                           ;
+; ENABLE_DPA_FIFO                      ; ON                  ; Untyped                           ;
+; USE_DPLL_RAWPERROR                   ; OFF                 ; Untyped                           ;
+; USE_CORECLOCK_INPUT                  ; OFF                 ; Untyped                           ;
+; DPLL_LOCK_COUNT                      ; 0                   ; Signed Integer                    ;
+; DPLL_LOCK_WINDOW                     ; 0                   ; Signed Integer                    ;
+; OUTCLOCK_RESOURCE                    ; AUTO                ; Untyped                           ;
+; RX_ALIGN_DATA_REG                    ; RISING_EDGE         ; Untyped                           ;
+; DATA_ALIGN_ROLLOVER                  ; 4                   ; Signed Integer                    ;
+; LOSE_LOCK_ON_ONE_CHANGE              ; OFF                 ; Untyped                           ;
+; RESET_FIFO_AT_FIRST_LOCK             ; ON                  ; Untyped                           ;
+; USE_EXTERNAL_PLL                     ; OFF                 ; Untyped                           ;
+; IMPLEMENT_IN_LES                     ; ON                  ; Untyped                           ;
+; BUFFER_IMPLEMENTATION                ; RAM                 ; Untyped                           ;
+; DPA_INITIAL_PHASE_VALUE              ; 0                   ; Signed Integer                    ;
+; ENABLE_DPA_ALIGN_TO_RISING_EDGE_ONLY ; OFF                 ; Untyped                           ;
+; ENABLE_DPA_INITIAL_PHASE_SELECTION   ; OFF                 ; Untyped                           ;
+; ENABLE_SOFT_CDR_MODE                 ; OFF                 ; Untyped                           ;
+; PLL_OPERATION_MODE                   ; NORMAL              ; Untyped                           ;
+; SIM_DPA_IS_NEGATIVE_PPM_DRIFT        ; OFF                 ; Untyped                           ;
+; SIM_DPA_NET_PPM_VARIATION            ; 0                   ; Signed Integer                    ;
+; SIM_DPA_OUTPUT_CLOCK_PHASE_SHIFT     ; 0                   ; Signed Integer                    ;
+; USE_NO_PHASE_SHIFT                   ; ON                  ; Untyped                           ;
+; PORT_RX_CHANNEL_DATA_ALIGN           ; PORT_UNUSED         ; Untyped                           ;
+; PLL_SELF_RESET_ON_LOSS_LOCK          ; ON                  ; Untyped                           ;
+; X_ON_BITSLIP                         ; ON                  ; Untyped                           ;
+; ENABLE_DPA_PLL_CALIBRATION           ; OFF                 ; Untyped                           ;
+; CBXI_PARAMETER                       ; altlvds_rx0_lvds_rx ; Untyped                           ;
++--------------------------------------+---------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                           ;
 +-------------------------------+----------------------------------------+
@@ -1119,7 +1381,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Fri Oct 12 15:07:04 2012
+    Info: Processing started: Fri Oct 12 15:43:08 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file m2fs-data-formatter.bdf
@@ -1313,66 +1575,6 @@ Info (12128): Elaborating entity "cntr_slk" for hierarchy "lpm_counter5:inst122|
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_jfc.tdf
     Info (12023): Found entity 1: cmpr_jfc
 Info (12128): Elaborating entity "cmpr_jfc" for hierarchy "lpm_counter5:inst122|lpm_counter:LPM_COUNTER_component|cntr_slk:auto_generated|cmpr_jfc:cmpr1"
-Info (12128): Elaborating entity "74374b" for hierarchy "74374b:inst21"
-Info (12130): Elaborated megafunction instantiation "74374b:inst21"
-Info (12128): Elaborating entity "altlvds_rx0" for hierarchy "altlvds_rx0:inst1"
-Info (12128): Elaborating entity "altlvds_rx" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component"
-Info (12130): Elaborated megafunction instantiation "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component"
-Info (12133): Instantiated megafunction "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component" with the following parameter:
-    Info (12134): Parameter "buffer_implementation" = "RAM"
-    Info (12134): Parameter "cds_mode" = "UNUSED"
-    Info (12134): Parameter "common_rx_tx_pll" = "OFF"
-    Info (12134): Parameter "data_align_rollover" = "4"
-    Info (12134): Parameter "data_rate" = "80.0 Mbps"
-    Info (12134): Parameter "deserialization_factor" = "8"
-    Info (12134): Parameter "dpa_initial_phase_value" = "0"
-    Info (12134): Parameter "dpll_lock_count" = "0"
-    Info (12134): Parameter "dpll_lock_window" = "0"
-    Info (12134): Parameter "enable_clock_pin_mode" = "UNUSED"
-    Info (12134): Parameter "enable_dpa_align_to_rising_edge_only" = "OFF"
-    Info (12134): Parameter "enable_dpa_calibration" = "ON"
-    Info (12134): Parameter "enable_dpa_fifo" = "UNUSED"
-    Info (12134): Parameter "enable_dpa_initial_phase_selection" = "OFF"
-    Info (12134): Parameter "enable_dpa_mode" = "OFF"
-    Info (12134): Parameter "enable_dpa_pll_calibration" = "OFF"
-    Info (12134): Parameter "enable_soft_cdr_mode" = "OFF"
-    Info (12134): Parameter "implement_in_les" = "ON"
-    Info (12134): Parameter "inclock_boost" = "0"
-    Info (12134): Parameter "inclock_data_alignment" = "EDGE_ALIGNED"
-    Info (12134): Parameter "inclock_period" = "12500"
-    Info (12134): Parameter "inclock_phase_shift" = "0"
-    Info (12134): Parameter "input_data_rate" = "80"
-    Info (12134): Parameter "intended_device_family" = "Cyclone III"
-    Info (12134): Parameter "lose_lock_on_one_change" = "UNUSED"
-    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=altlvds_rx0"
-    Info (12134): Parameter "lpm_type" = "altlvds_rx"
-    Info (12134): Parameter "number_of_channels" = "8"
-    Info (12134): Parameter "outclock_resource" = "AUTO"
-    Info (12134): Parameter "pll_operation_mode" = "UNUSED"
-    Info (12134): Parameter "pll_self_reset_on_loss_lock" = "OFF"
-    Info (12134): Parameter "port_rx_channel_data_align" = "PORT_UNUSED"
-    Info (12134): Parameter "port_rx_data_align" = "PORT_UNUSED"
-    Info (12134): Parameter "refclk_frequency" = "UNUSED"
-    Info (12134): Parameter "registered_data_align_input" = "UNUSED"
-    Info (12134): Parameter "registered_output" = "ON"
-    Info (12134): Parameter "reset_fifo_at_first_lock" = "UNUSED"
-    Info (12134): Parameter "rx_align_data_reg" = "UNUSED"
-    Info (12134): Parameter "sim_dpa_is_negative_ppm_drift" = "OFF"
-    Info (12134): Parameter "sim_dpa_net_ppm_variation" = "0"
-    Info (12134): Parameter "sim_dpa_output_clock_phase_shift" = "0"
-    Info (12134): Parameter "use_coreclock_input" = "OFF"
-    Info (12134): Parameter "use_dpll_rawperror" = "OFF"
-    Info (12134): Parameter "use_external_pll" = "OFF"
-    Info (12134): Parameter "use_no_phase_shift" = "ON"
-    Info (12134): Parameter "x_on_bitslip" = "ON"
-    Info (12134): Parameter "clk_src_is_pll" = "off"
-Info (12021): Found 3 design units, including 3 entities, in source file db/altlvds_rx0_lvds_rx.v
-    Info (12023): Found entity 1: altlvds_rx0_lvds_ddio_in
-    Info (12023): Found entity 2: altlvds_rx0_dffpipe
-    Info (12023): Found entity 3: altlvds_rx0_lvds_rx
-Info (12128): Elaborating entity "altlvds_rx0_lvds_rx" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated"
-Info (12128): Elaborating entity "altlvds_rx0_lvds_ddio_in" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in"
-Info (12128): Elaborating entity "altlvds_rx0_dffpipe" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe"
 Info (12128): Elaborating entity "lpm_counter8" for hierarchy "lpm_counter8:inst144"
 Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component"
 Info (12130): Elaborated megafunction instantiation "lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component"
@@ -1428,28 +1630,100 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_efc
 Info (12128): Elaborating entity "cmpr_efc" for hierarchy "lpm_counter10:inst146|lpm_counter:LPM_COUNTER_component|cntr_3kk:auto_generated|cmpr_efc:cmpr1"
 Info (12128): Elaborating entity "lpm_counter2" for hierarchy "lpm_counter2:inst118"
+Info (12128): Elaborating entity "74374b" for hierarchy "74374b:inst21"
+Info (12130): Elaborated megafunction instantiation "74374b:inst21"
+Info (12128): Elaborating entity "altlvds_rx0" for hierarchy "altlvds_rx0:inst1"
+Info (12128): Elaborating entity "altlvds_rx" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component"
+Info (12130): Elaborated megafunction instantiation "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component"
+Info (12133): Instantiated megafunction "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component" with the following parameter:
+    Info (12134): Parameter "buffer_implementation" = "RAM"
+    Info (12134): Parameter "cds_mode" = "UNUSED"
+    Info (12134): Parameter "common_rx_tx_pll" = "OFF"
+    Info (12134): Parameter "data_align_rollover" = "4"
+    Info (12134): Parameter "data_rate" = "80.0 Mbps"
+    Info (12134): Parameter "deserialization_factor" = "8"
+    Info (12134): Parameter "dpa_initial_phase_value" = "0"
+    Info (12134): Parameter "dpll_lock_count" = "0"
+    Info (12134): Parameter "dpll_lock_window" = "0"
+    Info (12134): Parameter "enable_clock_pin_mode" = "UNUSED"
+    Info (12134): Parameter "enable_dpa_align_to_rising_edge_only" = "OFF"
+    Info (12134): Parameter "enable_dpa_calibration" = "ON"
+    Info (12134): Parameter "enable_dpa_fifo" = "UNUSED"
+    Info (12134): Parameter "enable_dpa_initial_phase_selection" = "OFF"
+    Info (12134): Parameter "enable_dpa_mode" = "OFF"
+    Info (12134): Parameter "enable_dpa_pll_calibration" = "OFF"
+    Info (12134): Parameter "enable_soft_cdr_mode" = "OFF"
+    Info (12134): Parameter "implement_in_les" = "ON"
+    Info (12134): Parameter "inclock_boost" = "0"
+    Info (12134): Parameter "inclock_data_alignment" = "EDGE_ALIGNED"
+    Info (12134): Parameter "inclock_period" = "12500"
+    Info (12134): Parameter "inclock_phase_shift" = "0"
+    Info (12134): Parameter "input_data_rate" = "80"
+    Info (12134): Parameter "intended_device_family" = "Cyclone III"
+    Info (12134): Parameter "lose_lock_on_one_change" = "UNUSED"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=altlvds_rx0"
+    Info (12134): Parameter "lpm_type" = "altlvds_rx"
+    Info (12134): Parameter "number_of_channels" = "8"
+    Info (12134): Parameter "outclock_resource" = "AUTO"
+    Info (12134): Parameter "pll_operation_mode" = "UNUSED"
+    Info (12134): Parameter "pll_self_reset_on_loss_lock" = "ON"
+    Info (12134): Parameter "port_rx_channel_data_align" = "PORT_UNUSED"
+    Info (12134): Parameter "port_rx_data_align" = "PORT_UNUSED"
+    Info (12134): Parameter "refclk_frequency" = "UNUSED"
+    Info (12134): Parameter "registered_data_align_input" = "UNUSED"
+    Info (12134): Parameter "registered_output" = "ON"
+    Info (12134): Parameter "reset_fifo_at_first_lock" = "UNUSED"
+    Info (12134): Parameter "rx_align_data_reg" = "UNUSED"
+    Info (12134): Parameter "sim_dpa_is_negative_ppm_drift" = "OFF"
+    Info (12134): Parameter "sim_dpa_net_ppm_variation" = "0"
+    Info (12134): Parameter "sim_dpa_output_clock_phase_shift" = "0"
+    Info (12134): Parameter "use_coreclock_input" = "OFF"
+    Info (12134): Parameter "use_dpll_rawperror" = "OFF"
+    Info (12134): Parameter "use_external_pll" = "OFF"
+    Info (12134): Parameter "use_no_phase_shift" = "ON"
+    Info (12134): Parameter "x_on_bitslip" = "ON"
+    Info (12134): Parameter "clk_src_is_pll" = "off"
+Info (12021): Found 3 design units, including 3 entities, in source file db/altlvds_rx0_lvds_rx.v
+    Info (12023): Found entity 1: altlvds_rx0_lvds_ddio_in
+    Info (12023): Found entity 2: altlvds_rx0_dffpipe
+    Info (12023): Found entity 3: altlvds_rx0_lvds_rx
+Info (12128): Elaborating entity "altlvds_rx0_lvds_rx" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated"
+Info (12128): Elaborating entity "altlvds_rx0_lvds_ddio_in" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in"
+Info (12128): Elaborating entity "altlvds_rx0_dffpipe" for hierarchy "altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe"
 Warning (14026): LATCH primitive "74137:inst147|19" is permanently enabled
 Warning (14026): LATCH primitive "74137:inst147|2" is permanently enabled
 Warning (14026): LATCH primitive "74137:inst147|26" is permanently enabled
 Warning (14025): LATCH primitive "inst138" is permanently disabled
 Warning (14025): LATCH primitive "inst143" is permanently disabled
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "Q[1]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "Q[1]" and its non-tri-state driver.
 Warning (13032): The following tri-state nodes are fed by constants
     Warning (13033): The pin "CMOS_OE" is fed by GND
-Error (13076): The pin "Q[1]" has multiple drivers due to the non-tri-state driver "lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|counter_reg_bit[2]"
 Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst21|49" to the node "Q[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst20|49" to the node "Q[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst19|49" to the node "Q[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst52|49" to the node "Q[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst22|49" to the node "Q[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst23|49" to the node "Q[1]"
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 18 warnings
-    Error: Peak virtual memory: 360 megabytes
-    Error: Processing ended: Fri Oct 12 15:07:07 2012
-    Error: Elapsed time: 00:00:03
-    Error: Total CPU time (on all processors): 00:00:03
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst21|49" to the node "Q[8]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst20|49" to the node "Q[8]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst19|49" to the node "Q[8]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst52|49" to the node "Q[8]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst22|49" to the node "Q[8]"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "74374b:inst23|49" to the node "Q[8]"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DATA_READY" is stuck at GND
+    Warning (13410): Pin "Q[12]" is stuck at GND
+    Warning (13410): Pin "Q[11]" is stuck at GND
+    Warning (13410): Pin "Q[10]" is stuck at GND
+    Warning (13410): Pin "Q[9]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 62 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 2 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 128 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
+    Info (21059): Implemented 47 output pins
+    Info (21060): Implemented 1 bidirectional pins
+    Info (21061): Implemented 44 logic cells
+    Info (21065): Implemented 2 PLLs
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 353 megabytes
+    Info: Processing ended: Fri Oct 12 15:43:12 2012
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

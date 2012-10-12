@@ -1,5 +1,5 @@
 Flow report for M2FS-Data-Formatter
-Fri Oct 12 15:07:07 2012
+Fri Oct 12 15:43:31 2012
 Quartus II 32-bit Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Web Edition
 
 
@@ -38,22 +38,22 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Flow Summary                                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Oct 12 15:07:07 2012        ;
+; Flow Status                        ; Successful - Fri Oct 12 15:43:31 2012         ;
 ; Quartus II 32-bit Version          ; 12.0 Build 263 08/02/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; M2FS-Data-Formatter                           ;
 ; Top-level Entity Name              ; M2FS-Data-Formatter                           ;
 ; Family                             ; Cyclone III                                   ;
 ; Device                             ; EP3C40F324C8                                  ;
 ; Timing Models                      ; Final                                         ;
-; Total logic elements               ; N/A until Partition Merge                     ;
-;     Total combinational functions  ; N/A until Partition Merge                     ;
-;     Dedicated logic registers      ; N/A until Partition Merge                     ;
-; Total registers                    ; N/A until Partition Merge                     ;
-; Total pins                         ; N/A until Partition Merge                     ;
-; Total virtual pins                 ; N/A until Partition Merge                     ;
-; Total memory bits                  ; N/A until Partition Merge                     ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                     ;
-; Total PLLs                         ; N/A until Partition Merge                     ;
+; Total logic elements               ; 43 / 39,600 ( < 1 % )                         ;
+;     Total combinational functions  ; 10 / 39,600 ( < 1 % )                         ;
+;     Dedicated logic registers      ; 37 / 39,600 ( < 1 % )                         ;
+; Total registers                    ; 37                                            ;
+; Total pins                         ; 82 / 196 ( 42 % )                             ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0 / 1,161,216 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 252 ( 0 % )                               ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                                ;
 +------------------------------------+-----------------------------------------------+
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/12/2012 15:07:05 ;
+; Start date & time ; 10/12/2012 15:43:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; M2FS-Data-Formatter ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 22930445152154.135007962401720 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 22930445152154.135008178804276 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --             ;
@@ -140,29 +140,41 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 360 MB              ; 00:00:03                           ;
-; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 352 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 451 MB              ; 00:00:12                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 319 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 328 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 274 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:21                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
+quartus_fit --read_settings_files=off --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
+quartus_asm --read_settings_files=off --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
+quartus_sta M2FS-Data-Formatter -c M2FS-Data-Formatter
+quartus_eda --read_settings_files=off --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
 
 
 

@@ -151,7 +151,7 @@ BEGIN
 		number_of_channels => 8,
 		outclock_resource => "AUTO",
 		pll_operation_mode => "UNUSED",
-		pll_self_reset_on_loss_lock => "OFF",
+		pll_self_reset_on_loss_lock => "ON",
 		port_rx_channel_data_align => "PORT_UNUSED",
 		port_rx_data_align => "PORT_UNUSED",
 		refclk_frequency => "UNUSED",
@@ -244,7 +244,7 @@ END SYN;
 -- Retrieval info: CONSTANT: NUMBER_OF_CHANNELS NUMERIC "8"
 -- Retrieval info: CONSTANT: OUTCLOCK_RESOURCE STRING "AUTO"
 -- Retrieval info: CONSTANT: PLL_OPERATION_MODE STRING "UNUSED"
--- Retrieval info: CONSTANT: PLL_SELF_RESET_ON_LOSS_LOCK STRING "OFF"
+-- Retrieval info: CONSTANT: PLL_SELF_RESET_ON_LOSS_LOCK STRING "ON"
 -- Retrieval info: CONSTANT: PORT_RX_CHANNEL_DATA_ALIGN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: PORT_RX_DATA_ALIGN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: REFCLK_FREQUENCY STRING "UNUSED"

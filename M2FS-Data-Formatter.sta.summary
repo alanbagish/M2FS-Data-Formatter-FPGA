@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Vsync'
+Slack : -2.514
+TNS   : -7.542
+
+Type  : Slow 1200mV 85C Model Setup 'CAM_FLD'
+Slack : -0.204
+TNS   : -0.204
+
+Type  : Slow 1200mV 85C Model Setup 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 5.122
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.196
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 10.782
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CAM_FLD'
+Slack : -1.027
+TNS   : -1.027
+
+Type  : Slow 1200mV 85C Model Hold 'Vsync'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.498
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.786
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.640
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Vsync'
+Slack : -3.000
+TNS   : -7.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CAM_FLD'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CAM_CLKA'
+Slack : 2.250
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.938
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 5.940
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 24.692
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Vsync'
+Slack : -2.224
+TNS   : -6.672
+
+Type  : Slow 1200mV 0C Model Setup 'CAM_FLD'
+Slack : -0.168
+TNS   : -0.168
+
+Type  : Slow 1200mV 0C Model Setup 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.870
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 5.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 10.898
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CAM_FLD'
+Slack : -1.088
+TNS   : -1.088
+
+Type  : Slow 1200mV 0C Model Hold 'Vsync'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.127
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Vsync'
+Slack : -3.000
+TNS   : -7.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CAM_FLD'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CAM_CLKA'
+Slack : 2.250
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.944
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 5.946
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 24.696
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Vsync'
+Slack : -0.467
+TNS   : -1.401
+
+Type  : Fast 1200mV 0C Model Setup 'CAM_FLD'
+Slack : -0.352
+TNS   : -0.352
+
+Type  : Fast 1200mV 0C Model Setup 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.177
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 5.740
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 11.690
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CAM_FLD'
+Slack : -0.334
+TNS   : -0.334
+
+Type  : Fast 1200mV 0C Model Hold 'Vsync'
+Slack : -0.191
+TNS   : -0.573
+
+Type  : Fast 1200mV 0C Model Hold 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.401
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Vsync'
+Slack : -3.000
+TNS   : -6.168
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CAM_FLD'
+Slack : -3.000
+TNS   : -3.078
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CAM_CLKA'
+Slack : 2.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[0]'
+Slack : 6.024
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst99|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6.030
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst1|ALTLVDS_RX_component|auto_generated|lvds_rx_pll|clk[1]'
+Slack : 24.782
+TNS   : 0.000
+
+------------------------------------------------------------
