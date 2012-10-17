@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP3C40F324C8
 set_global_assignment -name TOP_LEVEL_ENTITY "M2FS-Data-Formatter"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "12.0 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:06:14  OCTOBER 12, 2012"
-set_global_assignment -name LAST_QUARTUS_VERSION "12.0 SP2"
+set_global_assignment -name LAST_QUARTUS_VERSION 11.1
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
@@ -64,4 +64,171 @@ set_global_assignment -name QIP_FILE lpm_counter8.qip
 set_global_assignment -name QIP_FILE lpm_counter9.qip
 set_global_assignment -name QIP_FILE lpm_counter10.qip
 set_global_assignment -name QIP_FILE altlvds_rx0.qip
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_A1 -to Vsync
+set_location_assignment PIN_A3 -to Vs2
+set_location_assignment PIN_A5 -to Hsync
+set_location_assignment PIN_A6 -to IO_8
+set_location_assignment PIN_A7 -to Hs2
+set_location_assignment PIN_A9 -to CAM_FLD
+set_location_assignment PIN_B2 -to START_A
+set_instance_assignment -name IO_STANDARD LVDS -to START_A
+set_location_assignment PIN_B1 -to "START_A(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_2
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_3
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_4
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_5
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_6
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_7
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_8
+set_instance_assignment -name IO_STANDARD LVDS -to LVDS_CHANNEL_1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FRAME_CLK_OUT_B
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FRAME_CLK_OUT_A
+set_instance_assignment -name IO_STANDARD LVDS -to START_B
+set_instance_assignment -name IO_STANDARD LVDS -to SYS_CLK1
+set_instance_assignment -name IO_STANDARD LVDS -to SYS_CLK2
+set_instance_assignment -name IO_STANDARD "2.5 V" -to T18
+set_instance_assignment -name IO_STANDARD LVDS -to "SYS_CLK1(n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Vsync
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Vs2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Hsync
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Hs2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to CAM_FLD
+set_location_assignment PIN_B3 -to IO_5
+set_location_assignment PIN_B6 -to IO6
+set_location_assignment PIN_B8 -to IO8
+set_location_assignment PIN_B9 -to IO3
+set_location_assignment PIN_C2 -to PDWN
+set_location_assignment PIN_C7 -to IO_6
+set_location_assignment PIN_C9 -to CAM_PCLK
+set_location_assignment PIN_D2 -to PLL_LOCK_A
+set_location_assignment PIN_D5 -to IO_12
+set_location_assignment PIN_D7 -to CAM_VS
+set_location_assignment PIN_D9 -to IO_15
+set_location_assignment PIN_E6 -to IO12
+set_location_assignment PIN_E7 -to IO5
+set_location_assignment PIN_E8 -to CAM_HS
+set_location_assignment PIN_E9 -to IO15
+set_location_assignment PIN_G2 -to START_B
+set_location_assignment PIN_G1 -to "START_B(n)"
+set_location_assignment PIN_H1 -to DTP
+set_location_assignment PIN_A4 -to IO4
+set_location_assignment PIN_U1 -to CMOS_OE
+set_location_assignment PIN_B4 -to IO14
+set_location_assignment PIN_M3 -to IO_14
+set_location_assignment PIN_N1 -to IO1
+set_location_assignment PIN_N2 -to CAM_CLKA
+set_location_assignment PIN_P2 -to IO_11
+set_location_assignment PIN_P6 -to IO16
+set_location_assignment PIN_P7 -to IO_7
+set_location_assignment PIN_A8 -to IO11
+set_location_assignment PIN_T4 -to IO_16
+set_location_assignment PIN_U3 -to IO7
+set_location_assignment PIN_U4 -to IO_13
+set_location_assignment PIN_U11 -to FRAME_CLK_OUT_B
+set_location_assignment PIN_U8 -to DATA_CLK_OUTA
+set_location_assignment PIN_V8 -to DATA_CLK_OUTB
+set_location_assignment PIN_V9 -to IO2
+set_location_assignment PIN_V7 -to FRAME_CLK_OUTA
+set_location_assignment PIN_U7 -to FRAME_CLK_OUTB
+set_location_assignment PIN_U13 -to FRAME_CLK_OUT_A
+set_instance_assignment -name IO_STANDARD LVDS -to DATA_CLK_OUT_A
+set_instance_assignment -name IO_STANDARD LVDS -to DATA_CLK_OUT_B
+set_location_assignment PIN_P17 -to SYS_CLK1
+set_location_assignment PIN_P18 -to "SYS_CLK1(n)"
+set_location_assignment PIN_N15 -to PLL_LOCK_B
+set_location_assignment PIN_L13 -to LVDS_CHANNEL_1
+set_location_assignment PIN_M14 -to "LVDS_CHANNEL_1(n)"
+set_location_assignment PIN_L14 -to LVDS_CHANNEL_2
+set_location_assignment PIN_L15 -to "LVDS_CHANNEL_2(n)"
+set_location_assignment PIN_L16 -to LVDS_CHANNEL_3
+set_location_assignment PIN_M17 -to "LVDS_CHANNEL_3(n)"
+set_location_assignment PIN_L17 -to LVDS_CHANNEL_4
+set_location_assignment PIN_M18 -to "LVDS_CHANNEL_4(n)"
+set_location_assignment PIN_K17 -to LVDS_CHANNEL_5
+set_location_assignment PIN_K18 -to "LVDS_CHANNEL_5(n)"
+set_location_assignment PIN_H16 -to DATA_READY
+set_location_assignment PIN_H13 -to LVDS_CHANNEL_6
+set_location_assignment PIN_H14 -to "LVDS_CHANNEL_6(n)"
+set_location_assignment PIN_G17 -to LVDS_CHANNEL_7
+set_location_assignment PIN_G18 -to "LVDS_CHANNEL_7(n)"
+set_location_assignment PIN_F17 -to EOS_B
+set_location_assignment PIN_F18 -to EOS_A
+set_location_assignment PIN_E10 -to CAM_FLD_OUT
+set_location_assignment PIN_D14 -to Q[1]
+set_location_assignment PIN_D12 -to Q[3]
+set_location_assignment PIN_C16 -to EOSB
+set_location_assignment PIN_D16 -to EOSA
+set_location_assignment PIN_C17 -to SYS_CLK2
+set_location_assignment PIN_C18 -to "SYS_CLK2(n)"
+set_location_assignment PIN_A18 -to Q[2]
+set_location_assignment PIN_C14 -to Q[8]
+set_location_assignment PIN_B14 -to IO10
+set_location_assignment PIN_B13 -to IO_10
+set_location_assignment PIN_B12 -to IO9
+set_location_assignment PIN_B11 -to IO_9
+set_location_assignment PIN_A12 -to Q[9]
+set_location_assignment PIN_A14 -to Q[10]
+set_location_assignment PIN_A15 -to Q[11]
+set_location_assignment PIN_A16 -to Q[12]
+set_location_assignment PIN_T18 -to T18
+set_location_assignment PIN_V17 -to V17
+set_location_assignment PIN_E13 -to Q[7]
+set_location_assignment PIN_V4 -to IO13
+set_location_assignment PIN_D17 -to LVDS_CHANNEL_8
+set_location_assignment PIN_D18 -to "LVDS_CHANNEL_8(n)"
+set_location_assignment PIN_E12 -to Q[6]
+set_location_assignment PIN_A17 -to Q[5]
+set_location_assignment PIN_E14 -to Q[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_16
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_13
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_7
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO16
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO13
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO7
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FRAME_CLK_OUTB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FRAME_CLK_OUTA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DATA_CLK_OUTB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DATA_CLK_OUTA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to CMOS_OE
+set_instance_assignment -name IO_STANDARD "1.8 V" -to V17
+set_instance_assignment -name IO_STANDARD LVDS -to "DATA_CLK_OUT_B(n)"
+set_instance_assignment -name IO_STANDARD LVDS -to "DATA_CLK_OUT_A(n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_9
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO10
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO9
+set_instance_assignment -name IO_STANDARD "1.8 V" -to EOSB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to EOSA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_15
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_12
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_5
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO15
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO14
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO12
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO11
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO6
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO5
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO4
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO3
+set_instance_assignment -name IO_STANDARD "1.8 V" -to CAM_VS
+set_instance_assignment -name IO_STANDARD "1.8 V" -to CAM_PCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to CAM_HS
+set_instance_assignment -name IO_STANDARD "1.8 V" -to CAM_FLD_OUT
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to Q[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to IO_10
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

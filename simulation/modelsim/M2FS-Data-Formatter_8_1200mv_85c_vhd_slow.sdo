@@ -1,4 +1,4 @@
-// Copyright (C) 1991-2012 Altera Corporation
+// Copyright (C) 1991-2011 Altera Corporation
 // Your use of Altera Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
@@ -29,10 +29,10 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "\M2FS-Data-Formatter\")
-  (DATE "10/12/2012 15:43:31")
+  (DATE "10/17/2012 11:29:25")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 32-bit")
-  (VERSION "Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Web Edition")
+  (VERSION "Version 11.1 Build 173 11/01/2011 SJ Web Edition")
   (DIVIDER .)
   (TIMESCALE 1 ps)
 
@@ -41,7 +41,8 @@
     (INSTANCE inst81)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (960:960:960) (998:998:998))
+        (IOPATH i o (941:941:941) (865:865:865))
+        (IOPATH ibar o (941:941:941) (865:865:865))
       )
     )
   )
@@ -50,7 +51,8 @@
     (INSTANCE inst85)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (931:931:931) (855:855:855))
+        (IOPATH ibar o (931:931:931) (855:855:855))
       )
     )
   )
@@ -59,7 +61,8 @@
     (INSTANCE inst87)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (920:920:920) (958:958:958))
+        (IOPATH i o (941:941:941) (865:865:865))
+        (IOPATH ibar o (941:941:941) (865:865:865))
       )
     )
   )
@@ -68,7 +71,8 @@
     (INSTANCE inst88)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (921:921:921) (845:845:845))
+        (IOPATH ibar o (921:921:921) (845:845:845))
       )
     )
   )
@@ -77,7 +81,8 @@
     (INSTANCE inst95)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (930:930:930) (968:968:968))
+        (IOPATH i o (921:921:921) (845:845:845))
+        (IOPATH ibar o (921:921:921) (845:845:845))
       )
     )
   )
@@ -86,7 +91,8 @@
     (INSTANCE inst97)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (899:899:899) (944:944:944))
+        (IOPATH i o (931:931:931) (855:855:855))
+        (IOPATH ibar o (931:931:931) (855:855:855))
       )
     )
   )
@@ -96,6 +102,15 @@
     (DELAY
       (ABSOLUTE
         (PORT inclk[0] (2382:2382:2382) (2382:2382:2382))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_pll")
+    (INSTANCE \\inst99\|altpll_component\|auto_generated\|pll1\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (2985:2985:2985) (2985:2985:2985))
       )
     )
   )
@@ -119,130 +134,10 @@
   )
   (CELL
     (CELLTYPE "cycloneiii_clkctrl")
-    (INSTANCE \\proj_VS\~clkctrl\\)
+    (INSTANCE \\inst99\|altpll_component\|auto_generated\|wire_pll1_clk\[0\]\~clkctrl\\)
     (DELAY
       (ABSOLUTE
-        (PORT inclk[0] (197:197:197) (186:186:186))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[7\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (431:431:431) (489:489:489))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[7\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (431:431:431) (489:489:489))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[6\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3312:3312:3312) (3526:3526:3526))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[6\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3311:3311:3311) (3526:3526:3526))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[5\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3020:3020:3020) (3254:3254:3254))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[5\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3020:3020:3020) (3254:3254:3254))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[4\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3277:3277:3277) (3503:3503:3503))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[4\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3277:3277:3277) (3503:3503:3503))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[3\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3003:3003:3003) (3239:3239:3239))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[3\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (3003:3003:3003) (3238:3238:3238))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[0\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (2974:2974:2974) (3211:3211:3211))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[1\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (4081:4081:4081) (4300:4300:4300))
-        (IOPATH datad combout (177:177:177) (155:155:155))
+        (PORT inclk[0] (2394:2394:2394) (2360:2360:2360))
       )
     )
   )
@@ -251,8 +146,8 @@
     (INSTANCE inst175)
     (DELAY
       (ABSOLUTE
-        (PORT i (813:813:813) (922:922:922))
-        (IOPATH i o (2532:2532:2532) (2483:2483:2483))
+        (PORT i (1929:1929:1929) (2017:2017:2017))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -261,8 +156,8 @@
     (INSTANCE inst174)
     (DELAY
       (ABSOLUTE
-        (PORT i (437:437:437) (398:398:398))
-        (IOPATH i o (2631:2631:2631) (2591:2591:2591))
+        (PORT i (1397:1397:1397) (1302:1302:1302))
+        (IOPATH i o (4624:4624:4624) (4715:4715:4715))
       )
     )
   )
@@ -271,8 +166,8 @@
     (INSTANCE inst180)
     (DELAY
       (ABSOLUTE
-        (PORT i (2968:2968:2968) (3192:3192:3192))
-        (IOPATH i o (2661:2661:2661) (2621:2621:2621))
+        (PORT i (3798:3798:3798) (3924:3924:3924))
+        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
   )
@@ -281,8 +176,8 @@
     (INSTANCE inst179)
     (DELAY
       (ABSOLUTE
-        (PORT i (3472:3472:3472) (3657:3657:3657))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
+        (PORT i (4228:4228:4228) (4455:4455:4455))
+        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
   )
@@ -291,8 +186,8 @@
     (INSTANCE inst177)
     (DELAY
       (ABSOLUTE
-        (PORT i (3387:3387:3387) (3534:3534:3534))
-        (IOPATH i o (2452:2452:2452) (2376:2376:2376))
+        (PORT i (1528:1528:1528) (1617:1617:1617))
+        (IOPATH i o (3068:3068:3068) (3023:3023:3023))
       )
     )
   )
@@ -301,28 +196,8 @@
     (INSTANCE inst176)
     (DELAY
       (ABSOLUTE
-        (PORT i (3423:3423:3423) (3593:3593:3593))
-        (IOPATH i o (3897:3897:3897) (3957:3957:3957))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_io_obuf")
-    (INSTANCE inst149)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (1767:1767:1767) (1709:1709:1709))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_io_obuf")
-    (INSTANCE inst130)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (1769:1769:1769) (1713:1713:1713))
-        (IOPATH i o (3897:3897:3897) (3957:3957:3957))
+        (PORT i (1877:1877:1877) (1963:1963:1963))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -331,8 +206,8 @@
     (INSTANCE inst136)
     (DELAY
       (ABSOLUTE
-        (PORT i (3373:3373:3373) (3530:3530:3530))
-        (IOPATH i o (3897:3897:3897) (3957:3957:3957))
+        (PORT i (1773:1773:1773) (1870:1870:1870))
+        (IOPATH i o (4011:4011:4011) (4090:4090:4090))
       )
     )
   )
@@ -341,8 +216,8 @@
     (INSTANCE inst137)
     (DELAY
       (ABSOLUTE
-        (PORT i (3401:3401:3401) (3567:3567:3567))
-        (IOPATH i o (2452:2452:2452) (2376:2376:2376))
+        (PORT i (3636:3636:3636) (3876:3876:3876))
+        (IOPATH i o (4001:4001:4001) (4080:4080:4080))
       )
     )
   )
@@ -351,8 +226,8 @@
     (INSTANCE inst158)
     (DELAY
       (ABSOLUTE
-        (PORT i (3352:3352:3352) (3509:3509:3509))
-        (IOPATH i o (3907:3907:3907) (3967:3967:3967))
+        (PORT i (3452:3452:3452) (3611:3611:3611))
+        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
   )
@@ -361,8 +236,8 @@
     (INSTANCE inst159)
     (DELAY
       (ABSOLUTE
-        (PORT i (3421:3421:3421) (3587:3587:3587))
-        (IOPATH i o (2452:2452:2452) (2376:2376:2376))
+        (PORT i (3423:3423:3423) (3589:3589:3589))
+        (IOPATH i o (4614:4614:4614) (4705:4705:4705))
       )
     )
   )
@@ -371,8 +246,8 @@
     (INSTANCE inst160)
     (DELAY
       (ABSOLUTE
-        (PORT i (3553:3553:3553) (3685:3685:3685))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
+        (PORT i (3352:3352:3352) (3509:3509:3509))
+        (IOPATH i o (4634:4634:4634) (4725:4725:4725))
       )
     )
   )
@@ -381,8 +256,8 @@
     (INSTANCE inst161)
     (DELAY
       (ABSOLUTE
-        (PORT i (3437:3437:3437) (3589:3589:3589))
-        (IOPATH i o (2442:2442:2442) (2366:2366:2366))
+        (PORT i (3350:3350:3350) (3507:3507:3507))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -391,8 +266,8 @@
     (INSTANCE inst162)
     (DELAY
       (ABSOLUTE
-        (PORT i (3357:3357:3357) (3515:3515:3515))
-        (IOPATH i o (2452:2452:2452) (2376:2376:2376))
+        (PORT i (3421:3421:3421) (3587:3587:3587))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -401,8 +276,8 @@
     (INSTANCE inst163)
     (DELAY
       (ABSOLUTE
-        (PORT i (3401:3401:3401) (3567:3567:3567))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
+        (PORT i (3392:3392:3392) (3530:3530:3530))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -411,8 +286,8 @@
     (INSTANCE inst164)
     (DELAY
       (ABSOLUTE
-        (PORT i (3398:3398:3398) (3545:3545:3545))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
+        (PORT i (4649:4649:4649) (4933:4933:4933))
+        (IOPATH i o (2641:2641:2641) (2601:2601:2601))
       )
     )
   )
@@ -421,8 +296,8 @@
     (INSTANCE inst165)
     (DELAY
       (ABSOLUTE
-        (PORT i (741:741:741) (828:828:828))
-        (IOPATH i o (2641:2641:2641) (2601:2601:2601))
+        (PORT i (3349:3349:3349) (3510:3510:3510))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -431,8 +306,8 @@
     (INSTANCE inst166)
     (DELAY
       (ABSOLUTE
-        (PORT i (753:753:753) (836:836:836))
-        (IOPATH i o (2631:2631:2631) (2591:2591:2591))
+        (PORT i (3372:3372:3372) (3529:3529:3529))
+        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
   )
@@ -441,8 +316,8 @@
     (INSTANCE inst167)
     (DELAY
       (ABSOLUTE
-        (PORT i (3395:3395:3395) (3566:3566:3566))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
+        (PORT i (4448:4448:4448) (4651:4651:4651))
+        (IOPATH i o (4001:4001:4001) (4080:4080:4080))
       )
     )
   )
@@ -451,8 +326,8 @@
     (INSTANCE inst168)
     (DELAY
       (ABSOLUTE
-        (PORT i (3350:3350:3350) (3507:3507:3507))
-        (IOPATH i o (2452:2452:2452) (2376:2376:2376))
+        (PORT i (3428:3428:3428) (3588:3588:3588))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -461,8 +336,8 @@
     (INSTANCE inst169)
     (DELAY
       (ABSOLUTE
-        (PORT i (2970:2970:2970) (3194:3194:3194))
-        (IOPATH i o (2641:2641:2641) (2601:2601:2601))
+        (PORT i (3349:3349:3349) (3511:3511:3511))
+        (IOPATH i o (4624:4624:4624) (4715:4715:4715))
       )
     )
   )
@@ -471,8 +346,8 @@
     (INSTANCE inst134)
     (DELAY
       (ABSOLUTE
-        (PORT i (3400:3400:3400) (3572:3572:3572))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
+        (PORT i (2380:2380:2380) (2446:2446:2446))
+        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
   )
@@ -481,8 +356,8 @@
     (INSTANCE inst135)
     (DELAY
       (ABSOLUTE
-        (PORT i (752:752:752) (862:862:862))
-        (IOPATH i o (4011:4011:4011) (4090:4090:4090))
+        (PORT i (1329:1329:1329) (1424:1424:1424))
+        (IOPATH i o (2542:2542:2542) (2493:2493:2493))
       )
     )
   )
@@ -491,8 +366,8 @@
     (INSTANCE inst80)
     (DELAY
       (ABSOLUTE
-        (PORT i (819:819:819) (927:927:927))
-        (IOPATH i o (4001:4001:4001) (4080:4080:4080))
+        (PORT i (3801:3801:3801) (3898:3898:3898))
+        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
   )
@@ -501,8 +376,8 @@
     (INSTANCE inst133)
     (DELAY
       (ABSOLUTE
-        (PORT i (3364:3364:3364) (3520:3520:3520))
-        (IOPATH i o (2452:2452:2452) (2376:2376:2376))
+        (PORT i (4124:4124:4124) (4183:4183:4183))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -511,8 +386,8 @@
     (INSTANCE inst9)
     (DELAY
       (ABSOLUTE
-        (PORT i (4749:4749:4749) (4976:4976:4976))
-        (IOPATH i o (2631:2631:2631) (2591:2591:2591))
+        (PORT i (1118:1118:1118) (1312:1312:1312))
+        (IOPATH i o (3058:3058:3058) (3013:3013:3013))
       )
     )
   )
@@ -521,10 +396,10 @@
     (INSTANCE \\Q\[8\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (1602:1602:1602) (1486:1486:1486))
-        (PORT oe (5622:5622:5622) (5457:5457:5457))
-        (IOPATH i o (2641:2641:2641) (2601:2601:2601))
-        (IOPATH oe o (2553:2553:2553) (2553:2553:2553))
+        (PORT i (741:741:741) (653:653:653))
+        (PORT oe (1581:1581:1581) (1512:1512:1512))
+        (IOPATH i o (3068:3068:3068) (3023:3023:3023))
+        (IOPATH oe o (3234:3234:3234) (3234:3234:3234))
       )
     )
   )
@@ -533,10 +408,10 @@
     (INSTANCE \\Q\[7\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (1211:1211:1211) (1106:1106:1106))
-        (PORT oe (5054:5054:5054) (4821:4821:4821))
-        (IOPATH i o (2641:2641:2641) (2601:2601:2601))
-        (IOPATH oe o (2553:2553:2553) (2553:2553:2553))
+        (PORT i (1112:1112:1112) (998:998:998))
+        (PORT oe (1555:1555:1555) (1485:1485:1485))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
+        (IOPATH oe o (3244:3244:3244) (3244:3244:3244))
       )
     )
   )
@@ -545,10 +420,10 @@
     (INSTANCE \\Q\[6\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (1602:1602:1602) (1486:1486:1486))
-        (PORT oe (5622:5622:5622) (5457:5457:5457))
-        (IOPATH i o (2641:2641:2641) (2601:2601:2601))
-        (IOPATH oe o (2553:2553:2553) (2553:2553:2553))
+        (PORT i (1093:1093:1093) (983:983:983))
+        (PORT oe (1548:1548:1548) (1489:1489:1489))
+        (IOPATH i o (3068:3068:3068) (3023:3023:3023))
+        (IOPATH oe o (3234:3234:3234) (3234:3234:3234))
       )
     )
   )
@@ -557,10 +432,10 @@
     (INSTANCE \\Q\[5\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (817:817:817) (753:753:753))
-        (PORT oe (4589:4589:4589) (4335:4335:4335))
-        (IOPATH i o (2631:2631:2631) (2591:2591:2591))
-        (IOPATH oe o (2543:2543:2543) (2543:2543:2543))
+        (PORT i (1048:1048:1048) (900:900:900))
+        (PORT oe (1887:1887:1887) (1764:1764:1764))
+        (IOPATH i o (4644:4644:4644) (4735:4735:4735))
+        (IOPATH oe o (3254:3254:3254) (3254:3254:3254))
       )
     )
   )
@@ -569,10 +444,10 @@
     (INSTANCE \\Q\[4\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (857:857:857) (797:797:797))
-        (PORT oe (5010:5010:5010) (4782:4782:4782))
-        (IOPATH i o (2631:2631:2631) (2591:2591:2591))
-        (IOPATH oe o (2543:2543:2543) (2543:2543:2543))
+        (PORT i (1079:1079:1079) (969:969:969))
+        (PORT oe (1555:1555:1555) (1485:1485:1485))
+        (IOPATH i o (3068:3068:3068) (3023:3023:3023))
+        (IOPATH oe o (3234:3234:3234) (3234:3234:3234))
       )
     )
   )
@@ -581,10 +456,10 @@
     (INSTANCE \\Q\[3\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (857:857:857) (797:797:797))
-        (PORT oe (5010:5010:5010) (4782:4782:4782))
-        (IOPATH i o (2631:2631:2631) (2591:2591:2591))
-        (IOPATH oe o (2543:2543:2543) (2543:2543:2543))
+        (PORT i (1092:1092:1092) (983:983:983))
+        (PORT oe (1548:1548:1548) (1489:1489:1489))
+        (IOPATH i o (4624:4624:4624) (4715:4715:4715))
+        (IOPATH oe o (3234:3234:3234) (3234:3234:3234))
       )
     )
   )
@@ -593,10 +468,10 @@
     (INSTANCE \\Q\[2\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (1211:1211:1211) (1106:1106:1106))
-        (PORT oe (5054:5054:5054) (4821:4821:4821))
-        (IOPATH i o (2641:2641:2641) (2601:2601:2601))
-        (IOPATH oe o (2553:2553:2553) (2553:2553:2553))
+        (PORT i (1048:1048:1048) (900:900:900))
+        (PORT oe (1887:1887:1887) (1764:1764:1764))
+        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
+        (IOPATH oe o (3254:3254:3254) (3254:3254:3254))
       )
     )
   )
@@ -605,10 +480,10 @@
     (INSTANCE \\Q\[1\]\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (817:817:817) (753:753:753))
-        (PORT oe (4589:4589:4589) (4335:4335:4335))
-        (IOPATH i o (2631:2631:2631) (2591:2591:2591))
-        (IOPATH oe o (2543:2543:2543) (2543:2543:2543))
+        (PORT i (741:741:741) (653:653:653))
+        (PORT oe (1581:1581:1581) (1512:1512:1512))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
+        (IOPATH oe o (3244:3244:3244) (3244:3244:3244))
       )
     )
   )
@@ -617,8 +492,8 @@
     (INSTANCE \\DATA_CLK_OUTA\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (3372:3372:3372) (3529:3529:3529))
-        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
+        (PORT i (4492:4492:4492) (4684:4684:4684))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -627,8 +502,8 @@
     (INSTANCE \\DATA_CLK_OUTB\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (3423:3423:3423) (3589:3589:3589))
-        (IOPATH i o (3887:3887:3887) (3947:3947:3947))
+        (PORT i (4450:4450:4450) (4651:4651:4651))
+        (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
   )
@@ -646,19 +521,10 @@
     (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita0\\)
     (DELAY
       (ABSOLUTE
-        (PORT datab (355:355:355) (431:431:431))
-        (IOPATH datab combout (472:472:472) (473:473:473))
-        (IOPATH datab cout (565:565:565) (421:421:421))
+        (PORT dataa (359:359:359) (443:443:443))
+        (IOPATH dataa combout (471:471:471) (472:472:472))
+        (IOPATH dataa cout (552:552:552) (416:416:416))
         (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_io_ibuf")
-    (INSTANCE inst5)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH i o (930:930:930) (968:968:968))
       )
     )
   )
@@ -667,7 +533,7 @@
     (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita1\\)
     (DELAY
       (ABSOLUTE
-        (PORT datab (365:365:365) (444:444:444))
+        (PORT datab (366:366:366) (447:447:447))
         (IOPATH datab combout (473:473:473) (487:487:487))
         (IOPATH datab cout (565:565:565) (421:421:421))
         (IOPATH datad combout (177:177:177) (155:155:155))
@@ -677,49 +543,24 @@
     )
   )
   (CELL
-    (CELLTYPE "dffeas")
-    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[1\]\\)
+    (CELLTYPE "cycloneiii_io_ibuf")
+    (INSTANCE inst5)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2030:2030:2030) (2037:2037:2037))
-        (PORT d (99:99:99) (115:115:115))
-        (PORT asdata (724:724:724) (752:752:752))
-        (PORT sload (1036:1036:1036) (1113:1113:1113))
-        (PORT ena (2620:2620:2620) (2411:2411:2411))
-        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
-      (HOLD sload (posedge clk) (212:212:212))
-      (HOLD asdata (posedge clk) (212:212:212))
-      (HOLD ena (posedge clk) (212:212:212))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita2\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (356:356:356) (432:432:432))
-        (IOPATH datab combout (472:472:472) (473:473:473))
-        (IOPATH datab cout (565:565:565) (421:421:421))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-        (IOPATH cin combout (607:607:607) (577:577:577))
-        (IOPATH cin cout (73:73:73) (73:73:73))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[2\]\\)
+    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2030:2030:2030) (2037:2037:2037))
+        (PORT clk (1686:1686:1686) (1606:1606:1606))
         (PORT d (99:99:99) (115:115:115))
-        (PORT asdata (723:723:723) (752:752:752))
+        (PORT asdata (722:722:722) (750:750:750))
         (PORT sload (1036:1036:1036) (1113:1113:1113))
-        (PORT ena (2620:2620:2620) (2411:2411:2411))
+        (PORT ena (2552:2552:2552) (2624:2624:2624))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
     )
@@ -735,13 +576,81 @@
     (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|cmpr1\|aneb_result_wire\[0\]\~0\\)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (642:642:642) (654:654:654))
-        (PORT datac (537:537:537) (567:567:567))
-        (PORT datad (328:328:328) (404:404:404))
-        (IOPATH dataa combout (421:421:421) (418:418:418))
-        (IOPATH datac combout (324:324:324) (315:315:315))
+        (PORT datab (578:578:578) (608:608:608))
+        (PORT datac (328:328:328) (413:413:413))
+        (PORT datad (329:329:329) (407:407:407))
+        (IOPATH datab combout (473:473:473) (487:487:487))
+        (IOPATH datac combout (327:327:327) (315:315:315))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_lcell_comb")
+    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[2\]\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (276:276:276) (301:301:301))
+        (PORT datac (1686:1686:1686) (1808:1808:1808))
+        (PORT datad (265:265:265) (284:284:284))
+        (IOPATH datab combout (472:472:472) (473:473:473))
+        (IOPATH datac combout (327:327:327) (315:315:315))
+        (IOPATH datad combout (177:177:177) (155:155:155))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[1\]\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1686:1686:1686) (1606:1606:1606))
+        (PORT d (99:99:99) (115:115:115))
+        (PORT asdata (722:722:722) (750:750:750))
+        (PORT sload (1036:1036:1036) (1113:1113:1113))
+        (PORT ena (2552:2552:2552) (2624:2624:2624))
+        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (212:212:212))
+      (HOLD sload (posedge clk) (212:212:212))
+      (HOLD asdata (posedge clk) (212:212:212))
+      (HOLD ena (posedge clk) (212:212:212))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_lcell_comb")
+    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_comb_bita2\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (366:366:366) (446:446:446))
+        (IOPATH datab combout (472:472:472) (473:473:473))
+        (IOPATH datab cout (565:565:565) (421:421:421))
+        (IOPATH datad combout (177:177:177) (155:155:155))
+        (IOPATH cin combout (607:607:607) (577:577:577))
+        (IOPATH cin cout (73:73:73) (73:73:73))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[2\]\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (1686:1686:1686) (1606:1606:1606))
+        (PORT d (99:99:99) (115:115:115))
+        (PORT asdata (722:722:722) (750:750:750))
+        (PORT sload (1036:1036:1036) (1113:1113:1113))
+        (PORT ena (2552:2552:2552) (2624:2624:2624))
+        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (212:212:212))
+      (HOLD sload (posedge clk) (212:212:212))
+      (HOLD asdata (posedge clk) (212:212:212))
+      (HOLD ena (posedge clk) (212:212:212))
     )
   )
   (CELL
@@ -755,48 +664,14 @@
   )
   (CELL
     (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[2\]\~0\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datab (1254:1254:1254) (1108:1108:1108))
-        (PORT datac (238:238:238) (265:265:265))
-        (PORT datad (265:265:265) (283:283:283))
-        (IOPATH datab combout (472:472:472) (473:473:473))
-        (IOPATH datac combout (327:327:327) (315:315:315))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "dffeas")
-    (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|counter_reg_bit\[0\]\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (2030:2030:2030) (2037:2037:2037))
-        (PORT d (99:99:99) (115:115:115))
-        (PORT asdata (724:724:724) (752:752:752))
-        (PORT sload (1036:1036:1036) (1113:1113:1113))
-        (PORT ena (2620:2620:2620) (2411:2411:2411))
-        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
-      (HOLD sload (posedge clk) (212:212:212))
-      (HOLD asdata (posedge clk) (212:212:212))
-      (HOLD ena (posedge clk) (212:212:212))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
     (INSTANCE \\inst121\|LPM_COUNTER_component\|auto_generated\|cout_actual\\)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (643:643:643) (655:655:655))
-        (PORT datab (580:580:580) (596:596:596))
-        (PORT datac (537:537:537) (569:569:569))
-        (PORT datad (734:734:734) (650:650:650))
-        (IOPATH dataa combout (481:481:481) (491:491:491))
+        (PORT dataa (518:518:518) (503:503:503))
+        (PORT datab (882:882:882) (840:840:840))
+        (PORT datac (534:534:534) (566:566:566))
+        (PORT datad (774:774:774) (732:732:732))
+        (IOPATH dataa combout (471:471:471) (453:453:453))
         (IOPATH datab combout (472:472:472) (452:452:452))
         (IOPATH datac combout (324:324:324) (315:315:315))
         (IOPATH datad combout (177:177:177) (155:155:155))
@@ -808,7 +683,7 @@
     (INSTANCE inst79)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (930:930:930) (968:968:968))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -817,7 +692,7 @@
     (INSTANCE inst78)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (899:899:899) (944:944:944))
+        (IOPATH i o (1099:1099:1099) (933:933:933))
       )
     )
   )
@@ -826,7 +701,7 @@
     (INSTANCE \\EOS_A\~input\\)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (869:869:869) (914:914:914))
+        (IOPATH i o (960:960:960) (998:998:998))
       )
     )
   )
@@ -835,25 +710,7 @@
     (INSTANCE \\EOS_B\~input\\)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (879:879:879) (924:924:924))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_pll")
-    (INSTANCE \\inst99\|altpll_component\|auto_generated\|pll1\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT inclk[0] (2985:2985:2985) (2985:2985:2985))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_clkctrl")
-    (INSTANCE \\inst99\|altpll_component\|auto_generated\|wire_pll1_clk\[0\]\~clkctrl\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT inclk[0] (2394:2394:2394) (2360:2360:2360))
+        (IOPATH i o (960:960:960) (998:998:998))
       )
     )
   )
@@ -862,7 +719,7 @@
     (INSTANCE inst106)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (879:879:879) (924:924:924))
+        (IOPATH i o (1079:1079:1079) (913:913:913))
       )
     )
   )
@@ -871,7 +728,7 @@
     (INSTANCE inst105)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (879:879:879) (924:924:924))
+        (IOPATH i o (1099:1099:1099) (933:933:933))
       )
     )
   )
@@ -880,7 +737,7 @@
     (INSTANCE inst107)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (909:909:909) (954:954:954))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -889,7 +746,7 @@
     (INSTANCE inst108)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -898,7 +755,7 @@
     (INSTANCE inst109)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (899:899:899) (944:944:944))
+        (IOPATH i o (1109:1109:1109) (943:943:943))
       )
     )
   )
@@ -907,7 +764,7 @@
     (INSTANCE inst110)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -916,7 +773,7 @@
     (INSTANCE inst111)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -925,7 +782,7 @@
     (INSTANCE inst112)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (1099:1099:1099) (933:933:933))
       )
     )
   )
@@ -934,7 +791,7 @@
     (INSTANCE inst113)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (899:899:899) (944:944:944))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -943,7 +800,7 @@
     (INSTANCE inst126)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (960:960:960) (998:998:998))
+        (IOPATH i o (1069:1069:1069) (903:903:903))
       )
     )
   )
@@ -952,7 +809,7 @@
     (INSTANCE inst114)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (960:960:960) (998:998:998))
+        (IOPATH i o (1099:1099:1099) (933:933:933))
       )
     )
   )
@@ -961,7 +818,7 @@
     (INSTANCE inst127)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -970,7 +827,7 @@
     (INSTANCE inst131)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (1079:1079:1079) (913:913:913))
       )
     )
   )
@@ -979,7 +836,7 @@
     (INSTANCE inst132)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (950:950:950) (988:988:988))
+        (IOPATH i o (1079:1079:1079) (913:913:913))
       )
     )
   )
@@ -988,7 +845,7 @@
     (INSTANCE inst103)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (899:899:899) (944:944:944))
+        (IOPATH i o (960:960:960) (998:998:998))
       )
     )
   )
@@ -997,7 +854,7 @@
     (INSTANCE inst104)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (960:960:960) (998:998:998))
+        (IOPATH i o (1079:1079:1079) (913:913:913))
       )
     )
   )
@@ -1006,7 +863,7 @@
     (INSTANCE inst75)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (950:950:950) (988:988:988))
+        (IOPATH i o (1099:1099:1099) (933:933:933))
       )
     )
   )
@@ -1015,7 +872,7 @@
     (INSTANCE inst76)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (1089:1089:1089) (923:923:923))
       )
     )
   )
@@ -1024,11 +881,11 @@
     (INSTANCE \\inst115\|2\\)
     (DELAY
       (ABSOLUTE
-        (PORT datab (1348:1348:1348) (1565:1565:1565))
-        (PORT datac (2390:2390:2390) (2333:2333:2333))
-        (PORT datad (246:246:246) (271:271:271))
-        (IOPATH datab combout (472:472:472) (473:473:473))
-        (IOPATH datac combout (324:324:324) (316:316:316))
+        (PORT dataa (308:308:308) (342:342:342))
+        (PORT datac (1750:1750:1750) (1935:1935:1935))
+        (PORT datad (1691:1691:1691) (1806:1806:1806))
+        (IOPATH dataa combout (405:405:405) (398:398:398))
+        (IOPATH datac combout (327:327:327) (315:315:315))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1038,17 +895,8 @@
     (INSTANCE inst98)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[1\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (4082:4082:4082) (4303:4303:4303))
-        (IOPATH datad combout (177:177:177) (155:155:155))
+        (IOPATH i o (921:921:921) (845:845:845))
+        (IOPATH ibar o (921:921:921) (845:845:845))
       )
     )
   )
@@ -1057,13 +905,14 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[1\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2033:2033:2033) (2053:2053:2053))
-        (PORT d (99:99:99) (115:115:115))
-        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
+        (PORT clk (1833:1833:1833) (1906:1906:1906))
+        (PORT d (269:269:269) (267:267:267))
+        (IOPATH (posedge clk) q (751:751:751) (683:683:683))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1071,7 +920,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_latch\[1\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (297:297:297) (367:367:367))
+        (PORT datad (736:736:736) (640:640:640))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1081,7 +930,31 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_latch\[1\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2033:2033:2033) (2053:2053:2053))
+        (PORT clk (2014:2014:2014) (2036:2036:2036))
+        (PORT d (99:99:99) (115:115:115))
+        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (212:212:212))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_lcell_comb")
+    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_reg\[1\]\~feeder\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (297:297:297) (368:368:368))
+        (IOPATH datad combout (177:177:177) (155:155:155))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_reg\[1\]\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2023:2023:2023) (2027:2027:2027))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1092,10 +965,10 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_reg\[1\]\\)
+    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|h_dffpipe\|dffe17a\[1\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2040:2040:2040) (2046:2046:2046))
+        (PORT clk (2023:2023:2023) (2027:2027:2027))
         (PORT asdata (763:763:763) (833:833:833))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1106,34 +979,10 @@
   )
   (CELL
     (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|h_dffpipe\|dffe17a\[1\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (294:294:294) (364:364:364))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "dffeas")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|h_dffpipe\|dffe17a\[1\]\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT clk (2040:2040:2040) (2046:2046:2046))
-        (PORT d (99:99:99) (115:115:115))
-        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
-      )
-    )
-    (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[0\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (296:296:296) (367:367:367))
+        (PORT datad (295:295:295) (365:365:365))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1143,7 +992,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2040:2040:2040) (2046:2046:2046))
+        (PORT clk (2023:2023:2023) (2027:2027:2027))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1157,7 +1006,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[1\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (296:296:296) (367:367:367))
+        (PORT datad (298:298:298) (369:369:369))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1167,7 +1016,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[1\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2040:2040:2040) (2046:2046:2046))
+        (PORT clk (2023:2023:2023) (2027:2027:2027))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1181,7 +1030,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[2\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (297:297:297) (366:366:366))
+        (PORT datad (299:299:299) (369:369:369))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1191,7 +1040,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[2\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2040:2040:2040) (2046:2046:2046))
+        (PORT clk (2023:2023:2023) (2027:2027:2027))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1205,7 +1054,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[3\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (1116:1116:1116) (1044:1044:1044))
+        (PORT datad (298:298:298) (369:369:369))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1215,7 +1064,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg3a\[3\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2042:2042:2042) (2048:2048:2048))
+        (PORT clk (2023:2023:2023) (2027:2027:2027))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1229,7 +1078,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|rx_reg\[15\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (790:790:790) (769:769:769))
+        (PORT datad (3504:3504:3504) (3244:3244:3244))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1239,7 +1088,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|rx_reg\[15\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2048:2048:2048))
+        (PORT clk (2024:2024:2024) (2030:2030:2030))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1253,8 +1102,8 @@
     (INSTANCE \\inst24\|20\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2022:2022:2022) (2026:2026:2026))
-        (PORT asdata (763:763:763) (833:833:833))
+        (PORT clk (2005:2005:2005) (2008:2008:2008))
+        (PORT asdata (761:761:761) (831:831:831))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
     )
@@ -1267,17 +1116,8 @@
     (INSTANCE inst100)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (940:940:940) (978:978:978))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[0\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (2970:2970:2970) (3209:3209:3209))
-        (IOPATH datad combout (177:177:177) (155:155:155))
+        (IOPATH i o (941:941:941) (865:865:865))
+        (IOPATH ibar o (941:941:941) (865:865:865))
       )
     )
   )
@@ -1286,13 +1126,14 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2033:2033:2033) (2054:2054:2054))
-        (PORT d (99:99:99) (115:115:115))
-        (IOPATH (posedge clk) q (261:261:261) (261:261:261))
+        (PORT clk (1831:1831:1831) (1904:1904:1904))
+        (PORT d (269:269:269) (267:267:267))
+        (IOPATH (posedge clk) q (751:751:751) (683:683:683))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1300,8 +1141,8 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_latch\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2033:2033:2033) (2054:2054:2054))
-        (PORT asdata (761:761:761) (832:832:832))
+        (PORT clk (2020:2020:2020) (2041:2041:2041))
+        (PORT asdata (1617:1617:1617) (1467:1467:1467))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
     )
@@ -1314,7 +1155,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_reg\[0\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (296:296:296) (367:367:367))
+        (PORT datad (296:296:296) (368:368:368))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1324,7 +1165,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|dataout_l_reg\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2046:2046:2046))
+        (PORT clk (2028:2028:2028) (2033:2033:2033))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1338,7 +1179,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|h_dffpipe\|dffe17a\[0\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (295:295:295) (366:366:366))
+        (PORT datad (297:297:297) (367:367:367))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1348,7 +1189,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|h_dffpipe\|dffe17a\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2046:2046:2046))
+        (PORT clk (2028:2028:2028) (2033:2033:2033))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1362,7 +1203,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[0\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (298:298:298) (368:368:368))
+        (PORT datad (298:298:298) (367:367:367))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1372,7 +1213,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2046:2046:2046))
+        (PORT clk (2028:2028:2028) (2033:2033:2033))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1386,7 +1227,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[1\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (296:296:296) (367:367:367))
+        (PORT datad (296:296:296) (366:366:366))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1396,7 +1237,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[1\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2046:2046:2046))
+        (PORT clk (2028:2028:2028) (2033:2033:2033))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1410,7 +1251,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[2\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (296:296:296) (368:368:368))
+        (PORT datad (296:296:296) (367:367:367))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1420,7 +1261,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[2\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2046:2046:2046))
+        (PORT clk (2028:2028:2028) (2033:2033:2033))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1434,7 +1275,7 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[3\]\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (296:296:296) (365:365:365))
+        (PORT datad (295:295:295) (366:366:366))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1444,23 +1285,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|l_shiftreg1a\[3\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2046:2046:2046))
+        (PORT clk (2028:2028:2028) (2033:2033:2033))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
     )
     (TIMINGCHECK
       (HOLD d (posedge clk) (212:212:212))
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneiii_lcell_comb")
-    (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|rx_reg\[7\]\~feeder\\)
-    (DELAY
-      (ABSOLUTE
-        (PORT datad (983:983:983) (988:988:988))
-        (IOPATH datad combout (177:177:177) (155:155:155))
-      )
     )
   )
   (CELL
@@ -1468,13 +1299,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|rx_reg\[7\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2048:2048:2048))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (2024:2024:2024) (2030:2030:2030))
+        (PORT asdata (3514:3514:3514) (3336:3336:3336))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (HOLD asdata (posedge clk) (212:212:212))
     )
   )
   (CELL
@@ -1482,7 +1313,7 @@
     (INSTANCE \\inst25\|20\~feeder\\)
     (DELAY
       (ABSOLUTE
-        (PORT datad (297:297:297) (368:368:368))
+        (PORT datad (295:295:295) (366:366:366))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
     )
@@ -1492,7 +1323,7 @@
     (INSTANCE \\inst25\|20\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2022:2022:2022) (2026:2026:2026))
+        (PORT clk (2005:2005:2005) (2008:2008:2008))
         (PORT d (99:99:99) (115:115:115))
         (IOPATH (posedge clk) q (261:261:261) (261:261:261))
       )
@@ -1506,11 +1337,11 @@
     (INSTANCE \\inst24\|49\~8\\)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (4886:4886:4886) (5065:5065:5065))
-        (PORT datab (293:293:293) (322:322:322))
-        (PORT datad (296:296:296) (366:366:366))
-        (IOPATH dataa combout (471:471:471) (472:472:472))
-        (IOPATH datab combout (455:455:455) (412:412:412))
+        (PORT dataa (2876:2876:2876) (2654:2654:2654))
+        (PORT datab (1898:1898:1898) (2011:2011:2011))
+        (PORT datad (294:294:294) (364:364:364))
+        (IOPATH dataa combout (453:453:453) (413:413:413))
+        (IOPATH datab combout (472:472:472) (473:473:473))
         (IOPATH datac combout (462:462:462) (482:482:482))
         (IOPATH datad combout (177:177:177) (155:155:155))
       )
@@ -1521,7 +1352,8 @@
     (INSTANCE inst47)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (899:899:899) (944:944:944))
+        (IOPATH i o (921:921:921) (845:845:845))
+        (IOPATH ibar o (921:921:921) (845:845:845))
       )
     )
   )
@@ -1530,7 +1362,8 @@
     (INSTANCE inst46)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (889:889:889) (934:934:934))
+        (IOPATH i o (921:921:921) (845:845:845))
+        (IOPATH ibar o (921:921:921) (845:845:845))
       )
     )
   )
@@ -1539,12 +1372,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[0\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2041:2041:2041) (2046:2046:2046))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1832:1832:1832) (1903:1903:1903))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1552,12 +1386,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[1\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2040:2040:2040) (2046:2046:2046))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1834:1834:1834) (1905:1905:1905))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1565,12 +1400,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[2\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2034:2034:2034) (2040:2040:2040))
-        (PORT asdata (3734:3734:3734) (3945:3945:3945))
+        (PORT clk (1838:1838:1838) (1909:1909:1909))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD asdata (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1578,12 +1414,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[3\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2038:2038:2038) (2043:2043:2043))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1839:1839:1839) (1910:1910:1910))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1591,12 +1428,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[4\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2030:2030:2030) (2037:2037:2037))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1841:1841:1841) (1913:1913:1913))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1604,12 +1442,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[5\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2029:2029:2029) (2033:2033:2033))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1832:1832:1832) (1903:1903:1903))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1617,12 +1456,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[6\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2044:2044:2044) (2050:2050:2050))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1839:1839:1839) (1910:1910:1910))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1630,12 +1470,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_h_reg\[7\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2030:2030:2030) (2037:2037:2037))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1822:1822:1822) (1895:1895:1895))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1643,12 +1484,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[2\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2027:2027:2027) (2047:2047:2047))
-        (PORT asdata (3733:3733:3733) (3945:3945:3945))
+        (PORT clk (1837:1837:1837) (1910:1910:1910))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD asdata (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1656,12 +1498,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[3\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2030:2030:2030) (2051:2051:2051))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1838:1838:1838) (1911:1911:1911))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1669,12 +1512,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[4\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2024:2024:2024) (2043:2043:2043))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1841:1841:1841) (1913:1913:1913))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1682,12 +1526,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[5\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2020:2020:2020) (2042:2042:2042))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1831:1831:1831) (1904:1904:1904))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1695,12 +1540,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[6\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2037:2037:2037) (2057:2057:2057))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1838:1838:1838) (1911:1911:1911))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
   (CELL
@@ -1708,12 +1554,13 @@
     (INSTANCE \\inst1\|ALTLVDS_RX_component\|auto_generated\|ddio_in\|ddio_l_reg\[7\]\\)
     (DELAY
       (ABSOLUTE
-        (PORT clk (2024:2024:2024) (2043:2043:2043))
-        (PORT d (99:99:99) (115:115:115))
+        (PORT clk (1823:1823:1823) (1894:1894:1894))
+        (PORT d (269:269:269) (267:267:267))
       )
     )
     (TIMINGCHECK
-      (HOLD d (posedge clk) (212:212:212))
+      (SETUP d (posedge clk) (121:121:121))
+      (HOLD d (posedge clk) (65:65:65))
     )
   )
 )

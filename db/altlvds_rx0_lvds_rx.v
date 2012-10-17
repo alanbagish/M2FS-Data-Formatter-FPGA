@@ -1,12 +1,12 @@
 //altlvds_rx BUFFER_IMPLEMENTATION="RAM" CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" COMMON_RX_TX_PLL="OFF" CYCLONEII_M4K_COMPATIBILITY="ON" DATA_ALIGN_ROLLOVER=4 DATA_RATE="80.0 Mbps" DESERIALIZATION_FACTOR=8 DEVICE_FAMILY="Cyclone III" DPA_INITIAL_PHASE_VALUE=0 DPLL_LOCK_COUNT=0 DPLL_LOCK_WINDOW=0 ENABLE_DPA_ALIGN_TO_RISING_EDGE_ONLY="OFF" ENABLE_DPA_CALIBRATION="ON" ENABLE_DPA_INITIAL_PHASE_SELECTION="OFF" ENABLE_DPA_MODE="OFF" ENABLE_DPA_PLL_CALIBRATION="OFF" ENABLE_SOFT_CDR_MODE="OFF" IMPLEMENT_IN_LES="ON" INCLOCK_BOOST=0 INCLOCK_DATA_ALIGNMENT="EDGE_ALIGNED" INCLOCK_PERIOD=12500 INCLOCK_PHASE_SHIFT=0 INPUT_DATA_RATE=80 NUMBER_OF_CHANNELS=8 OUTCLOCK_RESOURCE="AUTO" PLL_SELF_RESET_ON_LOSS_LOCK="ON" PORT_RX_CHANNEL_DATA_ALIGN="PORT_UNUSED" PORT_RX_DATA_ALIGN="PORT_UNUSED" REGISTERED_OUTPUT="ON" SIM_DPA_IS_NEGATIVE_PPM_DRIFT="OFF" SIM_DPA_NET_PPM_VARIATION=0 SIM_DPA_OUTPUT_CLOCK_PHASE_SHIFT=0 USE_CORECLOCK_INPUT="OFF" USE_DPLL_RAWPERROR="OFF" USE_EXTERNAL_PLL="OFF" USE_NO_PHASE_SHIFT="ON" X_ON_BITSLIP="ON" rx_in rx_inclock rx_out rx_outclock CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 LOW_POWER_MODE="AUTO" ALTERA_INTERNAL_OPTIONS=AUTO_SHIFT_REGISTER_RECOGNITION=OFF
-//VERSION_BEGIN 12.0SP2 cbx_altaccumulate 2012:08:02:15:18:54:SJ cbx_altclkbuf 2012:08:02:15:18:54:SJ cbx_altddio_in 2012:08:02:15:18:54:SJ cbx_altddio_out 2012:08:02:15:18:54:SJ cbx_altiobuf_bidir 2012:08:02:15:18:54:SJ cbx_altiobuf_in 2012:08:02:15:18:54:SJ cbx_altiobuf_out 2012:08:02:15:18:54:SJ cbx_altlvds_rx 2012:08:02:15:18:54:SJ cbx_altpll 2012:08:02:15:18:54:SJ cbx_altsyncram 2012:08:02:15:18:54:SJ cbx_arriav 2012:08:02:15:18:53:SJ cbx_cyclone 2012:08:02:15:18:54:SJ cbx_cycloneii 2012:08:02:15:18:54:SJ cbx_lpm_add_sub 2012:08:02:15:18:54:SJ cbx_lpm_compare 2012:08:02:15:18:54:SJ cbx_lpm_counter 2012:08:02:15:18:54:SJ cbx_lpm_decode 2012:08:02:15:18:54:SJ cbx_lpm_mux 2012:08:02:15:18:54:SJ cbx_lpm_shiftreg 2012:08:02:15:18:54:SJ cbx_maxii 2012:08:02:15:18:54:SJ cbx_mgl 2012:08:02:15:20:46:SJ cbx_stratix 2012:08:02:15:18:54:SJ cbx_stratixii 2012:08:02:15:18:54:SJ cbx_stratixiii 2012:08:02:15:18:54:SJ cbx_stratixv 2012:08:02:15:18:54:SJ cbx_util_mgl 2012:08:02:15:18:54:SJ  VERSION_END
+//VERSION_BEGIN 11.1 cbx_altaccumulate 2011:10:31:21:11:05:SJ cbx_altclkbuf 2011:10:31:21:11:05:SJ cbx_altddio_in 2011:10:31:21:11:05:SJ cbx_altddio_out 2011:10:31:21:11:05:SJ cbx_altiobuf_bidir 2011:10:31:21:11:05:SJ cbx_altiobuf_in 2011:10:31:21:11:05:SJ cbx_altiobuf_out 2011:10:31:21:11:05:SJ cbx_altlvds_rx 2011:10:31:21:11:05:SJ cbx_altpll 2011:10:31:21:11:05:SJ cbx_altsyncram 2011:10:31:21:11:05:SJ cbx_arriav 2011:10:31:21:11:04:SJ cbx_cyclone 2011:10:31:21:11:05:SJ cbx_cycloneii 2011:10:31:21:11:05:SJ cbx_lpm_add_sub 2011:10:31:21:11:05:SJ cbx_lpm_compare 2011:10:31:21:11:05:SJ cbx_lpm_counter 2011:10:31:21:11:05:SJ cbx_lpm_decode 2011:10:31:21:11:05:SJ cbx_lpm_mux 2011:10:31:21:11:05:SJ cbx_lpm_shiftreg 2011:10:31:21:11:05:SJ cbx_maxii 2011:10:31:21:11:05:SJ cbx_mgl 2011:10:31:21:12:31:SJ cbx_stratix 2011:10:31:21:11:05:SJ cbx_stratixii 2011:10:31:21:11:05:SJ cbx_stratixiii 2011:10:31:21:11:05:SJ cbx_stratixv 2011:10:31:21:11:05:SJ cbx_util_mgl 2011:10:31:21:11:05:SJ  VERSION_END
 //CBXI_INSTANCE_NAME="M2FS_Data_Formatter_altlvds_rx0_inst1_altlvds_rx_ALTLVDS_RX_component"
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
 
-// Copyright (C) 1991-2012 Altera Corporation
+// Copyright (C) 1991-2011 Altera Corporation
 //  Your use of Altera Corporation's design tools, logic functions 
 //  and other software and tools, and its AMPP partner logic 
 //  functions, and any output files from any of the foregoing 
@@ -24,7 +24,7 @@
 
 
 //alt_lvds_ddio_in ADD_LATENCY_REG="TRUE" CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" WIDTH=8 clock datain dataout_h dataout_l
-//VERSION_BEGIN 12.0SP2 cbx_altaccumulate 2012:08:02:15:18:54:SJ cbx_altclkbuf 2012:08:02:15:18:54:SJ cbx_altddio_in 2012:08:02:15:18:54:SJ cbx_altddio_out 2012:08:02:15:18:54:SJ cbx_altiobuf_bidir 2012:08:02:15:18:54:SJ cbx_altiobuf_in 2012:08:02:15:18:54:SJ cbx_altiobuf_out 2012:08:02:15:18:54:SJ cbx_altlvds_rx 2012:08:02:15:18:54:SJ cbx_altpll 2012:08:02:15:18:54:SJ cbx_altsyncram 2012:08:02:15:18:54:SJ cbx_arriav 2012:08:02:15:18:53:SJ cbx_cyclone 2012:08:02:15:18:54:SJ cbx_cycloneii 2012:08:02:15:18:54:SJ cbx_lpm_add_sub 2012:08:02:15:18:54:SJ cbx_lpm_compare 2012:08:02:15:18:54:SJ cbx_lpm_counter 2012:08:02:15:18:54:SJ cbx_lpm_decode 2012:08:02:15:18:54:SJ cbx_lpm_mux 2012:08:02:15:18:54:SJ cbx_lpm_shiftreg 2012:08:02:15:18:54:SJ cbx_maxii 2012:08:02:15:18:54:SJ cbx_mgl 2012:08:02:15:20:46:SJ cbx_stratix 2012:08:02:15:18:54:SJ cbx_stratixii 2012:08:02:15:18:54:SJ cbx_stratixiii 2012:08:02:15:18:54:SJ cbx_stratixv 2012:08:02:15:18:54:SJ cbx_util_mgl 2012:08:02:15:18:54:SJ  VERSION_END
+//VERSION_BEGIN 11.1 cbx_altaccumulate 2011:10:31:21:11:05:SJ cbx_altclkbuf 2011:10:31:21:11:05:SJ cbx_altddio_in 2011:10:31:21:11:05:SJ cbx_altddio_out 2011:10:31:21:11:05:SJ cbx_altiobuf_bidir 2011:10:31:21:11:05:SJ cbx_altiobuf_in 2011:10:31:21:11:05:SJ cbx_altiobuf_out 2011:10:31:21:11:05:SJ cbx_altlvds_rx 2011:10:31:21:11:05:SJ cbx_altpll 2011:10:31:21:11:05:SJ cbx_altsyncram 2011:10:31:21:11:05:SJ cbx_arriav 2011:10:31:21:11:04:SJ cbx_cyclone 2011:10:31:21:11:05:SJ cbx_cycloneii 2011:10:31:21:11:05:SJ cbx_lpm_add_sub 2011:10:31:21:11:05:SJ cbx_lpm_compare 2011:10:31:21:11:05:SJ cbx_lpm_counter 2011:10:31:21:11:05:SJ cbx_lpm_decode 2011:10:31:21:11:05:SJ cbx_lpm_mux 2011:10:31:21:11:05:SJ cbx_lpm_shiftreg 2011:10:31:21:11:05:SJ cbx_maxii 2011:10:31:21:11:05:SJ cbx_mgl 2011:10:31:21:12:31:SJ cbx_stratix 2011:10:31:21:11:05:SJ cbx_stratixii 2011:10:31:21:11:05:SJ cbx_stratixiii 2011:10:31:21:11:05:SJ cbx_stratixv 2011:10:31:21:11:05:SJ cbx_util_mgl 2011:10:31:21:11:05:SJ  VERSION_END
 
 //synthesis_resources = reg 40 
 //synopsys translate_off
@@ -87,7 +87,7 @@ endmodule //altlvds_rx0_lvds_ddio_in
 
 
 //dffpipe CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DELAY=1 WIDTH=8 clock d q ALTERA_INTERNAL_OPTIONS=AUTO_SHIFT_REGISTER_RECOGNITION=OFF
-//VERSION_BEGIN 12.0SP2 cbx_mgl 2012:08:02:15:20:46:SJ cbx_stratixii 2012:08:02:15:18:54:SJ cbx_util_mgl 2012:08:02:15:18:54:SJ  VERSION_END
+//VERSION_BEGIN 11.1 cbx_mgl 2011:10:31:21:12:31:SJ cbx_stratixii 2011:10:31:21:11:05:SJ cbx_util_mgl 2011:10:31:21:11:05:SJ  VERSION_END
 
 //synthesis_resources = reg 8 
 //synopsys translate_off

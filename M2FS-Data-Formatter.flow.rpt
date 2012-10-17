@@ -1,6 +1,6 @@
 Flow report for M2FS-Data-Formatter
-Fri Oct 12 15:43:31 2012
-Quartus II 32-bit Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Web Edition
+Wed Oct 17 11:29:25 2012
+Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Web Edition
 
 
 ---------------------
@@ -19,7 +19,7 @@ Quartus II 32-bit Version 12.0 Build 263 08/02/2012 Service Pack 2 SJ Web Editio
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2012 Altera Corporation
+Copyright (C) 1991-2011 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -35,26 +35,26 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------------+
-; Flow Summary                                                                       ;
-+------------------------------------+-----------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 12 15:43:31 2012         ;
-; Quartus II 32-bit Version          ; 12.0 Build 263 08/02/2012 SP 2 SJ Web Edition ;
-; Revision Name                      ; M2FS-Data-Formatter                           ;
-; Top-level Entity Name              ; M2FS-Data-Formatter                           ;
-; Family                             ; Cyclone III                                   ;
-; Device                             ; EP3C40F324C8                                  ;
-; Timing Models                      ; Final                                         ;
-; Total logic elements               ; 43 / 39,600 ( < 1 % )                         ;
-;     Total combinational functions  ; 10 / 39,600 ( < 1 % )                         ;
-;     Dedicated logic registers      ; 37 / 39,600 ( < 1 % )                         ;
-; Total registers                    ; 37                                            ;
-; Total pins                         ; 82 / 196 ( 42 % )                             ;
-; Total virtual pins                 ; 0                                             ;
-; Total memory bits                  ; 0 / 1,161,216 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 252 ( 0 % )                               ;
-; Total PLLs                         ; 2 / 4 ( 50 % )                                ;
-+------------------------------------+-----------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++------------------------------------+------------------------------------------+
+; Flow Status                        ; Successful - Wed Oct 17 11:29:25 2012    ;
+; Quartus II 32-bit Version          ; 11.1 Build 173 11/01/2011 SJ Web Edition ;
+; Revision Name                      ; M2FS-Data-Formatter                      ;
+; Top-level Entity Name              ; M2FS-Data-Formatter                      ;
+; Family                             ; Cyclone III                              ;
+; Device                             ; EP3C40F324C8                             ;
+; Timing Models                      ; Final                                    ;
+; Total logic elements               ; 27 / 39,600 ( < 1 % )                    ;
+;     Total combinational functions  ; 10 / 39,600 ( < 1 % )                    ;
+;     Dedicated logic registers      ; 21 / 39,600 ( < 1 % )                    ;
+; Total registers                    ; 37                                       ;
+; Total pins                         ; 96 / 196 ( 49 % )                        ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0 / 1,161,216 ( 0 % )                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 252 ( 0 % )                          ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                           ;
++------------------------------------+------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,82 +62,82 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/12/2012 15:43:08 ;
+; Start date & time ; 10/17/2012 11:29:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; M2FS-Data-Formatter ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                    ;
-+-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 22930445152154.135008178804276 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
-; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
-; IP_TOOL_NAME                        ; ALTLVDS_RX                     ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; IP_TOOL_VERSION                     ; 12.0                           ; --            ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
-; MISC_FILE                           ; altpll0.bsf                    ; --            ; --          ; --             ;
-; MISC_FILE                           ; altpll0.cmp                    ; --            ; --          ; --             ;
-; MISC_FILE                           ; altpll0.ppf                    ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter0.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter0.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter1.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter1.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter2.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter2.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter3.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter3.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter4.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter4.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter5.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter5.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter6.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter6.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter7.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter7.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter8.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter8.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter9.bsf               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter9.cmp               ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter10.bsf              ; --            ; --          ; --             ;
-; MISC_FILE                           ; lpm_counter10.cmp              ; --            ; --          ; --             ;
-; MISC_FILE                           ; altlvds_rx0.bsf                ; --            ; --          ; --             ;
-; MISC_FILE                           ; altlvds_rx0_inst.vhd           ; --            ; --          ; --             ;
-; MISC_FILE                           ; altlvds_rx0.inc                ; --            ; --          ; --             ;
-; MISC_FILE                           ; altlvds_rx0.cmp                ; --            ; --          ; --             ;
-; MISC_FILE                           ; altlvds_rx0.ppf                ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top            ;
-+-------------------------------------+--------------------------------+---------------+-------------+----------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                  ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 146385386682.135049854005544 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                         ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; ALTPLL                       ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                  ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ALTLVDS_RX                   ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 12.0                         ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; altpll0.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; altpll0.cmp                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; altpll0.ppf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter0.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter0.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter1.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter1.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter2.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter2.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter3.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter3.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter4.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter4.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter5.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter5.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter6.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter6.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter7.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter7.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter8.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter8.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter9.bsf             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter9.cmp             ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter10.bsf            ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter10.cmp            ; --            ; --          ; --             ;
+; MISC_FILE                           ; altlvds_rx0.bsf              ; --            ; --          ; --             ;
+; MISC_FILE                           ; altlvds_rx0_inst.vhd         ; --            ; --          ; --             ;
+; MISC_FILE                           ; altlvds_rx0.inc              ; --            ; --          ; --             ;
+; MISC_FILE                           ; altlvds_rx0.cmp              ; --            ; --          ; --             ;
+; MISC_FILE                           ; altlvds_rx0.ppf              ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top            ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -145,12 +145,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 352 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:13     ; 1.0                     ; 451 MB              ; 00:00:12                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 319 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 328 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 274 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:21                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 325 MB              ; 00:00:07                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 398 MB              ; 00:00:10                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 338 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 304 MB              ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 246 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:25                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -159,11 +159,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; alanb-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; alanb-NSB        ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; alanb-NSB        ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; alanb-NSB        ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; alanb-NSB        ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; alanb-NSB        ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

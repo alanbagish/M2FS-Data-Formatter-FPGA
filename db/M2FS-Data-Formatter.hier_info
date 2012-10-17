@@ -1,78 +1,31 @@
 |M2FS-Data-Formatter
-DATA_READY <= 23.DB_MAX_OUTPUT_PORT_TYPE
 Hsync => inst76.DATA
 CAM_CLKA => inst13.DATA
 CAM_FLD => inst5.DATA
 Vsync => inst75.DATA
-CAM_PCLK <= inst175.OUT
-CAM_HS <= inst173.OUT
-CAM_VS <= inst174.OUT
-FRAME_CLK_OUTB <= inst180.OUT
 FRAME_CLK_OUT_B => inst79.DATA
-FRAME_CLK_OUTA <= inst179.OUT
 FRAME_CLK_OUT_A => inst78.DATA
-DATA_CLK_OUTA <= inst47.OUT
 DATA_CLK_OUT_A => inst47.DATA
-DATA_CLK_OUTB <= inst46.OUT
 DATA_CLK_OUT_B => inst46.DATA
-EOSA <= inst177.OUT
 EOS_A => inst177.IN
-EOSB <= inst176.OUT
 EOS_B => inst176.IN
-START_A <= inst44.OUT
-START_B <= inst42.OUT
-PLL_LOCK_A <= inst181.OUT
-PLL_LOCK_B <= inst182.OUT
-SYS_CLK2 <= inst149.OUT
-SYS_CLK1 <= inst130.OUT
-PDWN <= inst136.OUT
 IO3 => inst106.DATA
-DTP <= inst137.OUT
 IO4 => inst105.DATA
-IO_5 <= inst158.OUT
 IO5 => inst107.DATA
-IO_6 <= inst159.OUT
 IO6 => inst108.DATA
-IO_7 <= inst160.OUT
 IO7 => inst109.DATA
-IO_8 <= inst161.OUT
 IO8 => inst110.DATA
-IO_9 <= inst162.OUT
 IO9 => inst111.DATA
-IO_10 <= inst163.OUT
 IO10 => inst112.DATA
-IO_11 <= inst164.OUT
 IO11 => inst113.DATA
-IO_12 <= inst165.OUT
 IO12 => inst126.DATA
-IO_13 <= inst166.OUT
 IO13 => inst114.DATA
-IO_14 <= inst167.OUT
 IO14 => inst127.DATA
-IO_15 <= inst168.OUT
 IO15 => inst131.DATA
-IO_16 <= inst169.OUT
 IO16 => inst132.DATA
-V17 <= inst134.OUT
 IO1 => inst103.DATA
-T18 <= inst135.OUT
 IO2 => inst104.DATA
-Vs2 <= inst80.OUT
-Hs2 <= inst133.OUT
-CAM_FLD_OUT <= inst9.OUT
 CMOS_OE <> <GND>
-Q[1] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[8] <= gdfx_temp0[8].DB_MAX_OUTPUT_PORT_TYPE
-Q[9] <= <GND>
-Q[10] <= <GND>
-Q[11] <= <GND>
-Q[12] <= <GND>
 LVDS_CHANNEL_8 => inst81.DATA
 LVDS_CHANNEL_7 => inst85.DATA
 LVDS_CHANNEL_6 => inst87.DATA
@@ -86,15 +39,6 @@ LVDS_CHANNEL_2 => inst98.DATA
 |M2FS-Data-Formatter|lpm_counter3:inst120
 clock => lpm_counter:LPM_COUNTER_component.clock
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
-q[3] <= lpm_counter:LPM_COUNTER_component.q[3]
-q[4] <= lpm_counter:LPM_COUNTER_component.q[4]
-q[5] <= lpm_counter:LPM_COUNTER_component.q[5]
-q[6] <= lpm_counter:LPM_COUNTER_component.q[6]
-q[7] <= lpm_counter:LPM_COUNTER_component.q[7]
 
 
 |M2FS-Data-Formatter|lpm_counter3:inst120|lpm_counter:LPM_COUNTER_component
@@ -119,31 +63,6 @@ data[5] => ~NO_FANOUT~
 data[6] => ~NO_FANOUT~
 data[7] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_l2k:auto_generated.q[0]
-q[1] <= cntr_l2k:auto_generated.q[1]
-q[2] <= cntr_l2k:auto_generated.q[2]
-q[3] <= cntr_l2k:auto_generated.q[3]
-q[4] <= cntr_l2k:auto_generated.q[4]
-q[5] <= cntr_l2k:auto_generated.q[5]
-q[6] <= cntr_l2k:auto_generated.q[6]
-q[7] <= cntr_l2k:auto_generated.q[7]
-cout <= cntr_l2k:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter3:inst120|lpm_counter:LPM_COUNTER_component|cntr_l2k:auto_generated
@@ -155,22 +74,12 @@ clock => counter_reg_bit[3].CLK
 clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= counter_reg_bit[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= counter_reg_bit[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= counter_reg_bit[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= counter_reg_bit[7].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter3:inst120|lpm_counter:LPM_COUNTER_component|cntr_l2k:auto_generated|cmpr_lfc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
 dataa[2] => data_wire[1].IN0
@@ -193,20 +102,6 @@ datab[7] => data_wire[3].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
-q[3] <= lpm_counter:LPM_COUNTER_component.q[3]
-q[4] <= lpm_counter:LPM_COUNTER_component.q[4]
-q[5] <= lpm_counter:LPM_COUNTER_component.q[5]
-q[6] <= lpm_counter:LPM_COUNTER_component.q[6]
-q[7] <= lpm_counter:LPM_COUNTER_component.q[7]
-q[8] <= lpm_counter:LPM_COUNTER_component.q[8]
-q[9] <= lpm_counter:LPM_COUNTER_component.q[9]
-q[10] <= lpm_counter:LPM_COUNTER_component.q[10]
-q[11] <= lpm_counter:LPM_COUNTER_component.q[11]
-q[12] <= lpm_counter:LPM_COUNTER_component.q[12]
 
 
 |M2FS-Data-Formatter|lpm_counter1:inst117|lpm_counter:LPM_COUNTER_component
@@ -236,36 +131,6 @@ data[10] => ~NO_FANOUT~
 data[11] => ~NO_FANOUT~
 data[12] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_oqk:auto_generated.q[0]
-q[1] <= cntr_oqk:auto_generated.q[1]
-q[2] <= cntr_oqk:auto_generated.q[2]
-q[3] <= cntr_oqk:auto_generated.q[3]
-q[4] <= cntr_oqk:auto_generated.q[4]
-q[5] <= cntr_oqk:auto_generated.q[5]
-q[6] <= cntr_oqk:auto_generated.q[6]
-q[7] <= cntr_oqk:auto_generated.q[7]
-q[8] <= cntr_oqk:auto_generated.q[8]
-q[9] <= cntr_oqk:auto_generated.q[9]
-q[10] <= cntr_oqk:auto_generated.q[10]
-q[11] <= cntr_oqk:auto_generated.q[11]
-q[12] <= cntr_oqk:auto_generated.q[12]
-cout <= cntr_oqk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter1:inst117|lpm_counter:LPM_COUNTER_component|cntr_oqk:auto_generated
@@ -283,27 +148,12 @@ clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= counter_reg_bit[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= counter_reg_bit[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= counter_reg_bit[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= counter_reg_bit[7].DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= counter_reg_bit[8].DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= counter_reg_bit[9].DB_MAX_OUTPUT_PORT_TYPE
-q[10] <= counter_reg_bit[10].DB_MAX_OUTPUT_PORT_TYPE
-q[11] <= counter_reg_bit[11].DB_MAX_OUTPUT_PORT_TYPE
-q[12] <= counter_reg_bit[12].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter1:inst117|lpm_counter:LPM_COUNTER_component|cntr_oqk:auto_generated|cmpr_1hc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[2].IN0
 dataa[1] => data_wire[2].IN0
 dataa[2] => data_wire[3].IN0
@@ -336,11 +186,6 @@ datab[12] => data_wire[8].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
-q[3] <= lpm_counter:LPM_COUNTER_component.q[3]
 
 
 |M2FS-Data-Formatter|lpm_counter0:inst116|lpm_counter:LPM_COUNTER_component
@@ -361,27 +206,6 @@ data[1] => ~NO_FANOUT~
 data[2] => ~NO_FANOUT~
 data[3] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_qlk:auto_generated.q[0]
-q[1] <= cntr_qlk:auto_generated.q[1]
-q[2] <= cntr_qlk:auto_generated.q[2]
-q[3] <= cntr_qlk:auto_generated.q[3]
-cout <= cntr_qlk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter0:inst116|lpm_counter:LPM_COUNTER_component|cntr_qlk:auto_generated
@@ -390,18 +214,12 @@ clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter0:inst116|lpm_counter:LPM_COUNTER_component|cntr_qlk:auto_generated|cmpr_hfc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
 dataa[2] => data_wire[1].IN0
@@ -414,7 +232,6 @@ datab[3] => data_wire[1].IN1
 
 |M2FS-Data-Formatter|altpll0:inst99
 inclk0 => altpll:altpll_component.inclk[0]
-c0 <= altpll:altpll_component.clk[0]
 
 
 |M2FS-Data-Formatter|altpll0:inst99|altpll:altpll_component
@@ -449,40 +266,9 @@ phaseupdown => ~NO_FANOUT~
 phasestep => ~NO_FANOUT~
 configupdate => ~NO_FANOUT~
 fbmimicbidir <> <GND>
-clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
-clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
-clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
-clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
-clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
-extclk[0] <= <GND>
-extclk[1] <= <GND>
-extclk[2] <= <GND>
-extclk[3] <= <GND>
-clkbad[0] <= <GND>
-clkbad[1] <= <GND>
-enable1 <= <GND>
-enable0 <= <GND>
-activeclock <= <GND>
-clkloss <= <GND>
-locked <= <GND>
-scandataout <= <GND>
-scandone <= <GND>
-sclkout0 <= <GND>
-sclkout1 <= <GND>
-phasedone <= <GND>
-vcooverrange <= <GND>
-vcounderrange <= <GND>
-fbout <= <GND>
-fref <= <GND>
-icdrclk <= <GND>
 
 
 |M2FS-Data-Formatter|altpll0:inst99|altpll:altpll_component|altpll0_altpll:auto_generated
-clk[0] <= pll1.CLK
-clk[1] <= pll1.CLK1
-clk[2] <= pll1.CLK2
-clk[3] <= pll1.CLK3
-clk[4] <= pll1.CLK4
 inclk[0] => pll1.CLK
 inclk[1] => pll1.CLK1
 
@@ -491,10 +277,6 @@ inclk[1] => pll1.CLK1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
 
 
 |M2FS-Data-Formatter|lpm_counter6:inst123|lpm_counter:LPM_COUNTER_component
@@ -514,26 +296,6 @@ data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 data[2] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_9kk:auto_generated.q[0]
-q[1] <= cntr_9kk:auto_generated.q[1]
-q[2] <= cntr_9kk:auto_generated.q[2]
-cout <= cntr_9kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter6:inst123|lpm_counter:LPM_COUNTER_component|cntr_9kk:auto_generated
@@ -541,17 +303,12 @@ clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter6:inst123|lpm_counter:LPM_COUNTER_component|cntr_9kk:auto_generated|cmpr_gfc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
 dataa[2] => data_wire[1].IN0
@@ -561,7 +318,6 @@ datab[2] => data_wire[1].IN1
 
 
 |M2FS-Data-Formatter|74137:inst147
-Y0 <= 70.DB_MAX_OUTPUT_PORT_TYPE
 G1 => 14.IN0
 C => 26.DATAIN
 GLN => 15.IN0
@@ -575,23 +331,12 @@ G2N => 66.IN2
 G2N => 65.IN2
 G2N => 64.IN2
 G2N => 63.IN2
-Y1 <= 69.DB_MAX_OUTPUT_PORT_TYPE
-Y2 <= 68.DB_MAX_OUTPUT_PORT_TYPE
-Y3 <= 67.DB_MAX_OUTPUT_PORT_TYPE
-Y4 <= 66.DB_MAX_OUTPUT_PORT_TYPE
-Y5 <= 65.DB_MAX_OUTPUT_PORT_TYPE
-Y6 <= 64.DB_MAX_OUTPUT_PORT_TYPE
-Y7 <= 63.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |M2FS-Data-Formatter|lpm_counter4:inst121
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
 
 
 |M2FS-Data-Formatter|lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component
@@ -611,26 +356,6 @@ data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 data[2] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_7kk:auto_generated.q[0]
-q[1] <= cntr_7kk:auto_generated.q[1]
-q[2] <= cntr_7kk:auto_generated.q[2]
-cout <= cntr_7kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated
@@ -638,17 +363,12 @@ clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|cmpr_gfc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
 dataa[2] => data_wire[1].IN0
@@ -661,13 +381,6 @@ datab[2] => data_wire[1].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
-q[3] <= lpm_counter:LPM_COUNTER_component.q[3]
-q[4] <= lpm_counter:LPM_COUNTER_component.q[4]
-q[5] <= lpm_counter:LPM_COUNTER_component.q[5]
 
 
 |M2FS-Data-Formatter|lpm_counter5:inst122|lpm_counter:LPM_COUNTER_component
@@ -690,29 +403,6 @@ data[3] => ~NO_FANOUT~
 data[4] => ~NO_FANOUT~
 data[5] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_slk:auto_generated.q[0]
-q[1] <= cntr_slk:auto_generated.q[1]
-q[2] <= cntr_slk:auto_generated.q[2]
-q[3] <= cntr_slk:auto_generated.q[3]
-q[4] <= cntr_slk:auto_generated.q[4]
-q[5] <= cntr_slk:auto_generated.q[5]
-cout <= cntr_slk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter5:inst122|lpm_counter:LPM_COUNTER_component|cntr_slk:auto_generated
@@ -723,20 +413,12 @@ clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= counter_reg_bit[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= counter_reg_bit[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= counter_reg_bit[5].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter5:inst122|lpm_counter:LPM_COUNTER_component|cntr_slk:auto_generated|cmpr_jfc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
 dataa[2] => data_wire[1].IN0
@@ -755,9 +437,6 @@ datab[5] => data_wire[2].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
 
 
 |M2FS-Data-Formatter|lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component
@@ -776,41 +455,18 @@ sload => ~NO_FANOUT~
 data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_6kk:auto_generated.q[0]
-q[1] <= cntr_6kk:auto_generated.q[1]
-cout <= cntr_6kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component|cntr_6kk:auto_generated
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter8:inst144|lpm_counter:LPM_COUNTER_component|cntr_6kk:auto_generated|cmpr_ffc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 dataa[1] => aneb_result_wire[0].IN0
 datab[0] => aneb_result_wire[0].IN1
@@ -821,10 +477,6 @@ datab[1] => aneb_result_wire[0].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
 
 
 |M2FS-Data-Formatter|lpm_counter7:inst139|lpm_counter:LPM_COUNTER_component
@@ -844,26 +496,6 @@ data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 data[2] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_8kk:auto_generated.q[0]
-q[1] <= cntr_8kk:auto_generated.q[1]
-q[2] <= cntr_8kk:auto_generated.q[2]
-cout <= cntr_8kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter7:inst139|lpm_counter:LPM_COUNTER_component|cntr_8kk:auto_generated
@@ -871,17 +503,12 @@ clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter7:inst139|lpm_counter:LPM_COUNTER_component|cntr_8kk:auto_generated|cmpr_gfc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
 dataa[2] => data_wire[1].IN0
@@ -894,9 +521,6 @@ datab[2] => data_wire[1].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
 
 
 |M2FS-Data-Formatter|lpm_counter9:inst145|lpm_counter:LPM_COUNTER_component
@@ -915,41 +539,18 @@ sload => ~NO_FANOUT~
 data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_5kk:auto_generated.q[0]
-q[1] <= cntr_5kk:auto_generated.q[1]
-cout <= cntr_5kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter9:inst145|lpm_counter:LPM_COUNTER_component|cntr_5kk:auto_generated
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter9:inst145|lpm_counter:LPM_COUNTER_component|cntr_5kk:auto_generated|cmpr_ffc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 dataa[1] => aneb_result_wire[0].IN0
 datab[0] => aneb_result_wire[0].IN1
@@ -960,8 +561,6 @@ datab[1] => aneb_result_wire[0].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
 
 
 |M2FS-Data-Formatter|lpm_counter10:inst146|lpm_counter:LPM_COUNTER_component
@@ -979,38 +578,17 @@ sconst => ~NO_FANOUT~
 sload => ~NO_FANOUT~
 data[0] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_3kk:auto_generated.q[0]
-cout <= cntr_3kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter10:inst146|lpm_counter:LPM_COUNTER_component|cntr_3kk:auto_generated
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter10:inst146|lpm_counter:LPM_COUNTER_component|cntr_3kk:auto_generated|cmpr_efc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 datab[0] => aneb_result_wire[0].IN1
 
@@ -1019,10 +597,6 @@ datab[0] => aneb_result_wire[0].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
-q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
-q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
 
 
 |M2FS-Data-Formatter|lpm_counter4:inst151|lpm_counter:LPM_COUNTER_component
@@ -1042,26 +616,6 @@ data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 data[2] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_7kk:auto_generated.q[0]
-q[1] <= cntr_7kk:auto_generated.q[1]
-q[2] <= cntr_7kk:auto_generated.q[2]
-cout <= cntr_7kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter4:inst151|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated
@@ -1069,17 +623,12 @@ clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= counter_reg_bit[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= counter_reg_bit[2].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter4:inst151|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|cmpr_gfc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
 dataa[2] => data_wire[1].IN0
@@ -1092,8 +641,6 @@ datab[2] => data_wire[1].IN1
 clock => lpm_counter:LPM_COUNTER_component.clock
 cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
 sclr => lpm_counter:LPM_COUNTER_component.sclr
-cout <= lpm_counter:LPM_COUNTER_component.cout
-q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
 
 
 |M2FS-Data-Formatter|lpm_counter2:inst118|lpm_counter:LPM_COUNTER_component
@@ -1111,44 +658,22 @@ sconst => ~NO_FANOUT~
 sload => ~NO_FANOUT~
 data[0] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_3kk:auto_generated.q[0]
-cout <= cntr_3kk:auto_generated.cout
-eq[0] <= <GND>
-eq[1] <= <GND>
-eq[2] <= <GND>
-eq[3] <= <GND>
-eq[4] <= <GND>
-eq[5] <= <GND>
-eq[6] <= <GND>
-eq[7] <= <GND>
-eq[8] <= <GND>
-eq[9] <= <GND>
-eq[10] <= <GND>
-eq[11] <= <GND>
-eq[12] <= <GND>
-eq[13] <= <GND>
-eq[14] <= <GND>
-eq[15] <= <GND>
 
 
 |M2FS-Data-Formatter|lpm_counter2:inst118|lpm_counter:LPM_COUNTER_component|cntr_3kk:auto_generated
 clock => counter_reg_bit[0].CLK
 cnt_en => _.IN1
-cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= counter_reg_bit[0].DB_MAX_OUTPUT_PORT_TYPE
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
 
 
 |M2FS-Data-Formatter|lpm_counter2:inst118|lpm_counter:LPM_COUNTER_component|cntr_3kk:auto_generated|cmpr_efc:cmpr1
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => aneb_result_wire[0].IN0
 datab[0] => aneb_result_wire[0].IN1
 
 
 |M2FS-Data-Formatter|74374b:inst21
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1159,24 +684,16 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
 |M2FS-Data-Formatter|74137:inst115
-Y0 <= 70.DB_MAX_OUTPUT_PORT_TYPE
 G1 => 14.IN0
 C => 26.DATAIN
 GLN => 15.IN0
@@ -1190,13 +707,6 @@ G2N => 66.IN2
 G2N => 65.IN2
 G2N => 64.IN2
 G2N => 63.IN2
-Y1 <= 69.DB_MAX_OUTPUT_PORT_TYPE
-Y2 <= 68.DB_MAX_OUTPUT_PORT_TYPE
-Y3 <= 67.DB_MAX_OUTPUT_PORT_TYPE
-Y4 <= 66.DB_MAX_OUTPUT_PORT_TYPE
-Y5 <= 65.DB_MAX_OUTPUT_PORT_TYPE
-Y6 <= 64.DB_MAX_OUTPUT_PORT_TYPE
-Y7 <= 63.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |M2FS-Data-Formatter|altlvds_rx0:inst1
@@ -1209,71 +719,6 @@ rx_in[5] => altlvds_rx:ALTLVDS_RX_component.rx_in[5]
 rx_in[6] => altlvds_rx:ALTLVDS_RX_component.rx_in[6]
 rx_in[7] => altlvds_rx:ALTLVDS_RX_component.rx_in[7]
 rx_inclock => altlvds_rx:ALTLVDS_RX_component.rx_inclock
-rx_out[0] <= altlvds_rx:ALTLVDS_RX_component.rx_out[0]
-rx_out[1] <= altlvds_rx:ALTLVDS_RX_component.rx_out[1]
-rx_out[2] <= altlvds_rx:ALTLVDS_RX_component.rx_out[2]
-rx_out[3] <= altlvds_rx:ALTLVDS_RX_component.rx_out[3]
-rx_out[4] <= altlvds_rx:ALTLVDS_RX_component.rx_out[4]
-rx_out[5] <= altlvds_rx:ALTLVDS_RX_component.rx_out[5]
-rx_out[6] <= altlvds_rx:ALTLVDS_RX_component.rx_out[6]
-rx_out[7] <= altlvds_rx:ALTLVDS_RX_component.rx_out[7]
-rx_out[8] <= altlvds_rx:ALTLVDS_RX_component.rx_out[8]
-rx_out[9] <= altlvds_rx:ALTLVDS_RX_component.rx_out[9]
-rx_out[10] <= altlvds_rx:ALTLVDS_RX_component.rx_out[10]
-rx_out[11] <= altlvds_rx:ALTLVDS_RX_component.rx_out[11]
-rx_out[12] <= altlvds_rx:ALTLVDS_RX_component.rx_out[12]
-rx_out[13] <= altlvds_rx:ALTLVDS_RX_component.rx_out[13]
-rx_out[14] <= altlvds_rx:ALTLVDS_RX_component.rx_out[14]
-rx_out[15] <= altlvds_rx:ALTLVDS_RX_component.rx_out[15]
-rx_out[16] <= altlvds_rx:ALTLVDS_RX_component.rx_out[16]
-rx_out[17] <= altlvds_rx:ALTLVDS_RX_component.rx_out[17]
-rx_out[18] <= altlvds_rx:ALTLVDS_RX_component.rx_out[18]
-rx_out[19] <= altlvds_rx:ALTLVDS_RX_component.rx_out[19]
-rx_out[20] <= altlvds_rx:ALTLVDS_RX_component.rx_out[20]
-rx_out[21] <= altlvds_rx:ALTLVDS_RX_component.rx_out[21]
-rx_out[22] <= altlvds_rx:ALTLVDS_RX_component.rx_out[22]
-rx_out[23] <= altlvds_rx:ALTLVDS_RX_component.rx_out[23]
-rx_out[24] <= altlvds_rx:ALTLVDS_RX_component.rx_out[24]
-rx_out[25] <= altlvds_rx:ALTLVDS_RX_component.rx_out[25]
-rx_out[26] <= altlvds_rx:ALTLVDS_RX_component.rx_out[26]
-rx_out[27] <= altlvds_rx:ALTLVDS_RX_component.rx_out[27]
-rx_out[28] <= altlvds_rx:ALTLVDS_RX_component.rx_out[28]
-rx_out[29] <= altlvds_rx:ALTLVDS_RX_component.rx_out[29]
-rx_out[30] <= altlvds_rx:ALTLVDS_RX_component.rx_out[30]
-rx_out[31] <= altlvds_rx:ALTLVDS_RX_component.rx_out[31]
-rx_out[32] <= altlvds_rx:ALTLVDS_RX_component.rx_out[32]
-rx_out[33] <= altlvds_rx:ALTLVDS_RX_component.rx_out[33]
-rx_out[34] <= altlvds_rx:ALTLVDS_RX_component.rx_out[34]
-rx_out[35] <= altlvds_rx:ALTLVDS_RX_component.rx_out[35]
-rx_out[36] <= altlvds_rx:ALTLVDS_RX_component.rx_out[36]
-rx_out[37] <= altlvds_rx:ALTLVDS_RX_component.rx_out[37]
-rx_out[38] <= altlvds_rx:ALTLVDS_RX_component.rx_out[38]
-rx_out[39] <= altlvds_rx:ALTLVDS_RX_component.rx_out[39]
-rx_out[40] <= altlvds_rx:ALTLVDS_RX_component.rx_out[40]
-rx_out[41] <= altlvds_rx:ALTLVDS_RX_component.rx_out[41]
-rx_out[42] <= altlvds_rx:ALTLVDS_RX_component.rx_out[42]
-rx_out[43] <= altlvds_rx:ALTLVDS_RX_component.rx_out[43]
-rx_out[44] <= altlvds_rx:ALTLVDS_RX_component.rx_out[44]
-rx_out[45] <= altlvds_rx:ALTLVDS_RX_component.rx_out[45]
-rx_out[46] <= altlvds_rx:ALTLVDS_RX_component.rx_out[46]
-rx_out[47] <= altlvds_rx:ALTLVDS_RX_component.rx_out[47]
-rx_out[48] <= altlvds_rx:ALTLVDS_RX_component.rx_out[48]
-rx_out[49] <= altlvds_rx:ALTLVDS_RX_component.rx_out[49]
-rx_out[50] <= altlvds_rx:ALTLVDS_RX_component.rx_out[50]
-rx_out[51] <= altlvds_rx:ALTLVDS_RX_component.rx_out[51]
-rx_out[52] <= altlvds_rx:ALTLVDS_RX_component.rx_out[52]
-rx_out[53] <= altlvds_rx:ALTLVDS_RX_component.rx_out[53]
-rx_out[54] <= altlvds_rx:ALTLVDS_RX_component.rx_out[54]
-rx_out[55] <= altlvds_rx:ALTLVDS_RX_component.rx_out[55]
-rx_out[56] <= altlvds_rx:ALTLVDS_RX_component.rx_out[56]
-rx_out[57] <= altlvds_rx:ALTLVDS_RX_component.rx_out[57]
-rx_out[58] <= altlvds_rx:ALTLVDS_RX_component.rx_out[58]
-rx_out[59] <= altlvds_rx:ALTLVDS_RX_component.rx_out[59]
-rx_out[60] <= altlvds_rx:ALTLVDS_RX_component.rx_out[60]
-rx_out[61] <= altlvds_rx:ALTLVDS_RX_component.rx_out[61]
-rx_out[62] <= altlvds_rx:ALTLVDS_RX_component.rx_out[62]
-rx_out[63] <= altlvds_rx:ALTLVDS_RX_component.rx_out[63]
-rx_outclock <= altlvds_rx:ALTLVDS_RX_component.rx_outclock
 
 
 |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component
@@ -1370,104 +815,6 @@ rx_dpa_lock_reset[5] => ~NO_FANOUT~
 rx_dpa_lock_reset[6] => ~NO_FANOUT~
 rx_dpa_lock_reset[7] => ~NO_FANOUT~
 dpa_pll_recal => ~NO_FANOUT~
-rx_out[0] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[0]
-rx_out[1] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[1]
-rx_out[2] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[2]
-rx_out[3] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[3]
-rx_out[4] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[4]
-rx_out[5] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[5]
-rx_out[6] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[6]
-rx_out[7] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[7]
-rx_out[8] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[8]
-rx_out[9] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[9]
-rx_out[10] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[10]
-rx_out[11] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[11]
-rx_out[12] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[12]
-rx_out[13] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[13]
-rx_out[14] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[14]
-rx_out[15] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[15]
-rx_out[16] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[16]
-rx_out[17] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[17]
-rx_out[18] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[18]
-rx_out[19] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[19]
-rx_out[20] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[20]
-rx_out[21] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[21]
-rx_out[22] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[22]
-rx_out[23] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[23]
-rx_out[24] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[24]
-rx_out[25] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[25]
-rx_out[26] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[26]
-rx_out[27] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[27]
-rx_out[28] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[28]
-rx_out[29] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[29]
-rx_out[30] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[30]
-rx_out[31] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[31]
-rx_out[32] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[32]
-rx_out[33] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[33]
-rx_out[34] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[34]
-rx_out[35] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[35]
-rx_out[36] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[36]
-rx_out[37] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[37]
-rx_out[38] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[38]
-rx_out[39] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[39]
-rx_out[40] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[40]
-rx_out[41] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[41]
-rx_out[42] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[42]
-rx_out[43] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[43]
-rx_out[44] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[44]
-rx_out[45] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[45]
-rx_out[46] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[46]
-rx_out[47] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[47]
-rx_out[48] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[48]
-rx_out[49] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[49]
-rx_out[50] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[50]
-rx_out[51] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[51]
-rx_out[52] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[52]
-rx_out[53] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[53]
-rx_out[54] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[54]
-rx_out[55] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[55]
-rx_out[56] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[56]
-rx_out[57] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[57]
-rx_out[58] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[58]
-rx_out[59] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[59]
-rx_out[60] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[60]
-rx_out[61] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[61]
-rx_out[62] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[62]
-rx_out[63] <= altlvds_rx0_lvds_rx:auto_generated.rx_out[63]
-rx_outclock <= altlvds_rx0_lvds_rx:auto_generated.rx_outclock
-rx_locked <= <GND>
-rx_dpa_locked[0] <= <GND>
-rx_dpa_locked[1] <= <GND>
-rx_dpa_locked[2] <= <GND>
-rx_dpa_locked[3] <= <GND>
-rx_dpa_locked[4] <= <GND>
-rx_dpa_locked[5] <= <GND>
-rx_dpa_locked[6] <= <GND>
-rx_dpa_locked[7] <= <GND>
-rx_cda_max[0] <= <GND>
-rx_cda_max[1] <= <GND>
-rx_cda_max[2] <= <GND>
-rx_cda_max[3] <= <GND>
-rx_cda_max[4] <= <GND>
-rx_cda_max[5] <= <GND>
-rx_cda_max[6] <= <GND>
-rx_cda_max[7] <= <GND>
-rx_divfwdclk[0] <= <GND>
-rx_divfwdclk[1] <= <GND>
-rx_divfwdclk[2] <= <GND>
-rx_divfwdclk[3] <= <GND>
-rx_divfwdclk[4] <= <GND>
-rx_divfwdclk[5] <= <GND>
-rx_divfwdclk[6] <= <GND>
-rx_divfwdclk[7] <= <GND>
-dpa_pll_cal_busy <= <GND>
-pll_phaseupdown <= <GND>
-pll_phasestep <= <GND>
-pll_phasecounterselect[0] <= <GND>
-pll_phasecounterselect[1] <= <GND>
-pll_phasecounterselect[2] <= <GND>
-pll_phasecounterselect[3] <= <GND>
-pll_scanclk <= <GND>
 
 
 |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated
@@ -1480,71 +827,6 @@ rx_in[5] => rx_in[5].IN1
 rx_in[6] => rx_in[6].IN1
 rx_in[7] => rx_in[7].IN1
 rx_inclock => lvds_rx_pll.CLK
-rx_out[0] <= rx_reg[0].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[1] <= rx_reg[1].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[2] <= rx_reg[2].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[3] <= rx_reg[3].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[4] <= rx_reg[4].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[5] <= rx_reg[5].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[6] <= rx_reg[6].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[7] <= rx_reg[7].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[8] <= rx_reg[8].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[9] <= rx_reg[9].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[10] <= rx_reg[10].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[11] <= rx_reg[11].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[12] <= rx_reg[12].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[13] <= rx_reg[13].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[14] <= rx_reg[14].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[15] <= rx_reg[15].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[16] <= rx_reg[16].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[17] <= rx_reg[17].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[18] <= rx_reg[18].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[19] <= rx_reg[19].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[20] <= rx_reg[20].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[21] <= rx_reg[21].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[22] <= rx_reg[22].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[23] <= rx_reg[23].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[24] <= rx_reg[24].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[25] <= rx_reg[25].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[26] <= rx_reg[26].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[27] <= rx_reg[27].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[28] <= rx_reg[28].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[29] <= rx_reg[29].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[30] <= rx_reg[30].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[31] <= rx_reg[31].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[32] <= rx_reg[32].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[33] <= rx_reg[33].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[34] <= rx_reg[34].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[35] <= rx_reg[35].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[36] <= rx_reg[36].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[37] <= rx_reg[37].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[38] <= rx_reg[38].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[39] <= rx_reg[39].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[40] <= rx_reg[40].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[41] <= rx_reg[41].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[42] <= rx_reg[42].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[43] <= rx_reg[43].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[44] <= rx_reg[44].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[45] <= rx_reg[45].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[46] <= rx_reg[46].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[47] <= rx_reg[47].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[48] <= rx_reg[48].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[49] <= rx_reg[49].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[50] <= rx_reg[50].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[51] <= rx_reg[51].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[52] <= rx_reg[52].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[53] <= rx_reg[53].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[54] <= rx_reg[54].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[55] <= rx_reg[55].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[56] <= rx_reg[56].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[57] <= rx_reg[57].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[58] <= rx_reg[58].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[59] <= rx_reg[59].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[60] <= rx_reg[60].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[61] <= rx_reg[61].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[62] <= rx_reg[62].DB_MAX_OUTPUT_PORT_TYPE
-rx_out[63] <= rx_reg[63].DB_MAX_OUTPUT_PORT_TYPE
-rx_outclock <= lvds_rx_pll.CLK1
 
 
 |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_lvds_ddio_in:ddio_in
@@ -1604,22 +886,6 @@ datain[6] => ddio_l_reg[6].DATAIN
 datain[6] => ddio_h_reg[6].DATAIN
 datain[7] => ddio_l_reg[7].DATAIN
 datain[7] => ddio_h_reg[7].DATAIN
-dataout_h[0] <= dataout_l_reg[0].DB_MAX_OUTPUT_PORT_TYPE
-dataout_h[1] <= dataout_l_reg[1].DB_MAX_OUTPUT_PORT_TYPE
-dataout_h[2] <= dataout_l_reg[2].DB_MAX_OUTPUT_PORT_TYPE
-dataout_h[3] <= dataout_l_reg[3].DB_MAX_OUTPUT_PORT_TYPE
-dataout_h[4] <= dataout_l_reg[4].DB_MAX_OUTPUT_PORT_TYPE
-dataout_h[5] <= dataout_l_reg[5].DB_MAX_OUTPUT_PORT_TYPE
-dataout_h[6] <= dataout_l_reg[6].DB_MAX_OUTPUT_PORT_TYPE
-dataout_h[7] <= dataout_l_reg[7].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[0] <= dataout_h_reg[0].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[1] <= dataout_h_reg[1].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[2] <= dataout_h_reg[2].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[3] <= dataout_h_reg[3].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[4] <= dataout_h_reg[4].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[5] <= dataout_h_reg[5].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[6] <= dataout_h_reg[6].DB_MAX_OUTPUT_PORT_TYPE
-dataout_l[7] <= dataout_h_reg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:h_dffpipe
@@ -1639,14 +905,6 @@ d[4] => dffe17a[4].DATAIN
 d[5] => dffe17a[5].DATAIN
 d[6] => dffe17a[6].DATAIN
 d[7] => dffe17a[7].DATAIN
-q[0] <= dffe17a[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffe17a[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffe17a[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffe17a[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffe17a[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffe17a[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffe17a[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= dffe17a[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |M2FS-Data-Formatter|altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|altlvds_rx0_dffpipe:l_dffpipe
@@ -1666,18 +924,9 @@ d[4] => dffe17a[4].DATAIN
 d[5] => dffe17a[5].DATAIN
 d[6] => dffe17a[6].DATAIN
 d[7] => dffe17a[7].DATAIN
-q[0] <= dffe17a[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffe17a[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffe17a[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffe17a[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffe17a[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffe17a[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffe17a[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= dffe17a[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |M2FS-Data-Formatter|74374b:inst20
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1688,24 +937,16 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
 |M2FS-Data-Formatter|74374b:inst19
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1716,24 +957,16 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
 |M2FS-Data-Formatter|74374b:inst52
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1744,24 +977,16 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
 |M2FS-Data-Formatter|74374b:inst22
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1772,24 +997,16 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
 |M2FS-Data-Formatter|74374b:inst23
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1800,24 +1017,16 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
 |M2FS-Data-Formatter|74374b:inst24
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1828,24 +1037,16 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
 |M2FS-Data-Formatter|74374b:inst25
-Q8 <= 49.DB_MAX_OUTPUT_PORT_TYPE
 CLK => 20.CLK
 CLK => 19.CLK
 CLK => 18.CLK
@@ -1856,19 +1057,12 @@ CLK => 14.CLK
 CLK => 13.CLK
 D8 => 20.DATAIN
 OEN => 51.IN0
-Q7 <= 48.DB_MAX_OUTPUT_PORT_TYPE
 D7 => 19.DATAIN
-Q6 <= 47.DB_MAX_OUTPUT_PORT_TYPE
 D6 => 18.DATAIN
-Q5 <= 46.DB_MAX_OUTPUT_PORT_TYPE
 D5 => 17.DATAIN
-Q4 <= 45.DB_MAX_OUTPUT_PORT_TYPE
 D4 => 16.DATAIN
-Q3 <= 44.DB_MAX_OUTPUT_PORT_TYPE
 D3 => 15.DATAIN
-Q2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
 D2 => 14.DATAIN
-Q1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
 D1 => 13.DATAIN
 
 
