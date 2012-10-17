@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 32-bit"
 -- VERSION "Version 11.1 Build 173 11/01/2011 SJ Web Edition"
 
--- DATE "10/17/2012 11:29:25"
+-- DATE "10/17/2012 11:57:55"
 
 -- 
 -- Device: Altera EP3C40F324C8 Package FBGA324
@@ -75,6 +75,8 @@ ENTITY 	\M2FS-Data-Formatter\ IS
 	\START_B(n)\ : OUT std_logic;
 	\SYS_CLK2(n)\ : OUT std_logic;
 	\SYS_CLK1(n)\ : OUT std_logic;
+	\FRAME_CLK_OUT_B(n)\ : IN std_logic := '0';
+	\FRAME_CLK_OUT_A(n)\ : IN std_logic := '0';
 	\DATA_CLK_OUT_A(n)\ : IN std_logic := '0';
 	\DATA_CLK_OUT_B(n)\ : IN std_logic := '0';
 	\LVDS_CHANNEL_8(n)\ : IN std_logic := '0';
@@ -176,8 +178,8 @@ END \M2FS-Data-Formatter\;
 -- CAM_CLKA	=>  Location: PIN_N2,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- CAM_FLD	=>  Location: PIN_A9,	 I/O Standard: 1.8 V,	 Current Strength: Default
 -- Vsync	=>  Location: PIN_A1,	 I/O Standard: 1.8 V,	 Current Strength: Default
--- FRAME_CLK_OUT_B	=>  Location: PIN_U11,	 I/O Standard: 1.8 V,	 Current Strength: Default
--- FRAME_CLK_OUT_A	=>  Location: PIN_U13,	 I/O Standard: 1.8 V,	 Current Strength: Default
+-- FRAME_CLK_OUT_B	=>  Location: PIN_L4,	 I/O Standard: LVDS,	 Current Strength: Default
+-- FRAME_CLK_OUT_A	=>  Location: PIN_M2,	 I/O Standard: LVDS,	 Current Strength: Default
 -- DATA_CLK_OUT_A	=>  Location: PIN_K5,	 I/O Standard: LVDS,	 Current Strength: Default
 -- DATA_CLK_OUT_B	=>  Location: PIN_L2,	 I/O Standard: LVDS,	 Current Strength: Default
 -- EOS_A	=>  Location: PIN_F18,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -210,6 +212,8 @@ END \M2FS-Data-Formatter\;
 -- START_B(n)	=>  Location: PIN_G1,	 I/O Standard: LVDS,	 Current Strength: Maximum Current
 -- SYS_CLK2(n)	=>  Location: PIN_C18,	 I/O Standard: LVDS,	 Current Strength: Maximum Current
 -- SYS_CLK1(n)	=>  Location: PIN_P18,	 I/O Standard: LVDS,	 Current Strength: Maximum Current
+-- FRAME_CLK_OUT_B(n)	=>  Location: PIN_L3,	 I/O Standard: LVDS,	 Current Strength: Default
+-- FRAME_CLK_OUT_A(n)	=>  Location: PIN_M1,	 I/O Standard: LVDS,	 Current Strength: Default
 -- DATA_CLK_OUT_A(n)	=>  Location: PIN_L5,	 I/O Standard: LVDS,	 Current Strength: Default
 -- DATA_CLK_OUT_B(n)	=>  Location: PIN_L1,	 I/O Standard: LVDS,	 Current Strength: Default
 -- LVDS_CHANNEL_8(n)	=>  Location: PIN_D18,	 I/O Standard: LVDS,	 Current Strength: Default
@@ -272,6 +276,8 @@ SIGNAL \ww_START_A(n)\ : std_logic;
 SIGNAL \ww_START_B(n)\ : std_logic;
 SIGNAL \ww_SYS_CLK2(n)\ : std_logic;
 SIGNAL \ww_SYS_CLK1(n)\ : std_logic;
+SIGNAL \ww_FRAME_CLK_OUT_B(n)\ : std_logic;
+SIGNAL \ww_FRAME_CLK_OUT_A(n)\ : std_logic;
 SIGNAL \ww_DATA_CLK_OUT_A(n)\ : std_logic;
 SIGNAL \ww_DATA_CLK_OUT_B(n)\ : std_logic;
 SIGNAL \ww_LVDS_CHANNEL_8(n)\ : std_logic;
@@ -375,11 +381,11 @@ SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[3]~feeder_combout
 SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[15]~feeder_combout\ : std_logic;
 SIGNAL \inst24|20~q\ : std_logic;
 SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[0]~feeder_combout\ : std_logic;
-SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a[0]~feeder_combout\ : std_logic;
 SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[0]~feeder_combout\ : std_logic;
 SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[1]~feeder_combout\ : std_logic;
 SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[2]~feeder_combout\ : std_logic;
 SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[3]~feeder_combout\ : std_logic;
+SIGNAL \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[7]~feeder_combout\ : std_logic;
 SIGNAL \inst25|20~feeder_combout\ : std_logic;
 SIGNAL \inst25|20~q\ : std_logic;
 SIGNAL \inst24|49~8_combout\ : std_logic;
@@ -442,6 +448,8 @@ Q <= ww_Q;
 \START_B(n)\ <= \ww_START_B(n)\;
 \SYS_CLK2(n)\ <= \ww_SYS_CLK2(n)\;
 \SYS_CLK1(n)\ <= \ww_SYS_CLK1(n)\;
+\ww_FRAME_CLK_OUT_B(n)\ <= \FRAME_CLK_OUT_B(n)\;
+\ww_FRAME_CLK_OUT_A(n)\ <= \FRAME_CLK_OUT_A(n)\;
 \ww_DATA_CLK_OUT_A(n)\ <= \DATA_CLK_OUT_A(n)\;
 \ww_DATA_CLK_OUT_B(n)\ <= \DATA_CLK_OUT_B(n)\;
 \ww_LVDS_CHANNEL_8(n)\ <= \LVDS_CHANNEL_8(n)\;
@@ -1407,7 +1415,7 @@ PORT MAP (
 	i => ww_CAM_CLKA,
 	o => \8_ham_clk\);
 
--- Location: LCCOMB_X1_Y41_N12
+-- Location: LCCOMB_X2_Y37_N12
 \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita0\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout\ = \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(0) $ (VCC)
@@ -1424,7 +1432,7 @@ PORT MAP (
 	combout => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita0~combout\,
 	cout => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT\);
 
--- Location: LCCOMB_X1_Y41_N14
+-- Location: LCCOMB_X2_Y37_N14
 \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita1\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout\ = (\inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(1) & (!\inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita0~COUT\)) # 
@@ -1443,7 +1451,7 @@ PORT MAP (
 	combout => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita1~combout\,
 	cout => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT\);
 
--- Location: LCCOMB_X1_Y41_N8
+-- Location: LCCOMB_X2_Y37_N8
 \~GND\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \~GND~combout\ = GND
@@ -1467,7 +1475,7 @@ PORT MAP (
 	i => ww_CAM_FLD,
 	o => cam_fldx);
 
--- Location: FF_X1_Y41_N13
+-- Location: FF_X2_Y37_N13
 \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1484,7 +1492,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(0));
 
--- Location: LCCOMB_X1_Y41_N0
+-- Location: LCCOMB_X2_Y37_N0
 \inst121|LPM_COUNTER_component|auto_generated|cmpr1|aneb_result_wire[0]~0\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst121|LPM_COUNTER_component|auto_generated|cmpr1|aneb_result_wire[0]~0_combout\ = (!\inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(0) & (\inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(1) & 
@@ -1501,7 +1509,7 @@ PORT MAP (
 	datad => \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(2),
 	combout => \inst121|LPM_COUNTER_component|auto_generated|cmpr1|aneb_result_wire[0]~0_combout\);
 
--- Location: LCCOMB_X1_Y41_N2
+-- Location: LCCOMB_X2_Y37_N2
 \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit[2]~0\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit[2]~0_combout\ = (\inst121|LPM_COUNTER_component|auto_generated|cmpr1|aneb_result_wire[0]~0_combout\) # ((cam_fldx) # 
@@ -1518,7 +1526,7 @@ PORT MAP (
 	datad => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~0_combout\,
 	combout => \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit[2]~0_combout\);
 
--- Location: FF_X1_Y41_N15
+-- Location: FF_X2_Y37_N15
 \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1535,7 +1543,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(1));
 
--- Location: LCCOMB_X1_Y41_N16
+-- Location: LCCOMB_X2_Y37_N16
 \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout\ = (\inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(2) & (\inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita1~COUT\ $ (GND))) # 
@@ -1554,7 +1562,7 @@ PORT MAP (
 	combout => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~combout\,
 	cout => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT\);
 
--- Location: FF_X1_Y41_N17
+-- Location: FF_X2_Y37_N17
 \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1571,7 +1579,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(2));
 
--- Location: LCCOMB_X1_Y41_N18
+-- Location: LCCOMB_X2_Y37_N18
 \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~0\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~0_combout\ = \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT\
@@ -1585,7 +1593,7 @@ PORT MAP (
 	cin => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~COUT\,
 	combout => \inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~0_combout\);
 
--- Location: LCCOMB_X1_Y41_N4
+-- Location: LCCOMB_X2_Y37_N4
 \inst121|LPM_COUNTER_component|auto_generated|cout_actual\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst121|LPM_COUNTER_component|auto_generated|cout_actual~combout\ = (\inst121|LPM_COUNTER_component|auto_generated|counter_comb_bita2~0_combout\) # ((\inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(1) & 
@@ -1603,7 +1611,7 @@ PORT MAP (
 	datad => \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(2),
 	combout => \inst121|LPM_COUNTER_component|auto_generated|cout_actual~combout\);
 
--- Location: IOIBUF_X38_Y0_N29
+-- Location: IOIBUF_X0_Y16_N1
 inst79 : cycloneiii_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1612,9 +1620,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	i => ww_FRAME_CLK_OUT_B,
+	ibar => \ww_FRAME_CLK_OUT_B(n)\,
 	o => \inst79~o\);
 
--- Location: IOIBUF_X43_Y0_N29
+-- Location: IOIBUF_X0_Y16_N22
 inst78 : cycloneiii_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1623,6 +1632,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	i => ww_FRAME_CLK_OUT_A,
+	ibar => \ww_FRAME_CLK_OUT_A(n)\,
 	o => \inst78~o\);
 
 -- Location: IOIBUF_X67_Y22_N8
@@ -1845,20 +1855,20 @@ PORT MAP (
 	i => ww_Hsync,
 	o => proj_HS);
 
--- Location: LCCOMB_X1_Y41_N6
+-- Location: LCCOMB_X2_Y37_N6
 \inst115|2\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst115|2~combout\ = (cam_fldx & (\inst115|2~combout\)) # (!cam_fldx & ((\8_ham_clk\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101011110000",
+	lut_mask => "1010111110100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \inst115|2~combout\,
-	datac => \8_ham_clk\,
-	datad => cam_fldx,
+	datac => cam_fldx,
+	datad => \8_ham_clk\,
 	combout => \inst115|2~combout\);
 
 -- Location: IOIBUF_X67_Y15_N1
@@ -1887,7 +1897,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|ddio_l_reg\(1));
 
--- Location: LCCOMB_X63_Y15_N12
+-- Location: LCCOMB_X66_Y15_N12
 \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch[1]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch[1]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|ddio_l_reg\(1)
@@ -1901,7 +1911,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|ddio_l_reg\(1),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch[1]~feeder_combout\);
 
--- Location: FF_X63_Y15_N13
+-- Location: FF_X66_Y15_N13
 \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1915,7 +1925,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch\(1));
 
--- Location: LCCOMB_X63_Y15_N26
+-- Location: LCCOMB_X66_Y15_N26
 \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[1]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[1]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch\(1)
@@ -1929,7 +1939,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch\(1),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[1]~feeder_combout\);
 
--- Location: FF_X63_Y15_N27
+-- Location: FF_X66_Y15_N27
 \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1943,7 +1953,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg\(1));
 
--- Location: FF_X63_Y15_N1
+-- Location: FF_X66_Y15_N1
 \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1958,7 +1968,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a\(1));
 
--- Location: LCCOMB_X63_Y15_N6
+-- Location: LCCOMB_X66_Y15_N6
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[0]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[0]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a\(1)
@@ -1972,7 +1982,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a\(1),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[0]~feeder_combout\);
 
--- Location: FF_X63_Y15_N7
+-- Location: FF_X66_Y15_N7
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -1986,7 +1996,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(0));
 
--- Location: LCCOMB_X63_Y15_N28
+-- Location: LCCOMB_X66_Y15_N28
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[1]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[1]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(0)
@@ -2000,7 +2010,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(0),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[1]~feeder_combout\);
 
--- Location: FF_X63_Y15_N29
+-- Location: FF_X66_Y15_N29
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2014,7 +2024,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(1));
 
--- Location: LCCOMB_X63_Y15_N2
+-- Location: LCCOMB_X66_Y15_N2
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[2]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[2]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(1)
@@ -2028,7 +2038,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(1),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[2]~feeder_combout\);
 
--- Location: FF_X63_Y15_N3
+-- Location: FF_X66_Y15_N3
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2042,7 +2052,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(2));
 
--- Location: LCCOMB_X63_Y15_N24
+-- Location: LCCOMB_X66_Y15_N8
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[3]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[3]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(2)
@@ -2056,7 +2066,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(2),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[3]~feeder_combout\);
 
--- Location: FF_X63_Y15_N25
+-- Location: FF_X66_Y15_N9
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2070,7 +2080,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(3));
 
--- Location: LCCOMB_X60_Y41_N4
+-- Location: LCCOMB_X62_Y37_N4
 \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[15]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[15]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(3)
@@ -2084,7 +2094,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg3a\(3),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[15]~feeder_combout\);
 
--- Location: FF_X60_Y41_N5
+-- Location: FF_X62_Y37_N5
 \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[15]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2098,7 +2108,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|rx_reg\(15));
 
--- Location: FF_X60_Y41_N17
+-- Location: FF_X62_Y37_N25
 \inst24|20\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2139,7 +2149,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|ddio_l_reg\(0));
 
--- Location: FF_X65_Y18_N29
+-- Location: FF_X63_Y18_N29
 \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2154,7 +2164,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch\(0));
 
--- Location: LCCOMB_X65_Y18_N10
+-- Location: LCCOMB_X63_Y18_N26
 \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[0]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[0]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch\(0)
@@ -2168,7 +2178,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_latch\(0),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[0]~feeder_combout\);
 
--- Location: FF_X65_Y18_N11
+-- Location: FF_X63_Y18_N27
 \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2182,21 +2192,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg\(0));
 
--- Location: LCCOMB_X65_Y18_N24
-\inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a[0]~feeder\ : cycloneiii_lcell_comb
--- Equation(s):
--- \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a[0]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg\(0)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111100000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datad => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg\(0),
-	combout => \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a[0]~feeder_combout\);
-
--- Location: FF_X65_Y18_N25
+-- Location: FF_X63_Y18_N1
 \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2205,12 +2201,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst1|ALTLVDS_RX_component|auto_generated|fast_clock~clkctrl_outclk\,
-	d => \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a[0]~feeder_combout\,
+	asdata => \inst1|ALTLVDS_RX_component|auto_generated|ddio_in|dataout_l_reg\(0),
+	sload => VCC,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a\(0));
 
--- Location: LCCOMB_X65_Y18_N6
+-- Location: LCCOMB_X63_Y18_N6
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[0]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[0]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a\(0)
@@ -2224,7 +2221,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|h_dffpipe|dffe17a\(0),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[0]~feeder_combout\);
 
--- Location: FF_X65_Y18_N7
+-- Location: FF_X63_Y18_N7
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2238,7 +2235,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(0));
 
--- Location: LCCOMB_X65_Y18_N12
+-- Location: LCCOMB_X63_Y18_N12
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[1]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[1]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(0)
@@ -2252,7 +2249,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(0),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[1]~feeder_combout\);
 
--- Location: FF_X65_Y18_N13
+-- Location: FF_X63_Y18_N13
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2266,7 +2263,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(1));
 
--- Location: LCCOMB_X65_Y18_N2
+-- Location: LCCOMB_X63_Y18_N2
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[2]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[2]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(1)
@@ -2280,7 +2277,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(1),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[2]~feeder_combout\);
 
--- Location: FF_X65_Y18_N3
+-- Location: FF_X63_Y18_N3
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2294,7 +2291,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(2));
 
--- Location: LCCOMB_X65_Y18_N0
+-- Location: LCCOMB_X63_Y18_N16
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[3]~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[3]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(2)
@@ -2308,7 +2305,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(2),
 	combout => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[3]~feeder_combout\);
 
--- Location: FF_X65_Y18_N1
+-- Location: FF_X63_Y18_N17
 \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2322,7 +2319,21 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(3));
 
--- Location: FF_X60_Y41_N7
+-- Location: LCCOMB_X62_Y37_N6
+\inst1|ALTLVDS_RX_component|auto_generated|rx_reg[7]~feeder\ : cycloneiii_lcell_comb
+-- Equation(s):
+-- \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[7]~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(3)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111100000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datad => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(3),
+	combout => \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[7]~feeder_combout\);
+
+-- Location: FF_X62_Y37_N7
 \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[7]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2331,13 +2342,12 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst1|ALTLVDS_RX_component|auto_generated|wire_lvds_rx_pll_clk[1]~clkctrl_outclk\,
-	asdata => \inst1|ALTLVDS_RX_component|auto_generated|l_shiftreg1a\(3),
-	sload => VCC,
+	d => \inst1|ALTLVDS_RX_component|auto_generated|rx_reg[7]~feeder_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst1|ALTLVDS_RX_component|auto_generated|rx_reg\(7));
 
--- Location: LCCOMB_X60_Y41_N2
+-- Location: LCCOMB_X62_Y37_N2
 \inst25|20~feeder\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst25|20~feeder_combout\ = \inst1|ALTLVDS_RX_component|auto_generated|rx_reg\(7)
@@ -2351,7 +2361,7 @@ PORT MAP (
 	datad => \inst1|ALTLVDS_RX_component|auto_generated|rx_reg\(7),
 	combout => \inst25|20~feeder_combout\);
 
--- Location: FF_X60_Y41_N3
+-- Location: FF_X62_Y37_N3
 \inst25|20\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2365,19 +2375,19 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst25|20~q\);
 
--- Location: LCCOMB_X60_Y41_N16
+-- Location: LCCOMB_X62_Y37_N24
 \inst24|49~8\ : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst24|49~8_combout\ = (cam_fldx) # ((\inst115|2~combout\ & (\inst24|20~q\)) # (!\inst115|2~combout\ & ((\inst25|20~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111110111101100",
+	lut_mask => "1111101111101010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst115|2~combout\,
-	datab => cam_fldx,
+	dataa => cam_fldx,
+	datab => \inst115|2~combout\,
 	datac => \inst24|20~q\,
 	datad => \inst25|20~q\,
 	combout => \inst24|49~8_combout\);

@@ -1,5 +1,5 @@
 Fitter report for M2FS-Data-Formatter
-Wed Oct 17 11:29:17 2012
+Wed Oct 17 11:57:48 2012
 Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Web Edition
 
 
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +------------------------------------+------------------------------------------+
-; Fitter Status                      ; Successful - Wed Oct 17 11:29:17 2012    ;
+; Fitter Status                      ; Successful - Wed Oct 17 11:57:48 2012    ;
 ; Quartus II 32-bit Version          ; 11.1 Build 173 11/01/2011 SJ Web Edition ;
 ; Revision Name                      ; M2FS-Data-Formatter                      ;
 ; Top-level Entity Name              ; M2FS-Data-Formatter                      ;
@@ -80,7 +80,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 10 / 39,600 ( < 1 % )                    ;
 ;     Dedicated logic registers      ; 21 / 39,600 ( < 1 % )                    ;
 ; Total registers                    ; 37                                       ;
-; Total pins                         ; 96 / 196 ( 49 % )                        ;
+; Total pins                         ; 98 / 196 ( 50 % )                        ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0 / 1,161,216 ( 0 % )                    ;
 ; Embedded Multiplier 9-bit elements ; 0 / 252 ( 0 % )                          ;
@@ -228,8 +228,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 241 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 241 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 243 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 243 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -252,7 +252,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 226     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 228     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 15      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -290,7 +290,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; Total LABs:  partially or completely used   ; 4 / 2,475 ( < 1 % )                                                                                     ;
 ; User inserted logic elements                ; 0                                                                                                       ;
 ; Virtual pins                                ; 0                                                                                                       ;
-; I/O pins                                    ; 96 / 196 ( 49 % )                                                                                       ;
+; I/O pins                                    ; 98 / 196 ( 50 % )                                                                                       ;
 ;     -- Clock pins                           ; 4 / 8 ( 50 % )                                                                                          ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )                                                                                           ;
 ; Global signals                              ; 3                                                                                                       ;
@@ -310,7 +310,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; Maximum fan-out                             ; 30                                                                                                      ;
 ; Highest non-global fan-out signal           ; cam_fldx                                                                                                ;
 ; Highest non-global fan-out                  ; 15                                                                                                      ;
-; Total fan-out                               ; 272                                                                                                     ;
+; Total fan-out                               ; 274                                                                                                     ;
 ; Average fan-out                             ; 1.07                                                                                                    ;
 +---------------------------------------------+---------------------------------------------------------------------------------------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -346,7 +346,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; Total LABs:  partially or completely used   ; 4 / 2475 ( < 1 % )   ; 0 / 2475 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 96                   ; 0                              ;
+; I/O pins                                    ; 98                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 252 ( 0 % )      ; 0 / 252 ( 0 % )                ;
 ; Total memory bits                           ; 0                    ; 0                              ;
 ; Total RAM block bits                        ; 0                    ; 0                              ;
@@ -360,7 +360,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 262                  ; 46                             ;
+;     -- Total Connections                    ; 264                  ; 46                             ;
 ;     -- Registered Connections               ; 49                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
@@ -388,56 +388,58 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 +---------------------------------------------+----------------------+--------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                                             ;
-+-------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; Name              ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
-+-------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; CAM_CLKA          ; N2    ; 2        ; 0            ; 21           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; CAM_FLD           ; A9    ; 8        ; 34           ; 43           ; 14           ; 15                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; DATA_CLK_OUT_A    ; K5    ; 2        ; 0            ; 19           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
-; DATA_CLK_OUT_A(n) ; L5    ; 2        ; 0            ; 19           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
-; DATA_CLK_OUT_B    ; L2    ; 2        ; 0            ; 17           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
-; DATA_CLK_OUT_B(n) ; L1    ; 2        ; 0            ; 17           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
-; EOS_A             ; F18   ; 6        ; 67           ; 22           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; EOS_B             ; F17   ; 6        ; 67           ; 22           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; FRAME_CLK_OUT_A   ; U13   ; 4        ; 43           ; 0            ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; FRAME_CLK_OUT_B   ; U11   ; 4        ; 38           ; 0            ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; Hsync             ; A5    ; 8        ; 20           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO1               ; N1    ; 2        ; 0            ; 21           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; IO10              ; B14   ; 7        ; 45           ; 43           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO11              ; A8    ; 8        ; 25           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO12              ; E6    ; 8        ; 5            ; 43           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO13              ; V4    ; 3        ; 22           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO14              ; B4    ; 8        ; 7            ; 43           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO15              ; E9    ; 8        ; 29           ; 43           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO16              ; P6    ; 3        ; 5            ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO2               ; V9    ; 3        ; 36           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO3               ; B9    ; 8        ; 34           ; 43           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO4               ; A4    ; 8        ; 9            ; 43           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO5               ; E7    ; 8        ; 7            ; 43           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO6               ; B6    ; 8        ; 22           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO7               ; U3    ; 3        ; 20           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO8               ; B8    ; 8        ; 25           ; 43           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; IO9               ; B12   ; 7        ; 38           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-; LVDS_CHANNEL_1    ; L13   ; 5        ; 67           ; 14           ; 0            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_1(n) ; M14   ; 5        ; 67           ; 14           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_2    ; L14   ; 5        ; 67           ; 15           ; 0            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_2(n) ; L15   ; 5        ; 67           ; 15           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_3    ; L16   ; 5        ; 67           ; 17           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_3(n) ; M17   ; 5        ; 67           ; 17           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_4    ; L17   ; 5        ; 67           ; 18           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_4(n) ; M18   ; 5        ; 67           ; 18           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_5    ; K17   ; 5        ; 67           ; 20           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_5(n) ; K18   ; 5        ; 67           ; 20           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_6    ; H13   ; 6        ; 67           ; 37           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_6(n) ; H14   ; 6        ; 67           ; 37           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_7    ; G17   ; 6        ; 67           ; 25           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_7(n) ; G18   ; 6        ; 67           ; 25           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_8    ; D17   ; 6        ; 67           ; 34           ; 0            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; LVDS_CHANNEL_8(n) ; D18   ; 6        ; 67           ; 34           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
-; Vsync             ; A1    ; 8        ; 1            ; 43           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
-+-------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                              ;
++--------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
+; Name               ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
++--------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
+; CAM_CLKA           ; N2    ; 2        ; 0            ; 21           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; CAM_FLD            ; A9    ; 8        ; 34           ; 43           ; 14           ; 15                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; DATA_CLK_OUT_A     ; K5    ; 2        ; 0            ; 19           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; DATA_CLK_OUT_A(n)  ; L5    ; 2        ; 0            ; 19           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; DATA_CLK_OUT_B     ; L2    ; 2        ; 0            ; 17           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; DATA_CLK_OUT_B(n)  ; L1    ; 2        ; 0            ; 17           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; EOS_A              ; F18   ; 6        ; 67           ; 22           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; EOS_B              ; F17   ; 6        ; 67           ; 22           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; FRAME_CLK_OUT_A    ; M2    ; 2        ; 0            ; 16           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
+; FRAME_CLK_OUT_A(n) ; M1    ; 2        ; 0            ; 15           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
+; FRAME_CLK_OUT_B    ; L4    ; 2        ; 0            ; 16           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
+; FRAME_CLK_OUT_B(n) ; L3    ; 2        ; 0            ; 16           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; Fitter               ;
+; Hsync              ; A5    ; 8        ; 20           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO1                ; N1    ; 2        ; 0            ; 21           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; IO10               ; B14   ; 7        ; 45           ; 43           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO11               ; A8    ; 8        ; 25           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO12               ; E6    ; 8        ; 5            ; 43           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO13               ; V4    ; 3        ; 22           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO14               ; B4    ; 8        ; 7            ; 43           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO15               ; E9    ; 8        ; 29           ; 43           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO16               ; P6    ; 3        ; 5            ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO2                ; V9    ; 3        ; 36           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO3                ; B9    ; 8        ; 34           ; 43           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO4                ; A4    ; 8        ; 9            ; 43           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO5                ; E7    ; 8        ; 7            ; 43           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO6                ; B6    ; 8        ; 22           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO7                ; U3    ; 3        ; 20           ; 0            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO8                ; B8    ; 8        ; 25           ; 43           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; IO9                ; B12   ; 7        ; 38           ; 43           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
+; LVDS_CHANNEL_1     ; L13   ; 5        ; 67           ; 14           ; 0            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_1(n)  ; M14   ; 5        ; 67           ; 14           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_2     ; L14   ; 5        ; 67           ; 15           ; 0            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_2(n)  ; L15   ; 5        ; 67           ; 15           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_3     ; L16   ; 5        ; 67           ; 17           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_3(n)  ; M17   ; 5        ; 67           ; 17           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_4     ; L17   ; 5        ; 67           ; 18           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_4(n)  ; M18   ; 5        ; 67           ; 18           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_5     ; K17   ; 5        ; 67           ; 20           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_5(n)  ; K18   ; 5        ; 67           ; 20           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_6     ; H13   ; 6        ; 67           ; 37           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_6(n)  ; H14   ; 6        ; 67           ; 37           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_7     ; G17   ; 6        ; 67           ; 25           ; 14           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_7(n)  ; G18   ; 6        ; 67           ; 25           ; 21           ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_8     ; D17   ; 6        ; 67           ; 34           ; 0            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; LVDS_CHANNEL_8(n)  ; D18   ; 6        ; 67           ; 34           ; 7            ; 0                     ; 0                  ; no     ; yes            ; no            ; no              ; no       ; Off          ; LVDS         ; --                        ; User                 ;
+; Vsync              ; A1    ; 8        ; 1            ; 43           ; 14           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 1.8 V        ; --                        ; User                 ;
++--------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -570,9 +572,9 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
 ; 1        ; 11 / 20 ( 55 % ) ; 2.5V          ; --           ;
-; 2        ; 8 / 25 ( 32 % )  ; 2.5V          ; --           ;
+; 2        ; 12 / 25 ( 48 % ) ; 2.5V          ; --           ;
 ; 3        ; 12 / 26 ( 46 % ) ; 1.8V          ; --           ;
-; 4        ; 3 / 27 ( 11 % )  ; 1.8V          ; --           ;
+; 4        ; 1 / 27 ( 4 % )   ; 1.8V          ; --           ;
 ; 5        ; 14 / 23 ( 61 % ) ; 2.5V          ; --           ;
 ; 6        ; 12 / 20 ( 60 % ) ; 2.5V          ; --           ;
 ; 7        ; 18 / 28 ( 64 % ) ; 1.8V          ; --           ;
@@ -639,7 +641,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; C16      ; 422        ; 7        ; EOSB                                                      ; output ; 1.8 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; C17      ; 404        ; 6        ; SYS_CLK2                                                  ; output ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; C18      ; 403        ; 6        ; SYS_CLK2(n)                                               ; output ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; D1       ; 17         ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
+; D1       ; 17         ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; On           ;
 ; D2       ; 16         ; 1        ; PLL_LOCK_A                                                ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; D3       ; 14         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D4       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 1.8V    ; --         ;                 ; --       ; --           ;
@@ -658,7 +660,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; D17      ; 388        ; 6        ; LVDS_CHANNEL_8                                            ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; D18      ; 387        ; 6        ; LVDS_CHANNEL_8(n)                                         ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; E1       ; 22         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; E2       ; 21         ; 1        ; ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
+; E2       ; 21         ; 1        ; ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; On           ;
 ; E3       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E4       ;            ; --       ; VCCA3                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; E5       ;            ;          ; GNDA3                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -674,7 +676,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; E15      ;            ;          ; VCCD_PLL2                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; E16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E17      ; 361        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; E18      ; 360        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E18      ; 360        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; F1       ; 67         ; 1        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F2       ; 66         ; 1        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F3       ; 18         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -713,8 +715,8 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; G18      ; 353        ; 6        ; LVDS_CHANNEL_7(n)                                         ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H1       ; 53         ; 1        ; DTP                                                       ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H2       ; 50         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; H3       ; 59         ; 1        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
-; H4       ; 58         ; 1        ; ~ALTERA_DCLK~                                             ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
+; H3       ; 59         ; 1        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP          ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; On           ;
+; H4       ; 58         ; 1        ; ~ALTERA_DCLK~                                             ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; On           ;
 ; H5       ; 60         ; 1        ; ^nCONFIG                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; H6       ; 42         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -751,7 +753,7 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; K2       ; 70         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K3       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K4       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; K5       ; 74         ; 2        ; DATA_CLK_OUT_A                                            ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K5       ; 74         ; 2        ; DATA_CLK_OUT_A                                            ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; K6       ; 65         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; K7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -765,11 +767,11 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; K16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K17      ; 340        ; 5        ; LVDS_CHANNEL_5                                            ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; K18      ; 339        ; 5        ; LVDS_CHANNEL_5(n)                                         ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; L1       ; 84         ; 2        ; DATA_CLK_OUT_B(n)                                         ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L2       ; 83         ; 2        ; DATA_CLK_OUT_B                                            ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L3       ; 86         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; L4       ; 85         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; L5       ; 75         ; 2        ; DATA_CLK_OUT_A(n)                                         ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L1       ; 84         ; 2        ; DATA_CLK_OUT_B(n)                                         ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; L2       ; 83         ; 2        ; DATA_CLK_OUT_B                                            ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; L3       ; 86         ; 2        ; FRAME_CLK_OUT_B(n)                                        ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L4       ; 85         ; 2        ; FRAME_CLK_OUT_B                                           ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L5       ; 75         ; 2        ; DATA_CLK_OUT_A(n)                                         ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L6       ; 80         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -783,8 +785,8 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; L16      ; 330        ; 5        ; LVDS_CHANNEL_3                                            ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L17      ; 332        ; 5        ; LVDS_CHANNEL_4                                            ; input  ; LVDS         ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; L18      ; 337        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; M1       ; 89         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; M2       ; 88         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M1       ; 89         ; 2        ; FRAME_CLK_OUT_A(n)                                        ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M2       ; 88         ; 2        ; FRAME_CLK_OUT_A                                           ; input  ; LVDS         ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M3       ; 103        ; 2        ; IO_14                                                     ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; M4       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M5       ; 134        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -883,9 +885,9 @@ The pin-out file can be found in C:/Users/alanb/Documents/GitHub/M2FS-Data-Forma
 ; U8       ; 202        ; 3        ; DATA_CLK_OUTA                                             ; output ; 1.8 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; U9       ; 204        ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; U10      ; 206        ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; U11      ; 208        ; 4        ; FRAME_CLK_OUT_B                                           ; input  ; 1.8 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; U11      ; 208        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; U12      ; 210        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; U13      ; 218        ; 4        ; FRAME_CLK_OUT_A                                           ; input  ; 1.8 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; U13      ; 218        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; U14      ; 222        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; U15      ; 224        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; U16      ; 245        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -970,7 +972,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                        ; Library Name ;
 +------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |M2FS-Data-Formatter                           ; 27 (1)      ; 21 (0)                    ; 16 (16)       ; 0           ; 0    ; 0            ; 0       ; 0         ; 96   ; 0            ; 6 (1)        ; 17 (0)            ; 4 (0)            ; |M2FS-Data-Formatter                                                                                                                       ;              ;
+; |M2FS-Data-Formatter                           ; 27 (1)      ; 21 (0)                    ; 16 (16)       ; 0           ; 0    ; 0            ; 0       ; 0         ; 98   ; 0            ; 6 (1)        ; 17 (0)            ; 4 (0)            ; |M2FS-Data-Formatter                                                                                                                       ;              ;
 ;    |74137:inst115|                             ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |M2FS-Data-Formatter|74137:inst115                                                                                                         ;              ;
 ;    |74374b:inst24|                             ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |M2FS-Data-Formatter|74374b:inst24                                                                                                         ;              ;
 ;    |74374b:inst25|                             ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; |M2FS-Data-Formatter|74374b:inst25                                                                                                         ;              ;
@@ -990,108 +992,110 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                               ;
-+-------------------+----------+---------------+---------------+-----------------------+-----+------+
-; Name              ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+-------------------+----------+---------------+---------------+-----------------------+-----+------+
-; DATA_READY        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; CAM_PCLK          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; CAM_HS            ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; CAM_VS            ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; FRAME_CLK_OUTB    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; FRAME_CLK_OUTA    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; DATA_CLK_OUTA     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; DATA_CLK_OUTB     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; EOSA              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; EOSB              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; START_A           ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; START_B           ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; PLL_LOCK_A        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; PLL_LOCK_B        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SYS_CLK2          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SYS_CLK1          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; PDWN              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; DTP               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_5              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_6              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_7              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_8              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_9              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_10             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_11             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_12             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_13             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_14             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_15             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; IO_16             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; V17               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; T18               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Vs2               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Hs2               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; CAM_FLD_OUT       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[12]             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[11]             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[10]             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[9]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[8]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[7]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[6]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[5]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[4]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[3]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[2]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Q[1]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; CMOS_OE           ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; Hsync             ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; CAM_CLKA          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; CAM_FLD           ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; Vsync             ; Input    ; (6) 2587 ps   ; (0) 0 ps      ; --                    ; --  ; --   ;
-; FRAME_CLK_OUT_B   ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; FRAME_CLK_OUT_A   ; Input    ; --            ; (6) 2587 ps   ; --                    ; --  ; --   ;
-; DATA_CLK_OUT_A    ; Input    ; (6) 2585 ps   ; --            ; --                    ; --  ; --   ;
-; DATA_CLK_OUT_B    ; Input    ; --            ; (6) 2585 ps   ; --                    ; --  ; --   ;
-; EOS_A             ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; EOS_B             ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; IO3               ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; IO4               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO5               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO6               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO7               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO8               ; Input    ; --            ; (6) 2587 ps   ; --                    ; --  ; --   ;
-; IO9               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO10              ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO11              ; Input    ; --            ; (6) 2587 ps   ; --                    ; --  ; --   ;
-; IO12              ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO13              ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO14              ; Input    ; --            ; (6) 2587 ps   ; --                    ; --  ; --   ;
-; IO15              ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO16              ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
-; IO1               ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; IO2               ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; LVDS_CHANNEL_8    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_7    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_6    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_5    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_4    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_3    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_1    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_2    ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; START_A(n)        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; START_B(n)        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SYS_CLK2(n)       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SYS_CLK1(n)       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; DATA_CLK_OUT_A(n) ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; DATA_CLK_OUT_B(n) ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
-; LVDS_CHANNEL_8(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_7(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_6(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_5(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_4(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_3(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_1(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-; LVDS_CHANNEL_2(n) ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
-+-------------------+----------+---------------+---------------+-----------------------+-----+------+
++----------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                ;
++--------------------+----------+---------------+---------------+-----------------------+-----+------+
+; Name               ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++--------------------+----------+---------------+---------------+-----------------------+-----+------+
+; DATA_READY         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; CAM_PCLK           ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; CAM_HS             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; CAM_VS             ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; FRAME_CLK_OUTB     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; FRAME_CLK_OUTA     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DATA_CLK_OUTA      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DATA_CLK_OUTB      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; EOSA               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; EOSB               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; START_A            ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; START_B            ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; PLL_LOCK_A         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; PLL_LOCK_B         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; SYS_CLK2           ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; SYS_CLK1           ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; PDWN               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DTP                ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_5               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_6               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_7               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_8               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_9               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_10              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_11              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_12              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_13              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_14              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_15              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; IO_16              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; V17                ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; T18                ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Vs2                ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Hs2                ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; CAM_FLD_OUT        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[12]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[11]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[10]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[9]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[8]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[7]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[6]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[5]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[4]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[3]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[2]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Q[1]               ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; CMOS_OE            ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; Hsync              ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; CAM_CLKA           ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; CAM_FLD            ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; Vsync              ; Input    ; (6) 2587 ps   ; (0) 0 ps      ; --                    ; --  ; --   ;
+; FRAME_CLK_OUT_B    ; Input    ; --            ; (6) 2585 ps   ; --                    ; --  ; --   ;
+; FRAME_CLK_OUT_A    ; Input    ; --            ; (6) 2585 ps   ; --                    ; --  ; --   ;
+; DATA_CLK_OUT_A     ; Input    ; (6) 2585 ps   ; --            ; --                    ; --  ; --   ;
+; DATA_CLK_OUT_B     ; Input    ; --            ; (6) 2585 ps   ; --                    ; --  ; --   ;
+; EOS_A              ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; EOS_B              ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; IO3                ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; IO4                ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO5                ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO6                ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO7                ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO8                ; Input    ; --            ; (6) 2587 ps   ; --                    ; --  ; --   ;
+; IO9                ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO10               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO11               ; Input    ; --            ; (6) 2587 ps   ; --                    ; --  ; --   ;
+; IO12               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO13               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO14               ; Input    ; --            ; (6) 2587 ps   ; --                    ; --  ; --   ;
+; IO15               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO16               ; Input    ; (6) 2587 ps   ; --            ; --                    ; --  ; --   ;
+; IO1                ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; IO2                ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; LVDS_CHANNEL_8     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_7     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_6     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_5     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_4     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_3     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_1     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_2     ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; START_A(n)         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; START_B(n)         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; SYS_CLK2(n)        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; SYS_CLK1(n)        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; FRAME_CLK_OUT_B(n) ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; FRAME_CLK_OUT_A(n) ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; DATA_CLK_OUT_A(n)  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; DATA_CLK_OUT_B(n)  ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; LVDS_CHANNEL_8(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_7(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_6(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_5(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_4(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_3(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_1(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
+; LVDS_CHANNEL_2(n)  ; Input    ; --            ; --            ; (0) 0 ps              ; --  ; --   ;
++--------------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1110,7 +1114,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|counter_reg_bit[1] ; 1                 ; 0       ;
 ;      - lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|counter_reg_bit[0] ; 1                 ; 0       ;
 ; FRAME_CLK_OUT_B                                                                                          ;                   ;         ;
-;      - inst180                                                                                           ; 0                 ; 6       ;
+;      - inst180                                                                                           ; 1                 ; 6       ;
 ; FRAME_CLK_OUT_A                                                                                          ;                   ;         ;
 ;      - inst179                                                                                           ; 1                 ; 6       ;
 ; DATA_CLK_OUT_A                                                                                           ;                   ;         ;
@@ -1156,6 +1160,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LVDS_CHANNEL_3                                                                                           ;                   ;         ;
 ; LVDS_CHANNEL_1                                                                                           ;                   ;         ;
 ; LVDS_CHANNEL_2                                                                                           ;                   ;         ;
+; FRAME_CLK_OUT_B(n)                                                                                       ;                   ;         ;
+;      - inst180                                                                                           ; 1                 ; 0       ;
+; FRAME_CLK_OUT_A(n)                                                                                       ;                   ;         ;
+;      - inst179                                                                                           ; 1                 ; 0       ;
 ; DATA_CLK_OUT_A(n)                                                                                        ;                   ;         ;
 ;      - DATA_CLK_OUTA~output                                                                              ; 0                 ; 0       ;
 ; DATA_CLK_OUT_B(n)                                                                                        ;                   ;         ;
@@ -1182,7 +1190,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|fast_clock              ; PLL_1            ; 30      ; Clock                                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
 ; altlvds_rx0:inst1|altlvds_rx:ALTLVDS_RX_component|altlvds_rx0_lvds_rx:auto_generated|wire_lvds_rx_pll_clk[1] ; PLL_1            ; 2       ; Clock                                     ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 ; altpll0:inst99|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0]                        ; PLL_3            ; 2       ; Clock                                     ; yes    ; Global Clock         ; GCLK13           ; --                        ;
-; lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|counter_reg_bit[2]~0          ; LCCOMB_X1_Y41_N2 ; 3       ; Sync. load                                ; no     ; --                   ; --               ; --                        ;
+; lpm_counter4:inst121|lpm_counter:LPM_COUNTER_component|cntr_7kk:auto_generated|counter_reg_bit[2]~0          ; LCCOMB_X2_Y37_N2 ; 3       ; Sync. load                                ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------------------------------------------------------------------------+------------------+---------+-------------------------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1283,13 +1291,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Interconnect Resource Type ; Usage                  ;
 +----------------------------+------------------------+
 ; Block interconnects        ; 50 / 116,715 ( < 1 % ) ;
-; C16 interconnects          ; 30 / 3,886 ( < 1 % )   ;
-; C4 interconnects           ; 51 / 73,752 ( < 1 % )  ;
+; C16 interconnects          ; 35 / 3,886 ( < 1 % )   ;
+; C4 interconnects           ; 48 / 73,752 ( < 1 % )  ;
 ; Direct links               ; 2 / 116,715 ( < 1 % )  ;
 ; Global clocks              ; 3 / 20 ( 15 % )        ;
 ; Local interconnects        ; 23 / 39,600 ( < 1 % )  ;
-; R24 interconnects          ; 26 / 3,777 ( < 1 % )   ;
-; R4 interconnects           ; 22 / 99,858 ( < 1 % )  ;
+; R24 interconnects          ; 30 / 3,777 ( < 1 % )   ;
+; R4 interconnects           ; 26 / 99,858 ( < 1 % )  ;
 +----------------------------+------------------------+
 
 
@@ -1340,13 +1348,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 0                           ;
-; 7                                            ; 1                           ;
-; 8                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 1                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
-; 12                                           ; 1                           ;
-; 13                                           ; 2                           ;
+; 12                                           ; 2                           ;
+; 13                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -1434,9 +1442,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 92           ; 16           ; 92           ; 0            ; 0            ; 96        ; 92           ; 0            ; 96        ; 96        ; 0            ; 44           ; 0            ; 0            ; 4            ; 0            ; 44           ; 4            ; 0            ; 0            ; 1            ; 44           ; 0            ; 0            ; 0            ; 0            ; 0            ; 96        ; 72           ; 0            ;
+; Total Pass         ; 94           ; 16           ; 94           ; 0            ; 0            ; 98        ; 94           ; 0            ; 98        ; 98        ; 0            ; 44           ; 0            ; 0            ; 4            ; 0            ; 44           ; 4            ; 0            ; 0            ; 1            ; 44           ; 0            ; 0            ; 0            ; 0            ; 0            ; 98        ; 76           ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 4            ; 80           ; 4            ; 96           ; 96           ; 0         ; 4            ; 96           ; 0         ; 0         ; 96           ; 52           ; 96           ; 96           ; 92           ; 96           ; 52           ; 92           ; 96           ; 96           ; 95           ; 52           ; 96           ; 96           ; 96           ; 96           ; 96           ; 0         ; 24           ; 96           ;
+; Total Inapplicable ; 4            ; 82           ; 4            ; 98           ; 98           ; 0         ; 4            ; 98           ; 0         ; 0         ; 98           ; 54           ; 98           ; 98           ; 94           ; 98           ; 54           ; 94           ; 98           ; 98           ; 97           ; 54           ; 98           ; 98           ; 98           ; 98           ; 98           ; 0         ; 22           ; 98           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; DATA_READY         ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
 ; CAM_PCLK           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
@@ -1490,10 +1498,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CAM_CLKA           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; CAM_FLD            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Vsync              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; FRAME_CLK_OUT_B    ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; FRAME_CLK_OUT_A    ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; DATA_CLK_OUT_A     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
-; DATA_CLK_OUT_B     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; FRAME_CLK_OUT_B    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; FRAME_CLK_OUT_A    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; DATA_CLK_OUT_A     ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; DATA_CLK_OUT_B     ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
 ; EOS_A              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; EOS_B              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; IO3                ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1524,8 +1532,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; START_B(n)         ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
 ; SYS_CLK2(n)        ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
 ; SYS_CLK1(n)        ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
-; DATA_CLK_OUT_A(n)  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
-; DATA_CLK_OUT_B(n)  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; FRAME_CLK_OUT_B(n) ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; FRAME_CLK_OUT_A(n) ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; DATA_CLK_OUT_A(n)  ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
+; DATA_CLK_OUT_B(n)  ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
 ; LVDS_CHANNEL_8(n)  ; Pass         ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
 ; LVDS_CHANNEL_7(n)  ; Pass         ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
 ; LVDS_CHANNEL_6(n)  ; Pass         ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ;
@@ -1580,7 +1590,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Fitter
     Info: Version 11.1 Build 173 11/01/2011 SJ Web Edition
-    Info: Processing started: Wed Oct 17 11:29:07 2012
+    Info: Processing started: Wed Oct 17 11:57:38 2012
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (119006): Selected device EP3C40F324C8 for design "M2FS-Data-Formatter"
@@ -1619,11 +1629,13 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location H3
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location E18
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Warning (176674): Following 14 pins are differential I/O pins but do not have their complement pins. Hence, the Fitter automatically created the complement pins.
+Warning (176674): Following 16 pins are differential I/O pins but do not have their complement pins. Hence, the Fitter automatically created the complement pins.
     Warning (176118): Pin "START_A" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "START_A(n)"
     Warning (176118): Pin "START_B" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "START_B(n)"
     Warning (176118): Pin "SYS_CLK2" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "SYS_CLK2(n)"
     Warning (176118): Pin "SYS_CLK1" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "SYS_CLK1(n)"
+    Warning (176118): Pin "FRAME_CLK_OUT_B" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "FRAME_CLK_OUT_B(n)"
+    Warning (176118): Pin "FRAME_CLK_OUT_A" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "FRAME_CLK_OUT_A(n)"
     Warning (176118): Pin "DATA_CLK_OUT_A" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "DATA_CLK_OUT_A(n)"
     Warning (176118): Pin "DATA_CLK_OUT_B" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "DATA_CLK_OUT_B(n)"
     Warning (176118): Pin "LVDS_CHANNEL_8" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "LVDS_CHANNEL_8(n)"
@@ -1635,8 +1647,8 @@ Warning (176674): Following 14 pins are differential I/O pins but do not have th
     Warning (176118): Pin "LVDS_CHANNEL_1" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "LVDS_CHANNEL_1(n)"
     Warning (176118): Pin "LVDS_CHANNEL_2" is a differential I/O pin but does not have its complement pin. Hence, fitter automatically created the complement pin "LVDS_CHANNEL_2(n)"
 Critical Warning (169085): No exact pin location assignment(s) for 2 pins of 82 total pins
-    Info (169086): Pin DATA_CLK_OUT_A not assigned to an exact location on the device
-    Info (169086): Pin DATA_CLK_OUT_B not assigned to an exact location on the device
+    Info (169086): Pin FRAME_CLK_OUT_B not assigned to an exact location on the device
+    Info (169086): Pin FRAME_CLK_OUT_A not assigned to an exact location on the device
 Warning (335093): Timing Analysis is analyzing one or more combinational loops as latches
     Warning (335094): Node "inst115|2|combout" is a latch
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'M2FS-Data-Formatter.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -1696,10 +1708,10 @@ Info (334004): Delay annotation completed successfully
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169064): Following 1 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin CMOS_OE has a permanently enabled output enable
-Info: Quartus II 32-bit Fitter was successful. 0 errors, 26 warnings
+Info: Quartus II 32-bit Fitter was successful. 0 errors, 28 warnings
     Info: Peak virtual memory: 398 megabytes
-    Info: Processing ended: Wed Oct 17 11:29:18 2012
-    Info: Elapsed time: 00:00:11
+    Info: Processing ended: Wed Oct 17 11:57:48 2012
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:10
 
 

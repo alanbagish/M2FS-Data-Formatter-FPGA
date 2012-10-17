@@ -1,5 +1,5 @@
 Analysis & Synthesis report for M2FS-Data-Formatter
-Wed Oct 17 11:29:06 2012
+Wed Oct 17 11:57:37 2012
 Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Web Edition
 
 
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 17 11:29:06 2012    ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 17 11:57:37 2012    ;
 ; Quartus II 32-bit Version          ; 11.1 Build 173 11/01/2011 SJ Web Edition ;
 ; Revision Name                      ; M2FS-Data-Formatter                      ;
 ; Top-level Entity Name              ; M2FS-Data-Formatter                      ;
@@ -1388,7 +1388,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 173 11/01/2011 SJ Web Edition
-    Info: Processing started: Wed Oct 17 11:28:59 2012
+    Info: Processing started: Wed Oct 17 11:57:29 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file m2fs-data-formatter.bdf
@@ -1796,7 +1796,7 @@ Info (21057): Implemented 128 device resources after synthesis - the final resou
     Info (21065): Implemented 2 PLLs
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 25 warnings
     Info: Peak virtual memory: 325 megabytes
-    Info: Processing ended: Wed Oct 17 11:29:07 2012
+    Info: Processing ended: Wed Oct 17 11:57:37 2012
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:07
 

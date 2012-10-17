@@ -1,5 +1,5 @@
 Assembler report for M2FS-Data-Formatter
-Wed Oct 17 11:29:22 2012
+Wed Oct 17 11:57:53 2012
 Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Oct 17 11:29:22 2012 ;
+; Assembler Status      ; Successful - Wed Oct 17 11:57:53 2012 ;
 ; Revision Name         ; M2FS-Data-Formatter                   ;
 ; Top-level Entity Name ; M2FS-Data-Formatter                   ;
 ; Family                ; Cyclone III                           ;
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +----------------+--------------------------------------------------------------------------------------+
 ; Device         ; EP3C40F324C8                                                                         ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                           ;
-; Checksum       ; 0x00216B29                                                                           ;
+; Checksum       ; 0x002167A6                                                                           ;
 +----------------+--------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 11.1 Build 173 11/01/2011 SJ Web Edition
-    Info: Processing started: Wed Oct 17 11:29:19 2012
+    Info: Processing started: Wed Oct 17 11:57:49 2012
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off M2FS-Data-Formatter -c M2FS-Data-Formatter
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 338 megabytes
-    Info: Processing ended: Wed Oct 17 11:29:22 2012
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Wed Oct 17 11:57:53 2012
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 
