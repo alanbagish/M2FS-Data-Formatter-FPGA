@@ -29,7 +29,7 @@
  --					Bank 1:		2.5V
  --					Bank 2:		2.5V
  --					Bank 3:		1.8V
- --					Bank 4:		1.8V
+ --					Bank 4:		2.5V
  --					Bank 5:		2.5V
  --					Bank 6:		2.5V
  --					Bank 7:		1.8V
@@ -234,7 +234,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 2         :                
 GND                          : K3        : gnd    :                   :         :           :                
 VCCIO2                       : K4        : power  :                   : 2.5V    : 2         :                
-DATA_CLK_OUT_A               : K5        : input  : LVDS              :         : 2         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 2         :                
 nCE                          : K6        :        :                   :         : 1         :                
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -248,11 +248,11 @@ VCCIO5                       : K15       : power  :                   : 2.5V    
 GND                          : K16       : gnd    :                   :         :           :                
 LVDS_CHANNEL_5               : K17       : input  : LVDS              :         : 5         : Y              
 LVDS_CHANNEL_5(n)            : K18       : input  : LVDS              :         : 5         : Y              
-DATA_CLK_OUT_B(n)            : L1        : input  : LVDS              :         : 2         : Y              
-DATA_CLK_OUT_B               : L2        : input  : LVDS              :         : 2         : Y              
-FRAME_CLK_OUT_B(n)           : L3        : input  : LVDS              :         : 2         : N              
-FRAME_CLK_OUT_B              : L4        : input  : LVDS              :         : 2         : N              
-DATA_CLK_OUT_A(n)            : L5        : input  : LVDS              :         : 2         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L6        :        :                   :         : 2         :                
 VCCINT                       : L7        : power  :                   : 1.2V    :           :                
 GND                          : L8        : gnd    :                   :         :           :                
@@ -266,8 +266,8 @@ LVDS_CHANNEL_2(n)            : L15       : input  : LVDS              :         
 LVDS_CHANNEL_3               : L16       : input  : LVDS              :         : 5         : Y              
 LVDS_CHANNEL_4               : L17       : input  : LVDS              :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L18       :        :                   :         : 5         :                
-FRAME_CLK_OUT_A(n)           : M1        : input  : LVDS              :         : 2         : N              
-FRAME_CLK_OUT_A              : M2        : input  : LVDS              :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M2        :        :                   :         : 2         :                
 IO_14                        : M3        : output : 2.5 V             :         : 2         : Y              
 VCCIO2                       : M4        : power  :                   : 2.5V    : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M5        :        :                   :         : 2         :                
@@ -311,8 +311,8 @@ IO16                         : P6        : input  : 1.8 V             :         
 IO_7                         : P7        : output : 1.8 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P9        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P11       :        :                   :         : 4         :                
+DATA_CLK_OUT_A               : P10       : input  : LVDS              :         : 4         : Y              
+DATA_CLK_OUT_A(n)            : P11       : input  : LVDS              :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P13       :        :                   :         : 4         :                
 GNDA4                        : P14       : gnd    :                   :         :           :                
@@ -329,11 +329,11 @@ VCCIO3                       : R6        : power  :                   : 1.8V    
 VCCIO3                       : R7        : power  :                   : 1.8V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :         : 3         :                
 VCCIO3                       : R9        : power  :                   : 1.8V    : 3         :                
-VCCIO4                       : R10       : power  :                   : 1.8V    : 4         :                
+VCCIO4                       : R10       : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 4         :                
-VCCIO4                       : R12       : power  :                   : 1.8V    : 4         :                
+VCCIO4                       : R12       : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
-VCCIO4                       : R14       : power  :                   : 1.8V    : 4         :                
+VCCIO4                       : R14       : power  :                   : 2.5V    : 4         :                
 VCCIO5                       : R15       : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
@@ -366,10 +366,10 @@ FRAME_CLK_OUTB               : U7        : output : 1.8 V             :         
 DATA_CLK_OUTA                : U8        : output : 1.8 V             :         : 3         : Y              
 GND+                         : U9        :        :                   :         : 3         :                
 GND+                         : U10       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 4         :                
+FRAME_CLK_OUT_B              : U11       : input  : LVDS              :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U12       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U13       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U14       :        :                   :         : 4         :                
+FRAME_CLK_OUT_A              : U13       : input  : LVDS              :         : 4         : Y              
+DATA_CLK_OUT_B               : U14       : input  : LVDS              :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U17       :        :                   :         : 4         :                
@@ -384,11 +384,11 @@ FRAME_CLK_OUTA               : V7        : output : 1.8 V             :         
 DATA_CLK_OUTB                : V8        : output : 1.8 V             :         : 3         : Y              
 IO2                          : V9        : input  : 1.8 V             :         : 3         : Y              
 GND+                         : V10       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V11       :        :                   :         : 4         :                
+FRAME_CLK_OUT_B(n)           : V11       : input  : LVDS              :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V12       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V14       :        :                   :         : 4         :                
+FRAME_CLK_OUT_A(n)           : V13       : input  : LVDS              :         : 4         : Y              
+DATA_CLK_OUT_B(n)            : V14       : input  : LVDS              :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V16       :        :                   :         : 4         :                
-V17                          : V17       : output : 1.8 V             :         : 4         : Y              
+V17                          : V17       : output : 2.5 V             :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V18       :        :                   :         : 4         :                

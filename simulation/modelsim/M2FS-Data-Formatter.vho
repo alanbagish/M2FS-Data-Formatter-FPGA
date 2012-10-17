@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 32-bit"
 -- VERSION "Version 11.1 Build 173 11/01/2011 SJ Web Edition"
 
--- DATE "10/17/2012 11:57:56"
+-- DATE "10/17/2012 12:36:15"
 
 -- 
 -- Device: Altera EP3C40F324C8 Package FBGA324
@@ -156,7 +156,7 @@ END \M2FS-Data-Formatter\;
 -- IO_14	=>  Location: PIN_M3,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- IO_15	=>  Location: PIN_D9,	 I/O Standard: 1.8 V,	 Current Strength: Default
 -- IO_16	=>  Location: PIN_T4,	 I/O Standard: 1.8 V,	 Current Strength: Default
--- V17	=>  Location: PIN_V17,	 I/O Standard: 1.8 V,	 Current Strength: Default
+-- V17	=>  Location: PIN_V17,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- T18	=>  Location: PIN_T18,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- Vs2	=>  Location: PIN_A3,	 I/O Standard: 1.8 V,	 Current Strength: Default
 -- Hs2	=>  Location: PIN_A7,	 I/O Standard: 1.8 V,	 Current Strength: Default
@@ -178,10 +178,10 @@ END \M2FS-Data-Formatter\;
 -- CAM_CLKA	=>  Location: PIN_N2,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- CAM_FLD	=>  Location: PIN_A9,	 I/O Standard: 1.8 V,	 Current Strength: Default
 -- Vsync	=>  Location: PIN_A1,	 I/O Standard: 1.8 V,	 Current Strength: Default
--- FRAME_CLK_OUT_B	=>  Location: PIN_L4,	 I/O Standard: LVDS,	 Current Strength: Default
--- FRAME_CLK_OUT_A	=>  Location: PIN_M2,	 I/O Standard: LVDS,	 Current Strength: Default
--- DATA_CLK_OUT_A	=>  Location: PIN_K5,	 I/O Standard: LVDS,	 Current Strength: Default
--- DATA_CLK_OUT_B	=>  Location: PIN_L2,	 I/O Standard: LVDS,	 Current Strength: Default
+-- FRAME_CLK_OUT_B	=>  Location: PIN_U11,	 I/O Standard: LVDS,	 Current Strength: Default
+-- FRAME_CLK_OUT_A	=>  Location: PIN_U13,	 I/O Standard: LVDS,	 Current Strength: Default
+-- DATA_CLK_OUT_A	=>  Location: PIN_P10,	 I/O Standard: LVDS,	 Current Strength: Default
+-- DATA_CLK_OUT_B	=>  Location: PIN_U14,	 I/O Standard: LVDS,	 Current Strength: Default
 -- EOS_A	=>  Location: PIN_F18,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- EOS_B	=>  Location: PIN_F17,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- IO3	=>  Location: PIN_B9,	 I/O Standard: 1.8 V,	 Current Strength: Default
@@ -212,10 +212,10 @@ END \M2FS-Data-Formatter\;
 -- START_B(n)	=>  Location: PIN_G1,	 I/O Standard: LVDS,	 Current Strength: Maximum Current
 -- SYS_CLK2(n)	=>  Location: PIN_C18,	 I/O Standard: LVDS,	 Current Strength: Maximum Current
 -- SYS_CLK1(n)	=>  Location: PIN_P18,	 I/O Standard: LVDS,	 Current Strength: Maximum Current
--- FRAME_CLK_OUT_B(n)	=>  Location: PIN_L3,	 I/O Standard: LVDS,	 Current Strength: Default
--- FRAME_CLK_OUT_A(n)	=>  Location: PIN_M1,	 I/O Standard: LVDS,	 Current Strength: Default
--- DATA_CLK_OUT_A(n)	=>  Location: PIN_L5,	 I/O Standard: LVDS,	 Current Strength: Default
--- DATA_CLK_OUT_B(n)	=>  Location: PIN_L1,	 I/O Standard: LVDS,	 Current Strength: Default
+-- FRAME_CLK_OUT_B(n)	=>  Location: PIN_V11,	 I/O Standard: LVDS,	 Current Strength: Default
+-- FRAME_CLK_OUT_A(n)	=>  Location: PIN_V13,	 I/O Standard: LVDS,	 Current Strength: Default
+-- DATA_CLK_OUT_A(n)	=>  Location: PIN_P11,	 I/O Standard: LVDS,	 Current Strength: Default
+-- DATA_CLK_OUT_B(n)	=>  Location: PIN_V14,	 I/O Standard: LVDS,	 Current Strength: Default
 -- LVDS_CHANNEL_8(n)	=>  Location: PIN_D18,	 I/O Standard: LVDS,	 Current Strength: Default
 -- LVDS_CHANNEL_7(n)	=>  Location: PIN_G18,	 I/O Standard: LVDS,	 Current Strength: Default
 -- LVDS_CHANNEL_6(n)	=>  Location: PIN_H14,	 I/O Standard: LVDS,	 Current Strength: Default
@@ -1611,7 +1611,7 @@ PORT MAP (
 	datad => \inst121|LPM_COUNTER_component|auto_generated|counter_reg_bit\(2),
 	combout => \inst121|LPM_COUNTER_component|auto_generated|cout_actual~combout\);
 
--- Location: IOIBUF_X0_Y16_N1
+-- Location: IOIBUF_X38_Y0_N29
 inst79 : cycloneiii_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -1623,7 +1623,7 @@ PORT MAP (
 	ibar => \ww_FRAME_CLK_OUT_B(n)\,
 	o => \inst79~o\);
 
--- Location: IOIBUF_X0_Y16_N22
+-- Location: IOIBUF_X43_Y0_N29
 inst78 : cycloneiii_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2392,7 +2392,7 @@ PORT MAP (
 	datad => \inst25|20~q\,
 	combout => \inst24|49~8_combout\);
 
--- Location: IOIBUF_X0_Y19_N1
+-- Location: IOIBUF_X43_Y0_N15
 inst47 : cycloneiii_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -2404,7 +2404,7 @@ PORT MAP (
 	ibar => \ww_DATA_CLK_OUT_A(n)\,
 	o => \inst47~o\);
 
--- Location: IOIBUF_X0_Y17_N15
+-- Location: IOIBUF_X43_Y0_N1
 inst46 : cycloneiii_io_ibuf
 -- pragma translate_off
 GENERIC MAP (

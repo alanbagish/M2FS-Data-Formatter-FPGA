@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "\M2FS-Data-Formatter\")
-  (DATE "10/17/2012 11:57:56")
+  (DATE "10/17/2012 12:36:15")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 32-bit")
   (VERSION "Version 11.1 Build 173 11/01/2011 SJ Web Edition")
@@ -166,7 +166,7 @@
     (INSTANCE inst180)
     (DELAY
       (ABSOLUTE
-        (PORT i (3834:3834:3834) (3915:3915:3915))
+        (PORT i (3393:3393:3393) (3378:3378:3378))
         (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
@@ -176,7 +176,7 @@
     (INSTANCE inst179)
     (DELAY
       (ABSOLUTE
-        (PORT i (4087:4087:4087) (4110:4110:4110))
+        (PORT i (3761:3761:3761) (3862:3862:3862))
         (IOPATH i o (3088:3088:3088) (3043:3043:3043))
       )
     )
@@ -347,7 +347,7 @@
     (DELAY
       (ABSOLUTE
         (PORT i (2117:2117:2117) (2369:2369:2369))
-        (IOPATH i o (3088:3088:3088) (3043:3043:3043))
+        (IOPATH i o (2462:2462:2462) (2386:2386:2386))
       )
     )
   )
@@ -492,7 +492,7 @@
     (INSTANCE \\DATA_CLK_OUTA\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (4041:4041:4041) (4058:4058:4058))
+        (PORT i (3611:3611:3611) (3729:3729:3729))
         (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
@@ -502,7 +502,7 @@
     (INSTANCE \\DATA_CLK_OUTB\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (4033:4033:4033) (4038:4038:4038))
+        (PORT i (3592:3592:3592) (3675:3675:3675))
         (IOPATH i o (3078:3078:3078) (3033:3033:3033))
       )
     )
@@ -683,8 +683,8 @@
     (INSTANCE inst79)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (845:845:845) (771:771:771))
-        (IOPATH ibar o (845:845:845) (771:771:771))
+        (IOPATH i o (802:802:802) (774:774:774))
+        (IOPATH ibar o (802:802:802) (774:774:774))
       )
     )
   )
@@ -693,8 +693,8 @@
     (INSTANCE inst78)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (835:835:835) (761:761:761))
-        (IOPATH ibar o (835:835:835) (761:761:761))
+        (IOPATH i o (812:812:812) (784:784:784))
+        (IOPATH ibar o (812:812:812) (784:784:784))
       )
     )
   )
@@ -1354,8 +1354,8 @@
     (INSTANCE inst47)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (835:835:835) (761:761:761))
-        (IOPATH ibar o (835:835:835) (761:761:761))
+        (IOPATH i o (802:802:802) (774:774:774))
+        (IOPATH ibar o (802:802:802) (774:774:774))
       )
     )
   )
@@ -1364,8 +1364,8 @@
     (INSTANCE inst46)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (835:835:835) (761:761:761))
-        (IOPATH ibar o (835:835:835) (761:761:761))
+        (IOPATH i o (812:812:812) (784:784:784))
+        (IOPATH ibar o (812:812:812) (784:784:784))
       )
     )
   )
